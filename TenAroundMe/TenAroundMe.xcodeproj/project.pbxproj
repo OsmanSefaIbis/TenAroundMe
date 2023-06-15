@@ -20,6 +20,7 @@
 		961F14672A38E9E100BF9A7C /* Daily Journal.swift in Sources */ = {isa = PBXBuildFile; fileRef = 961F14662A38E9E100BF9A7C /* Daily Journal.swift */; };
 		961F14692A38FD0A00BF9A7C /* Project Decisions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 961F14682A38FD0A00BF9A7C /* Project Decisions.swift */; };
 		961F146B2A3A3F6C00BF9A7C /* MockUps.png in Resources */ = {isa = PBXBuildFile; fileRef = 961F146A2A3A3F6C00BF9A7C /* MockUps.png */; };
+		961F146F2A3B90DA00BF9A7C /* Public Link.swift in Sources */ = {isa = PBXBuildFile; fileRef = 961F146E2A3B90DA00BF9A7C /* Public Link.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -57,6 +58,7 @@
 		961F14662A38E9E100BF9A7C /* Daily Journal.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Daily Journal.swift"; sourceTree = "<group>"; };
 		961F14682A38FD0A00BF9A7C /* Project Decisions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Project Decisions.swift"; sourceTree = "<group>"; };
 		961F146A2A3A3F6C00BF9A7C /* MockUps.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = MockUps.png; path = ../../../../../../../../../Desktop/MockUps.png; sourceTree = "<group>"; };
+		961F146E2A3B90DA00BF9A7C /* Public Link.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Public Link.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -238,6 +240,7 @@
 		961F14642A38DB7200BF9A7C /* Postman Collection */ = {
 			isa = PBXGroup;
 			children = (
+				961F146E2A3B90DA00BF9A7C /* Public Link.swift */,
 			);
 			path = "Postman Collection";
 			sourceTree = "<group>";
@@ -387,6 +390,7 @@
 				961F14182A38D16E00BF9A7C /* AppDelegate.swift in Sources */,
 				961F14692A38FD0A00BF9A7C /* Project Decisions.swift in Sources */,
 				961F14222A38D16E00BF9A7C /* TenAroundMe.xcdatamodeld in Sources */,
+				961F146F2A3B90DA00BF9A7C /* Public Link.swift in Sources */,
 				961F14672A38E9E100BF9A7C /* Daily Journal.swift in Sources */,
 				961F145F2A38D8BA00BF9A7C /* Project Description.swift in Sources */,
 			);

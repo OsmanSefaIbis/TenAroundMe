@@ -18,8 +18,13 @@
 
  June - 14
  ~~~~~~~~~~~~~~~~~~~
- • Has authentication problems due to legacy API, will continue with the suggested HERE API
+ • Had authentication problem due to legacy API, will continue with the suggested HERE API.
+ • UI decisions are made.
+ • Analyzing API to take advantage of its capabilities. Working on the postman collection.
  
- 
+ June - 15
+ ~~~~~~~~~~~~~~~~~~~
+ • Postman collection is set.
+ • 
  
 */

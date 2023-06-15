@@ -9,8 +9,9 @@
 
 /*
  
- June - 13
+ June - 13 --> 6 PM --> Case Given
  ~~~~~~~~~~~~~~~~~~~
+
  
  • The design guidelines of prominent platforms such as TripAdvisor, Airbnb, and Foursquare
  were examined and analyzed to gather insights and inspiration for UI/UX ideation.
@@ -52,5 +53,19 @@
  
  • https://www.figma.com/file/tsx9RdcBTjiWwRT5ix2Sk0/TenAroundMe?type=design&node-id=0%3A1&t=kVN0q9PE2JfaUTDj-1 --> Finalized UI Design (Public)
  
+ • https://developer.here.com/documentation/geocoding-search-api/api-reference-swagger.html --> swagger here
+ 
+ June - 15
+ ~~~~~~~~~~~~~~~~~~~
+ 
+ • Read the Guide and API reference, thought about what and how to use the API.
+ 
+ • Did the postman collection to test the api capabilities, added to the project as a public link.
+ 
+ • Matt Austin --> Reached to me about the technical problem that i had with API key and API.
+ 
+ • The uncertainty cost me time so i will just continue with the HERE Geocoding & Search API v7.
+ 
+ • Starting the implementation before its too late ❗️
  
 */
