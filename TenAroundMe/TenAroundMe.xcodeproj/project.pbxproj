@@ -14,13 +14,18 @@
 		961F14322A38D17000BF9A7C /* TenAroundMeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 961F14312A38D17000BF9A7C /* TenAroundMeTests.swift */; };
 		961F143C2A38D17000BF9A7C /* TenAroundMeUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 961F143B2A38D17000BF9A7C /* TenAroundMeUITests.swift */; };
 		961F143E2A38D17000BF9A7C /* TenAroundMeUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 961F143D2A38D17000BF9A7C /* TenAroundMeUITestsLaunchTests.swift */; };
-		961F145B2A38D4C400BF9A7C /* Search.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 961F145A2A38D4C400BF9A7C /* Search.storyboard */; };
-		961F145D2A38D5E100BF9A7C /* SearchVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 961F145C2A38D5E100BF9A7C /* SearchVC.swift */; };
 		961F145F2A38D8BA00BF9A7C /* Project Description.swift in Sources */ = {isa = PBXBuildFile; fileRef = 961F145E2A38D8BA00BF9A7C /* Project Description.swift */; };
 		961F14672A38E9E100BF9A7C /* Daily Journal.swift in Sources */ = {isa = PBXBuildFile; fileRef = 961F14662A38E9E100BF9A7C /* Daily Journal.swift */; };
 		961F14692A38FD0A00BF9A7C /* Project Decisions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 961F14682A38FD0A00BF9A7C /* Project Decisions.swift */; };
 		961F146B2A3A3F6C00BF9A7C /* MockUps.png in Resources */ = {isa = PBXBuildFile; fileRef = 961F146A2A3A3F6C00BF9A7C /* MockUps.png */; };
 		961F146F2A3B90DA00BF9A7C /* Public Link.swift in Sources */ = {isa = PBXBuildFile; fileRef = 961F146E2A3B90DA00BF9A7C /* Public Link.swift */; };
+		961F14762A3BAF7300BF9A7C /* MapVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 961F14742A3BAF7300BF9A7C /* MapVC.swift */; };
+		961F14792A3BB03800BF9A7C /* Map.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 961F14782A3BB03800BF9A7C /* Map.storyboard */; };
+		961F14802A3BB2C700BF9A7C /* DetailVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 961F147E2A3BB2C700BF9A7C /* DetailVC.swift */; };
+		961F14812A3BB2C700BF9A7C /* DetailVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 961F147F2A3BB2C700BF9A7C /* DetailVC.xib */; };
+		961F14882A3BC36500BF9A7C /* SearchVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 961F14862A3BC36500BF9A7C /* SearchVC.swift */; };
+		961F14892A3BC36500BF9A7C /* SearchVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 961F14872A3BC36500BF9A7C /* SearchVC.xib */; };
+		961F14912A3BC6D400BF9A7C /* MapVC+UIViewControllerTransitioningDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 961F14902A3BC6D400BF9A7C /* MapVC+UIViewControllerTransitioningDelegate.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -52,13 +57,18 @@
 		961F14372A38D17000BF9A7C /* TenAroundMeUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TenAroundMeUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		961F143B2A38D17000BF9A7C /* TenAroundMeUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TenAroundMeUITests.swift; sourceTree = "<group>"; };
 		961F143D2A38D17000BF9A7C /* TenAroundMeUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TenAroundMeUITestsLaunchTests.swift; sourceTree = "<group>"; };
-		961F145A2A38D4C400BF9A7C /* Search.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Search.storyboard; sourceTree = "<group>"; };
-		961F145C2A38D5E100BF9A7C /* SearchVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchVC.swift; sourceTree = "<group>"; };
 		961F145E2A38D8BA00BF9A7C /* Project Description.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Project Description.swift"; sourceTree = "<group>"; };
 		961F14662A38E9E100BF9A7C /* Daily Journal.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Daily Journal.swift"; sourceTree = "<group>"; };
 		961F14682A38FD0A00BF9A7C /* Project Decisions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Project Decisions.swift"; sourceTree = "<group>"; };
 		961F146A2A3A3F6C00BF9A7C /* MockUps.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = MockUps.png; path = ../../../../../../../../../Desktop/MockUps.png; sourceTree = "<group>"; };
 		961F146E2A3B90DA00BF9A7C /* Public Link.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Public Link.swift"; sourceTree = "<group>"; };
+		961F14742A3BAF7300BF9A7C /* MapVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapVC.swift; sourceTree = "<group>"; };
+		961F14782A3BB03800BF9A7C /* Map.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Map.storyboard; sourceTree = "<group>"; };
+		961F147E2A3BB2C700BF9A7C /* DetailVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailVC.swift; sourceTree = "<group>"; };
+		961F147F2A3BB2C700BF9A7C /* DetailVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DetailVC.xib; sourceTree = "<group>"; };
+		961F14862A3BC36500BF9A7C /* SearchVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchVC.swift; sourceTree = "<group>"; };
+		961F14872A3BC36500BF9A7C /* SearchVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SearchVC.xib; sourceTree = "<group>"; };
+		961F14902A3BC6D400BF9A7C /* MapVC+UIViewControllerTransitioningDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "MapVC+UIViewControllerTransitioningDelegate.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -176,7 +186,9 @@
 		961F144E2A38D24E00BF9A7C /* Screens */ = {
 			isa = PBXGroup;
 			children = (
-				961F14522A38D3AF00BF9A7C /* Search */,
+				961F14822A3BC07E00BF9A7C /* Search */,
+				961F14522A38D3AF00BF9A7C /* Map */,
+				961F14702A3BAE1000BF9A7C /* Detail */,
 			);
 			path = Screens;
 			sourceTree = "<group>";
@@ -204,14 +216,14 @@
 			path = Pseudocodes;
 			sourceTree = "<group>";
 		};
-		961F14522A38D3AF00BF9A7C /* Search */ = {
+		961F14522A38D3AF00BF9A7C /* Map */ = {
 			isa = PBXGroup;
 			children = (
 				961F14542A38D43600BF9A7C /* Model */,
 				961F14552A38D43D00BF9A7C /* View */,
 				961F14562A38D44500BF9A7C /* ViewModel */,
 			);
-			path = Search;
+			path = Map;
 			sourceTree = "<group>";
 		};
 		961F14542A38D43600BF9A7C /* Model */ = {
@@ -224,8 +236,9 @@
 		961F14552A38D43D00BF9A7C /* View */ = {
 			isa = PBXGroup;
 			children = (
-				961F145A2A38D4C400BF9A7C /* Search.storyboard */,
-				961F145C2A38D5E100BF9A7C /* SearchVC.swift */,
+				961F148A2A3BC63E00BF9A7C /* Utils */,
+				961F14782A3BB03800BF9A7C /* Map.storyboard */,
+				961F14742A3BAF7300BF9A7C /* MapVC.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -252,6 +265,120 @@
 				961F14682A38FD0A00BF9A7C /* Project Decisions.swift */,
 			);
 			path = "Project Journal";
+			sourceTree = "<group>";
+		};
+		961F14702A3BAE1000BF9A7C /* Detail */ = {
+			isa = PBXGroup;
+			children = (
+				961F14712A3BAE2E00BF9A7C /* Model */,
+				961F14732A3BAE3D00BF9A7C /* View */,
+				961F14722A3BAE3600BF9A7C /* ViewModel */,
+			);
+			path = Detail;
+			sourceTree = "<group>";
+		};
+		961F14712A3BAE2E00BF9A7C /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		961F14722A3BAE3600BF9A7C /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		961F14732A3BAE3D00BF9A7C /* View */ = {
+			isa = PBXGroup;
+			children = (
+				961F147E2A3BB2C700BF9A7C /* DetailVC.swift */,
+				961F147F2A3BB2C700BF9A7C /* DetailVC.xib */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		961F14822A3BC07E00BF9A7C /* Search */ = {
+			isa = PBXGroup;
+			children = (
+				961F14832A3BC32100BF9A7C /* Model */,
+				961F14842A3BC32D00BF9A7C /* View */,
+				961F14852A3BC33400BF9A7C /* ViewModel */,
+			);
+			path = Search;
+			sourceTree = "<group>";
+		};
+		961F14832A3BC32100BF9A7C /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		961F14842A3BC32D00BF9A7C /* View */ = {
+			isa = PBXGroup;
+			children = (
+				961F14872A3BC36500BF9A7C /* SearchVC.xib */,
+				961F14862A3BC36500BF9A7C /* SearchVC.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		961F14852A3BC33400BF9A7C /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		961F148A2A3BC63E00BF9A7C /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				961F148B2A3BC64600BF9A7C /* Extension */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		961F148B2A3BC64600BF9A7C /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				961F148C2A3BC65000BF9A7C /* Class */,
+				961F148D2A3BC66D00BF9A7C /* Conformances */,
+			);
+			path = Extension;
+			sourceTree = "<group>";
+		};
+		961F148C2A3BC65000BF9A7C /* Class */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Class;
+			sourceTree = "<group>";
+		};
+		961F148D2A3BC66D00BF9A7C /* Conformances */ = {
+			isa = PBXGroup;
+			children = (
+				961F148E2A3BC68D00BF9A7C /* Delegations */,
+			);
+			path = Conformances;
+			sourceTree = "<group>";
+		};
+		961F148E2A3BC68D00BF9A7C /* Delegations */ = {
+			isa = PBXGroup;
+			children = (
+				961F148F2A3BC6A000BF9A7C /* UIKit */,
+			);
+			path = Delegations;
+			sourceTree = "<group>";
+		};
+		961F148F2A3BC6A000BF9A7C /* UIKit */ = {
+			isa = PBXGroup;
+			children = (
+				961F14902A3BC6D400BF9A7C /* MapVC+UIViewControllerTransitioningDelegate.swift */,
+			);
+			path = UIKit;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -360,8 +487,10 @@
 			files = (
 				961F146B2A3A3F6C00BF9A7C /* MockUps.png in Resources */,
 				961F14272A38D17000BF9A7C /* LaunchScreen.storyboard in Resources */,
+				961F14892A3BC36500BF9A7C /* SearchVC.xib in Resources */,
+				961F14792A3BB03800BF9A7C /* Map.storyboard in Resources */,
 				961F14242A38D17000BF9A7C /* Assets.xcassets in Resources */,
-				961F145B2A38D4C400BF9A7C /* Search.storyboard in Resources */,
+				961F14812A3BB2C700BF9A7C /* DetailVC.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -386,13 +515,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				961F145D2A38D5E100BF9A7C /* SearchVC.swift in Sources */,
 				961F14182A38D16E00BF9A7C /* AppDelegate.swift in Sources */,
 				961F14692A38FD0A00BF9A7C /* Project Decisions.swift in Sources */,
 				961F14222A38D16E00BF9A7C /* TenAroundMe.xcdatamodeld in Sources */,
+				961F14882A3BC36500BF9A7C /* SearchVC.swift in Sources */,
 				961F146F2A3B90DA00BF9A7C /* Public Link.swift in Sources */,
+				961F14912A3BC6D400BF9A7C /* MapVC+UIViewControllerTransitioningDelegate.swift in Sources */,
 				961F14672A38E9E100BF9A7C /* Daily Journal.swift in Sources */,
+				961F14802A3BB2C700BF9A7C /* DetailVC.swift in Sources */,
 				961F145F2A38D8BA00BF9A7C /* Project Description.swift in Sources */,
+				961F14762A3BAF7300BF9A7C /* MapVC.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -567,9 +699,9 @@
 				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.navigation";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Search;
+				INFOPLIST_KEY_UIMainStoryboardFile = Map;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
-				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -599,9 +731,9 @@
 				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.navigation";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Search;
+				INFOPLIST_KEY_UIMainStoryboardFile = Map;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
-				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
