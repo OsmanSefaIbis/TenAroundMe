@@ -11,12 +11,15 @@ import MapKit
 final class MapVC: UIViewController {
     
     @IBOutlet private weak var map: MKMapView!
+    private let topSheet = SearchVC()
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        view.addSubview(topSheet)
         configureMap()
         configureTopSheet()
         configureBottomSheet()
+
     }
     
     private func configureMap() {
@@ -33,9 +36,11 @@ final class MapVC: UIViewController {
             sheet.detents = [.custom(resolver: { context in
                 0.05 * context.maximumDetentValue
             }), .large() ]
+            sheet.prefersGrabberVisible = true
             sheet.largestUndimmedDetentIdentifier = .large
         }
         present(navigateDetail, animated: true)
+        
     }
     
     private func configureTopSheet() {
@@ -57,3 +62,4 @@ final class MapVC: UIViewController {
         
     }
 }
+

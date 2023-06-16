@@ -25,7 +25,6 @@
 		961F14812A3BB2C700BF9A7C /* DetailVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 961F147F2A3BB2C700BF9A7C /* DetailVC.xib */; };
 		961F14882A3BC36500BF9A7C /* SearchVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 961F14862A3BC36500BF9A7C /* SearchVC.swift */; };
 		961F14892A3BC36500BF9A7C /* SearchVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 961F14872A3BC36500BF9A7C /* SearchVC.xib */; };
-		961F14912A3BC6D400BF9A7C /* MapVC+UIViewControllerTransitioningDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 961F14902A3BC6D400BF9A7C /* MapVC+UIViewControllerTransitioningDelegate.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -68,7 +67,6 @@
 		961F147F2A3BB2C700BF9A7C /* DetailVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DetailVC.xib; sourceTree = "<group>"; };
 		961F14862A3BC36500BF9A7C /* SearchVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchVC.swift; sourceTree = "<group>"; };
 		961F14872A3BC36500BF9A7C /* SearchVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SearchVC.xib; sourceTree = "<group>"; };
-		961F14902A3BC6D400BF9A7C /* MapVC+UIViewControllerTransitioningDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "MapVC+UIViewControllerTransitioningDelegate.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -336,49 +334,8 @@
 		961F148A2A3BC63E00BF9A7C /* Utils */ = {
 			isa = PBXGroup;
 			children = (
-				961F148B2A3BC64600BF9A7C /* Extension */,
 			);
 			path = Utils;
-			sourceTree = "<group>";
-		};
-		961F148B2A3BC64600BF9A7C /* Extension */ = {
-			isa = PBXGroup;
-			children = (
-				961F148C2A3BC65000BF9A7C /* Class */,
-				961F148D2A3BC66D00BF9A7C /* Conformances */,
-			);
-			path = Extension;
-			sourceTree = "<group>";
-		};
-		961F148C2A3BC65000BF9A7C /* Class */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Class;
-			sourceTree = "<group>";
-		};
-		961F148D2A3BC66D00BF9A7C /* Conformances */ = {
-			isa = PBXGroup;
-			children = (
-				961F148E2A3BC68D00BF9A7C /* Delegations */,
-			);
-			path = Conformances;
-			sourceTree = "<group>";
-		};
-		961F148E2A3BC68D00BF9A7C /* Delegations */ = {
-			isa = PBXGroup;
-			children = (
-				961F148F2A3BC6A000BF9A7C /* UIKit */,
-			);
-			path = Delegations;
-			sourceTree = "<group>";
-		};
-		961F148F2A3BC6A000BF9A7C /* UIKit */ = {
-			isa = PBXGroup;
-			children = (
-				961F14902A3BC6D400BF9A7C /* MapVC+UIViewControllerTransitioningDelegate.swift */,
-			);
-			path = UIKit;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -520,7 +477,6 @@
 				961F14222A38D16E00BF9A7C /* TenAroundMe.xcdatamodeld in Sources */,
 				961F14882A3BC36500BF9A7C /* SearchVC.swift in Sources */,
 				961F146F2A3B90DA00BF9A7C /* Public Link.swift in Sources */,
-				961F14912A3BC6D400BF9A7C /* MapVC+UIViewControllerTransitioningDelegate.swift in Sources */,
 				961F14672A38E9E100BF9A7C /* Daily Journal.swift in Sources */,
 				961F14802A3BB2C700BF9A7C /* DetailVC.swift in Sources */,
 				961F145F2A38D8BA00BF9A7C /* Project Description.swift in Sources */,
