@@ -27,16 +27,14 @@ public class SearchVC: UIView {
     }
 
     public func toggleUp() {
-        print("--> Index: \(currentFrameIndex)")
-        if currentFrameIndex >= 0 {
+        if currentFrameIndex > 0 {
             currentFrameIndex -= 1
             updateViewFrame(for: currentFrameIndex)
         } else { return }
     }
     
     public func toggleDown() {
-        print("--> Index: \(currentFrameIndex)")
-        if currentFrameIndex <= 3  {
+        if currentFrameIndex < 3  {
             currentFrameIndex += 1
             updateViewFrame(for: currentFrameIndex)
         } else { return }
@@ -65,17 +63,17 @@ private extension SearchVC {
         maskLayer.path = maskPath.cgPath
         layer.mask = maskLayer
 
-        let grooveSize: CGSize = CGSize(width: 35.0, height: 2)
+        let grabberSize: CGSize = CGSize(width: 35.0, height: 2)
 
-        let x: CGFloat = (bounds.size.width / 2.0) - (grooveSize.width / 2.0)
-        let y: CGFloat = bounds.size.height - (grooveSize.height * 3.025)
+        let x: CGFloat = (bounds.size.width / 2.0) - (grabberSize.width / 2.0)
+        let y: CGFloat = bounds.size.height - (grabberSize.height * 3.025)
 
-        let linePath = UIBezierPath(roundedRect: CGRect(x: x, y: y, width: grooveSize.width, height: grooveSize.height), cornerRadius: 10)
+        let linePath = UIBezierPath(roundedRect: CGRect(x: x, y: y, width: grabberSize.width, height: grabberSize.height), cornerRadius: 10)
 
         shapeLayer = CAShapeLayer()
         shapeLayer?.path = linePath.cgPath
         shapeLayer?.strokeColor = UIColor.white.withAlphaComponent(0.625).cgColor
-        shapeLayer?.lineWidth = grooveSize.height
+        shapeLayer?.lineWidth = grabberSize.height
         shapeLayer?.fillColor = UIColor.clear.cgColor
 
         layer.addSublayer(shapeLayer!)
@@ -120,64 +118,25 @@ private extension SearchVC {
         let velocity = gestureRecognizer.velocity(in: self)
 
         if gestureRecognizer.state == .ended {
-            if velocity.y > 0 {
+            if velocity.y > 0 && currentFrameIndex < 3 {
                 toggleDown()
-            } else if velocity.y < 0 {
+            } else if velocity.y < 0 && currentFrameIndex != 0 {
                 toggleUp()
             }
         }
         gestureRecognizer.setTranslation(CGPoint.zero, in: self)
     }
-
+    private var aspectRatio: CGFloat {
+        return UIScreen.main.bounds.width / UIScreen.main.bounds.height
+    }
 
     func frame(for index: Int) -> CGRect {
-        switch index {
-        case 0:
-            return minFrame()
-        case 1:
-            return mediumFrame()
-        case 2:
-            return largeFrame()
-        case 3:
-            return maxFrame()
-        default:
-            return mediumFrame()
-        }
-    }
-}
-
-private extension SearchVC {
-    func minFrame() -> CGRect {
+       
+        let visibleHeight: CGFloat = index == 0 ? Constants.minimumVisibleHeight : CGFloat(index) * Constants.visibleHeightIncrement
+       
         return CGRect(
             x: 0.0,
-            y: -(Constants.viewHeight - Constants.smallVisibleHeight),
-            width: Constants.viewWidth,
-            height: Constants.viewHeight
-        )
-    }
-
-    func mediumFrame() -> CGRect {
-        return CGRect(
-            x: 0.0,
-            y: -(Constants.viewHeight - Constants.mediumVisibleHeight),
-            width: Constants.viewWidth,
-            height: Constants.viewHeight
-        )
-    }
-
-    func largeFrame() -> CGRect {
-        return CGRect(
-            x: 0.0,
-            y: -(Constants.viewHeight - Constants.largeVisibleHeight),
-            width: Constants.viewWidth,
-            height: Constants.viewHeight
-        )
-    }
-    
-    func maxFrame() -> CGRect {
-        return CGRect(
-            x: 0.0,
-            y: -(Constants.viewHeight - Constants.maxVisibleHeight),
+            y: -(Constants.viewHeight - visibleHeight),
             width: Constants.viewWidth,
             height: Constants.viewHeight
         )
@@ -188,13 +147,9 @@ private extension SearchVC {
     struct Constants {
         static let viewHeight: CGFloat = UIScreen.main.bounds.size.height - Constants.minimumVisibleHeight
         static let viewWidth: CGFloat = UIScreen.main.bounds.size.width
-        static let minimumVisibleHeight: CGFloat = 76.0
-        static let smallVisibleHeight: CGFloat = 110.0
-        static let mediumVisibleHeight: CGFloat = 150.0 // TODO: make these aspect ratio
-        static let largeVisibleHeight: CGFloat = 250.0
-        static let maxVisibleHeight: CGFloat = 600.0
+        static let minimumVisibleHeight: CGFloat = 110.0
+        static let visibleHeightIncrement: CGFloat = (Constants.viewHeight - Constants.minimumVisibleHeight) / 4.0
         static let cornerRadius: CGFloat = 40.0
-        static let grabberSize: CGSize = CGSize(width: 75.0, height: 8.0)
     }
 }
 
