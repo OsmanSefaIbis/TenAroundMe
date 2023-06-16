@@ -23,8 +23,44 @@
 		961F14792A3BB03800BF9A7C /* Map.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 961F14782A3BB03800BF9A7C /* Map.storyboard */; };
 		961F14802A3BB2C700BF9A7C /* DetailVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 961F147E2A3BB2C700BF9A7C /* DetailVC.swift */; };
 		961F14812A3BB2C700BF9A7C /* DetailVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 961F147F2A3BB2C700BF9A7C /* DetailVC.xib */; };
-		961F14882A3BC36500BF9A7C /* SearchVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 961F14862A3BC36500BF9A7C /* SearchVC.swift */; };
-		961F14892A3BC36500BF9A7C /* SearchVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 961F14872A3BC36500BF9A7C /* SearchVC.xib */; };
+		961F14952A3CC89400BF9A7C /* SearchModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 961F14942A3CC89400BF9A7C /* SearchModel.swift */; };
+		961F14982A3CC8BD00BF9A7C /* SearchVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = 961F14972A3CC8BD00BF9A7C /* SearchVM.swift */; };
+		961F149D2A3CC94200BF9A7C /* SearchVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 961F149B2A3CC94200BF9A7C /* SearchVC.swift */; };
+		961F149E2A3CC94200BF9A7C /* SearchVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 961F149C2A3CC94200BF9A7C /* SearchVC.xib */; };
+		961F14A12A3CCA1D00BF9A7C /* MapModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 961F14A02A3CCA1D00BF9A7C /* MapModel.swift */; };
+		961F14A32A3CCB1500BF9A7C /* MapVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = 961F14A22A3CCB1500BF9A7C /* MapVM.swift */; };
+		961F14A82A3CCB5C00BF9A7C /* DetailModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 961F14A72A3CCB5C00BF9A7C /* DetailModel.swift */; };
+		961F14AA2A3CCB7200BF9A7C /* DetailVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = 961F14A92A3CCB7200BF9A7C /* DetailVM.swift */; };
+		961F14AD2A3CCCC900BF9A7C /* SearchVM+Delegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 961F14AC2A3CCCC900BF9A7C /* SearchVM+Delegate.swift */; };
+		961F14B32A3CD60900BF9A7C /* SearchVC+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 961F14B22A3CD60900BF9A7C /* SearchVC+Extension.swift */; };
+		961F14B82A3CDEE000BF9A7C /* SearchVC+SearchVMDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 961F14B72A3CDEE000BF9A7C /* SearchVC+SearchVMDelegate.swift */; };
+		961F14BA2A3CE1F700BF9A7C /* SearchVC+Contract.swift in Sources */ = {isa = PBXBuildFile; fileRef = 961F14B92A3CE1F700BF9A7C /* SearchVC+Contract.swift */; };
+		961F14BC2A3CE26900BF9A7C /* SearchVC+SearchVCContract.swift in Sources */ = {isa = PBXBuildFile; fileRef = 961F14BB2A3CE26900BF9A7C /* SearchVC+SearchVCContract.swift */; };
+		961F14C22A3CE33500BF9A7C /* MapVC+Contract.swift in Sources */ = {isa = PBXBuildFile; fileRef = 961F14C12A3CE33500BF9A7C /* MapVC+Contract.swift */; };
+		961F14C42A3CE38F00BF9A7C /* MapVC+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 961F14C32A3CE38F00BF9A7C /* MapVC+Extension.swift */; };
+		961F14C82A3CE3CF00BF9A7C /* MapVC+MapVCContract.swift in Sources */ = {isa = PBXBuildFile; fileRef = 961F14C72A3CE3CF00BF9A7C /* MapVC+MapVCContract.swift */; };
+		961F14CA2A3CE43E00BF9A7C /* MapVC+MapVMDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 961F14C92A3CE43E00BF9A7C /* MapVC+MapVMDelegate.swift */; };
+		961F14CC2A3CE56500BF9A7C /* SearchModelDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 961F14CB2A3CE56500BF9A7C /* SearchModelDelegate.swift */; };
+		961F14D32A3CE74700BF9A7C /* SearchVM+Contract.swift in Sources */ = {isa = PBXBuildFile; fileRef = 961F14D22A3CE74700BF9A7C /* SearchVM+Contract.swift */; };
+		961F14D72A3CE7CC00BF9A7C /* SearchVM+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 961F14D62A3CE7CC00BF9A7C /* SearchVM+Extension.swift */; };
+		961F14DB2A3CE82E00BF9A7C /* SearchVM+SearchVMContract.swift in Sources */ = {isa = PBXBuildFile; fileRef = 961F14DA2A3CE82E00BF9A7C /* SearchVM+SearchVMContract.swift */; };
+		961F14DE2A3CE87A00BF9A7C /* SearchVM+SearchModelDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 961F14DD2A3CE87A00BF9A7C /* SearchVM+SearchModelDelegate.swift */; };
+		961F14E22A3CEBA700BF9A7C /* MapModelDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 961F14E12A3CEBA700BF9A7C /* MapModelDelegate.swift */; };
+		961F14EA2A3CEF4200BF9A7C /* MapVM+Contract.swift in Sources */ = {isa = PBXBuildFile; fileRef = 961F14E92A3CEF4200BF9A7C /* MapVM+Contract.swift */; };
+		961F14EC2A3CEF6E00BF9A7C /* MapVM+Delegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 961F14EB2A3CEF6E00BF9A7C /* MapVM+Delegate.swift */; };
+		961F14F02A3CEFFB00BF9A7C /* MapVM+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 961F14EF2A3CEFFB00BF9A7C /* MapVM+Extension.swift */; };
+		961F14F42A3CF06F00BF9A7C /* MapVM+MapVMContract.swift in Sources */ = {isa = PBXBuildFile; fileRef = 961F14F32A3CF06F00BF9A7C /* MapVM+MapVMContract.swift */; };
+		961F14F72A3CF0E200BF9A7C /* MapVM+MapModelDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 961F14F62A3CF0E200BF9A7C /* MapVM+MapModelDelegate.swift */; };
+		961F14FB2A3CF29C00BF9A7C /* DetailModelDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 961F14FA2A3CF29C00BF9A7C /* DetailModelDelegate.swift */; };
+		961F15012A3CF32800BF9A7C /* DetailVC+Contract.swift in Sources */ = {isa = PBXBuildFile; fileRef = 961F15002A3CF32800BF9A7C /* DetailVC+Contract.swift */; };
+		961F15052A3CF36800BF9A7C /* DetailVC+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 961F15042A3CF36800BF9A7C /* DetailVC+Extension.swift */; };
+		961F15092A3CF3B300BF9A7C /* DetailVC+DetailVCContract.swift in Sources */ = {isa = PBXBuildFile; fileRef = 961F15082A3CF3B300BF9A7C /* DetailVC+DetailVCContract.swift */; };
+		961F150C2A3CF3F400BF9A7C /* DetailVC+DetailVMDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 961F150B2A3CF3F400BF9A7C /* DetailVC+DetailVMDelegate.swift */; };
+		961F15102A3CF45D00BF9A7C /* DetailVM+Contract.swift in Sources */ = {isa = PBXBuildFile; fileRef = 961F150F2A3CF45D00BF9A7C /* DetailVM+Contract.swift */; };
+		961F15122A3CF46C00BF9A7C /* DetailVM+Delegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 961F15112A3CF46C00BF9A7C /* DetailVM+Delegate.swift */; };
+		961F15162A3CF4CF00BF9A7C /* DetailVM+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 961F15152A3CF4CF00BF9A7C /* DetailVM+Extension.swift */; };
+		961F151A2A3CF51800BF9A7C /* DetailVM+DetailVMContract.swift in Sources */ = {isa = PBXBuildFile; fileRef = 961F15192A3CF51800BF9A7C /* DetailVM+DetailVMContract.swift */; };
+		961F151D2A3CF56000BF9A7C /* DetailVM+DetailModelDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 961F151C2A3CF56000BF9A7C /* DetailVM+DetailModelDelegate.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -65,8 +101,44 @@
 		961F14782A3BB03800BF9A7C /* Map.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Map.storyboard; sourceTree = "<group>"; };
 		961F147E2A3BB2C700BF9A7C /* DetailVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailVC.swift; sourceTree = "<group>"; };
 		961F147F2A3BB2C700BF9A7C /* DetailVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DetailVC.xib; sourceTree = "<group>"; };
-		961F14862A3BC36500BF9A7C /* SearchVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchVC.swift; sourceTree = "<group>"; };
-		961F14872A3BC36500BF9A7C /* SearchVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SearchVC.xib; sourceTree = "<group>"; };
+		961F14942A3CC89400BF9A7C /* SearchModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchModel.swift; sourceTree = "<group>"; };
+		961F14972A3CC8BD00BF9A7C /* SearchVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchVM.swift; sourceTree = "<group>"; };
+		961F149B2A3CC94200BF9A7C /* SearchVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = SearchVC.swift; path = Utils/SearchVC.swift; sourceTree = "<group>"; };
+		961F149C2A3CC94200BF9A7C /* SearchVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SearchVC.xib; sourceTree = "<group>"; };
+		961F14A02A3CCA1D00BF9A7C /* MapModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapModel.swift; sourceTree = "<group>"; };
+		961F14A22A3CCB1500BF9A7C /* MapVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapVM.swift; sourceTree = "<group>"; };
+		961F14A72A3CCB5C00BF9A7C /* DetailModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailModel.swift; sourceTree = "<group>"; };
+		961F14A92A3CCB7200BF9A7C /* DetailVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailVM.swift; sourceTree = "<group>"; };
+		961F14AC2A3CCCC900BF9A7C /* SearchVM+Delegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "SearchVM+Delegate.swift"; sourceTree = "<group>"; };
+		961F14B22A3CD60900BF9A7C /* SearchVC+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "SearchVC+Extension.swift"; sourceTree = "<group>"; };
+		961F14B72A3CDEE000BF9A7C /* SearchVC+SearchVMDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "SearchVC+SearchVMDelegate.swift"; sourceTree = "<group>"; };
+		961F14B92A3CE1F700BF9A7C /* SearchVC+Contract.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "SearchVC+Contract.swift"; sourceTree = "<group>"; };
+		961F14BB2A3CE26900BF9A7C /* SearchVC+SearchVCContract.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "SearchVC+SearchVCContract.swift"; sourceTree = "<group>"; };
+		961F14C12A3CE33500BF9A7C /* MapVC+Contract.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "MapVC+Contract.swift"; sourceTree = "<group>"; };
+		961F14C32A3CE38F00BF9A7C /* MapVC+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "MapVC+Extension.swift"; sourceTree = "<group>"; };
+		961F14C72A3CE3CF00BF9A7C /* MapVC+MapVCContract.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "MapVC+MapVCContract.swift"; sourceTree = "<group>"; };
+		961F14C92A3CE43E00BF9A7C /* MapVC+MapVMDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "MapVC+MapVMDelegate.swift"; sourceTree = "<group>"; };
+		961F14CB2A3CE56500BF9A7C /* SearchModelDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchModelDelegate.swift; sourceTree = "<group>"; };
+		961F14D22A3CE74700BF9A7C /* SearchVM+Contract.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "SearchVM+Contract.swift"; sourceTree = "<group>"; };
+		961F14D62A3CE7CC00BF9A7C /* SearchVM+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "SearchVM+Extension.swift"; sourceTree = "<group>"; };
+		961F14DA2A3CE82E00BF9A7C /* SearchVM+SearchVMContract.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "SearchVM+SearchVMContract.swift"; sourceTree = "<group>"; };
+		961F14DD2A3CE87A00BF9A7C /* SearchVM+SearchModelDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "SearchVM+SearchModelDelegate.swift"; sourceTree = "<group>"; };
+		961F14E12A3CEBA700BF9A7C /* MapModelDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapModelDelegate.swift; sourceTree = "<group>"; };
+		961F14E92A3CEF4200BF9A7C /* MapVM+Contract.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "MapVM+Contract.swift"; sourceTree = "<group>"; };
+		961F14EB2A3CEF6E00BF9A7C /* MapVM+Delegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "MapVM+Delegate.swift"; sourceTree = "<group>"; };
+		961F14EF2A3CEFFB00BF9A7C /* MapVM+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "MapVM+Extension.swift"; sourceTree = "<group>"; };
+		961F14F32A3CF06F00BF9A7C /* MapVM+MapVMContract.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "MapVM+MapVMContract.swift"; sourceTree = "<group>"; };
+		961F14F62A3CF0E200BF9A7C /* MapVM+MapModelDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "MapVM+MapModelDelegate.swift"; sourceTree = "<group>"; };
+		961F14FA2A3CF29C00BF9A7C /* DetailModelDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailModelDelegate.swift; sourceTree = "<group>"; };
+		961F15002A3CF32800BF9A7C /* DetailVC+Contract.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "DetailVC+Contract.swift"; sourceTree = "<group>"; };
+		961F15042A3CF36800BF9A7C /* DetailVC+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "DetailVC+Extension.swift"; sourceTree = "<group>"; };
+		961F15082A3CF3B300BF9A7C /* DetailVC+DetailVCContract.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "DetailVC+DetailVCContract.swift"; sourceTree = "<group>"; };
+		961F150B2A3CF3F400BF9A7C /* DetailVC+DetailVMDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "DetailVC+DetailVMDelegate.swift"; sourceTree = "<group>"; };
+		961F150F2A3CF45D00BF9A7C /* DetailVM+Contract.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "DetailVM+Contract.swift"; sourceTree = "<group>"; };
+		961F15112A3CF46C00BF9A7C /* DetailVM+Delegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "DetailVM+Delegate.swift"; sourceTree = "<group>"; };
+		961F15152A3CF4CF00BF9A7C /* DetailVM+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "DetailVM+Extension.swift"; sourceTree = "<group>"; };
+		961F15192A3CF51800BF9A7C /* DetailVM+DetailVMContract.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "DetailVM+DetailVMContract.swift"; sourceTree = "<group>"; };
+		961F151C2A3CF56000BF9A7C /* DetailVM+DetailModelDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "DetailVM+DetailModelDelegate.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -227,6 +299,8 @@
 		961F14542A38D43600BF9A7C /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				961F149F2A3CC9DF00BF9A7C /* Utils */,
+				961F14A02A3CCA1D00BF9A7C /* MapModel.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -244,6 +318,8 @@
 		961F14562A38D44500BF9A7C /* ViewModel */ = {
 			isa = PBXGroup;
 			children = (
+				961F14E62A3CEEEC00BF9A7C /* Utils */,
+				961F14A22A3CCB1500BF9A7C /* MapVM.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -278,6 +354,8 @@
 		961F14712A3BAE2E00BF9A7C /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				961F14A42A3CCB2C00BF9A7C /* Utils */,
+				961F14A72A3CCB5C00BF9A7C /* DetailModel.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -285,6 +363,8 @@
 		961F14722A3BAE3600BF9A7C /* ViewModel */ = {
 			isa = PBXGroup;
 			children = (
+				961F14A62A3CCB3900BF9A7C /* Utils */,
+				961F14A92A3CCB7200BF9A7C /* DetailVM.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -292,6 +372,7 @@
 		961F14732A3BAE3D00BF9A7C /* View */ = {
 			isa = PBXGroup;
 			children = (
+				961F14A52A3CCB3400BF9A7C /* Utils */,
 				961F147E2A3BB2C700BF9A7C /* DetailVC.swift */,
 				961F147F2A3BB2C700BF9A7C /* DetailVC.xib */,
 			);
@@ -311,6 +392,8 @@
 		961F14832A3BC32100BF9A7C /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				961F14962A3CC89900BF9A7C /* Utils */,
+				961F14942A3CC89400BF9A7C /* SearchModel.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -318,8 +401,9 @@
 		961F14842A3BC32D00BF9A7C /* View */ = {
 			isa = PBXGroup;
 			children = (
-				961F14872A3BC36500BF9A7C /* SearchVC.xib */,
-				961F14862A3BC36500BF9A7C /* SearchVC.swift */,
+				961F149A2A3CC8CC00BF9A7C /* Utils */,
+				961F149C2A3CC94200BF9A7C /* SearchVC.xib */,
+				961F149B2A3CC94200BF9A7C /* SearchVC.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -327,6 +411,8 @@
 		961F14852A3BC33400BF9A7C /* ViewModel */ = {
 			isa = PBXGroup;
 			children = (
+				961F14992A3CC8C300BF9A7C /* Utils */,
+				961F14972A3CC8BD00BF9A7C /* SearchVM.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -334,8 +420,526 @@
 		961F148A2A3BC63E00BF9A7C /* Utils */ = {
 			isa = PBXGroup;
 			children = (
+				961F14BD2A3CE2FA00BF9A7C /* Protocols */,
+				961F14BE2A3CE30300BF9A7C /* Extensions */,
 			);
 			path = Utils;
+			sourceTree = "<group>";
+		};
+		961F14962A3CC89900BF9A7C /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				961F14CD2A3CE56D00BF9A7C /* Protocols */,
+				961F14CE2A3CE57F00BF9A7C /* Data Links */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		961F14992A3CC8C300BF9A7C /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				961F14AB2A3CCCA600BF9A7C /* Protocols */,
+				961F14D12A3CE71200BF9A7C /* Extensions */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		961F149A2A3CC8CC00BF9A7C /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				961F14AE2A3CD54A00BF9A7C /* Protocols */,
+				961F14AF2A3CD55700BF9A7C /* Extensions */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		961F149F2A3CC9DF00BF9A7C /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				961F14DF2A3CEB8200BF9A7C /* Protocols */,
+				961F14E02A3CEB8F00BF9A7C /* Data Links */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		961F14A42A3CCB2C00BF9A7C /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				961F14F82A3CF27300BF9A7C /* Protocols */,
+				961F14F92A3CF28300BF9A7C /* Data Links */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		961F14A52A3CCB3400BF9A7C /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				961F14FE2A3CF2FB00BF9A7C /* Protocols */,
+				961F14FF2A3CF30500BF9A7C /* Extensions */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		961F14A62A3CCB3900BF9A7C /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				961F150D2A3CF43500BF9A7C /* Protocols */,
+				961F150E2A3CF43E00BF9A7C /* Extensions */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		961F14AB2A3CCCA600BF9A7C /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				961F14D22A3CE74700BF9A7C /* SearchVM+Contract.swift */,
+				961F14AC2A3CCCC900BF9A7C /* SearchVM+Delegate.swift */,
+			);
+			path = Protocols;
+			sourceTree = "<group>";
+		};
+		961F14AE2A3CD54A00BF9A7C /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				961F14B92A3CE1F700BF9A7C /* SearchVC+Contract.swift */,
+			);
+			path = Protocols;
+			sourceTree = "<group>";
+		};
+		961F14AF2A3CD55700BF9A7C /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				961F14B02A3CD58C00BF9A7C /* Class */,
+				961F14B12A3CD59400BF9A7C /* Conformances */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		961F14B02A3CD58C00BF9A7C /* Class */ = {
+			isa = PBXGroup;
+			children = (
+				961F14B22A3CD60900BF9A7C /* SearchVC+Extension.swift */,
+			);
+			path = Class;
+			sourceTree = "<group>";
+		};
+		961F14B12A3CD59400BF9A7C /* Conformances */ = {
+			isa = PBXGroup;
+			children = (
+				961F14B42A3CD7D700BF9A7C /* Contract */,
+				961F14B52A3CD7E600BF9A7C /* Delegations */,
+			);
+			path = Conformances;
+			sourceTree = "<group>";
+		};
+		961F14B42A3CD7D700BF9A7C /* Contract */ = {
+			isa = PBXGroup;
+			children = (
+				961F14BB2A3CE26900BF9A7C /* SearchVC+SearchVCContract.swift */,
+			);
+			path = Contract;
+			sourceTree = "<group>";
+		};
+		961F14B52A3CD7E600BF9A7C /* Delegations */ = {
+			isa = PBXGroup;
+			children = (
+				961F14B62A3CD7F600BF9A7C /* Communication */,
+			);
+			path = Delegations;
+			sourceTree = "<group>";
+		};
+		961F14B62A3CD7F600BF9A7C /* Communication */ = {
+			isa = PBXGroup;
+			children = (
+				961F14B72A3CDEE000BF9A7C /* SearchVC+SearchVMDelegate.swift */,
+			);
+			path = Communication;
+			sourceTree = "<group>";
+		};
+		961F14BD2A3CE2FA00BF9A7C /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				961F14C12A3CE33500BF9A7C /* MapVC+Contract.swift */,
+			);
+			path = Protocols;
+			sourceTree = "<group>";
+		};
+		961F14BE2A3CE30300BF9A7C /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				961F14BF2A3CE31200BF9A7C /* Class */,
+				961F14C02A3CE31900BF9A7C /* Conformances */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		961F14BF2A3CE31200BF9A7C /* Class */ = {
+			isa = PBXGroup;
+			children = (
+				961F14C32A3CE38F00BF9A7C /* MapVC+Extension.swift */,
+			);
+			path = Class;
+			sourceTree = "<group>";
+		};
+		961F14C02A3CE31900BF9A7C /* Conformances */ = {
+			isa = PBXGroup;
+			children = (
+				961F14C52A3CE39E00BF9A7C /* Contract */,
+				961F14C62A3CE3A800BF9A7C /* Delegations */,
+			);
+			path = Conformances;
+			sourceTree = "<group>";
+		};
+		961F14C52A3CE39E00BF9A7C /* Contract */ = {
+			isa = PBXGroup;
+			children = (
+				961F14C72A3CE3CF00BF9A7C /* MapVC+MapVCContract.swift */,
+			);
+			path = Contract;
+			sourceTree = "<group>";
+		};
+		961F14C62A3CE3A800BF9A7C /* Delegations */ = {
+			isa = PBXGroup;
+			children = (
+				961F14E52A3CEEB700BF9A7C /* Communication */,
+				961F14C92A3CE43E00BF9A7C /* MapVC+MapVMDelegate.swift */,
+			);
+			path = Delegations;
+			sourceTree = "<group>";
+		};
+		961F14CD2A3CE56D00BF9A7C /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				961F14CB2A3CE56500BF9A7C /* SearchModelDelegate.swift */,
+			);
+			path = Protocols;
+			sourceTree = "<group>";
+		};
+		961F14CE2A3CE57F00BF9A7C /* Data Links */ = {
+			isa = PBXGroup;
+			children = (
+				961F14CF2A3CE58800BF9A7C /* DTO */,
+				961F14D02A3CE59E00BF9A7C /* Model */,
+			);
+			path = "Data Links";
+			sourceTree = "<group>";
+		};
+		961F14CF2A3CE58800BF9A7C /* DTO */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = DTO;
+			sourceTree = "<group>";
+		};
+		961F14D02A3CE59E00BF9A7C /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		961F14D12A3CE71200BF9A7C /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				961F14D42A3CE7A500BF9A7C /* Class */,
+				961F14D52A3CE7AD00BF9A7C /* Conformances */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		961F14D42A3CE7A500BF9A7C /* Class */ = {
+			isa = PBXGroup;
+			children = (
+				961F14D62A3CE7CC00BF9A7C /* SearchVM+Extension.swift */,
+			);
+			path = Class;
+			sourceTree = "<group>";
+		};
+		961F14D52A3CE7AD00BF9A7C /* Conformances */ = {
+			isa = PBXGroup;
+			children = (
+				961F14D82A3CE7F300BF9A7C /* Contract */,
+				961F14D92A3CE80800BF9A7C /* Delegations */,
+			);
+			path = Conformances;
+			sourceTree = "<group>";
+		};
+		961F14D82A3CE7F300BF9A7C /* Contract */ = {
+			isa = PBXGroup;
+			children = (
+				961F14DA2A3CE82E00BF9A7C /* SearchVM+SearchVMContract.swift */,
+			);
+			path = Contract;
+			sourceTree = "<group>";
+		};
+		961F14D92A3CE80800BF9A7C /* Delegations */ = {
+			isa = PBXGroup;
+			children = (
+				961F14DC2A3CE85500BF9A7C /* Communication */,
+			);
+			path = Delegations;
+			sourceTree = "<group>";
+		};
+		961F14DC2A3CE85500BF9A7C /* Communication */ = {
+			isa = PBXGroup;
+			children = (
+				961F14DD2A3CE87A00BF9A7C /* SearchVM+SearchModelDelegate.swift */,
+			);
+			path = Communication;
+			sourceTree = "<group>";
+		};
+		961F14DF2A3CEB8200BF9A7C /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				961F14E12A3CEBA700BF9A7C /* MapModelDelegate.swift */,
+			);
+			path = Protocols;
+			sourceTree = "<group>";
+		};
+		961F14E02A3CEB8F00BF9A7C /* Data Links */ = {
+			isa = PBXGroup;
+			children = (
+				961F14E32A3CEBAC00BF9A7C /* DTO */,
+				961F14E42A3CEBC800BF9A7C /* Model */,
+			);
+			path = "Data Links";
+			sourceTree = "<group>";
+		};
+		961F14E32A3CEBAC00BF9A7C /* DTO */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = DTO;
+			sourceTree = "<group>";
+		};
+		961F14E42A3CEBC800BF9A7C /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		961F14E52A3CEEB700BF9A7C /* Communication */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Communication;
+			sourceTree = "<group>";
+		};
+		961F14E62A3CEEEC00BF9A7C /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				961F14E72A3CEF0F00BF9A7C /* Protocols */,
+				961F14E82A3CEF1E00BF9A7C /* Extensions */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		961F14E72A3CEF0F00BF9A7C /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				961F14E92A3CEF4200BF9A7C /* MapVM+Contract.swift */,
+				961F14EB2A3CEF6E00BF9A7C /* MapVM+Delegate.swift */,
+			);
+			path = Protocols;
+			sourceTree = "<group>";
+		};
+		961F14E82A3CEF1E00BF9A7C /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				961F14ED2A3CEFC700BF9A7C /* Class */,
+				961F14EE2A3CEFD400BF9A7C /* Conformances */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		961F14ED2A3CEFC700BF9A7C /* Class */ = {
+			isa = PBXGroup;
+			children = (
+				961F14EF2A3CEFFB00BF9A7C /* MapVM+Extension.swift */,
+			);
+			path = Class;
+			sourceTree = "<group>";
+		};
+		961F14EE2A3CEFD400BF9A7C /* Conformances */ = {
+			isa = PBXGroup;
+			children = (
+				961F14F12A3CF03D00BF9A7C /* Contract */,
+				961F14F22A3CF04700BF9A7C /* Delegations */,
+			);
+			path = Conformances;
+			sourceTree = "<group>";
+		};
+		961F14F12A3CF03D00BF9A7C /* Contract */ = {
+			isa = PBXGroup;
+			children = (
+				961F14F32A3CF06F00BF9A7C /* MapVM+MapVMContract.swift */,
+			);
+			path = Contract;
+			sourceTree = "<group>";
+		};
+		961F14F22A3CF04700BF9A7C /* Delegations */ = {
+			isa = PBXGroup;
+			children = (
+				961F14F52A3CF0C100BF9A7C /* Communication */,
+			);
+			path = Delegations;
+			sourceTree = "<group>";
+		};
+		961F14F52A3CF0C100BF9A7C /* Communication */ = {
+			isa = PBXGroup;
+			children = (
+				961F14F62A3CF0E200BF9A7C /* MapVM+MapModelDelegate.swift */,
+			);
+			path = Communication;
+			sourceTree = "<group>";
+		};
+		961F14F82A3CF27300BF9A7C /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				961F14FA2A3CF29C00BF9A7C /* DetailModelDelegate.swift */,
+			);
+			path = Protocols;
+			sourceTree = "<group>";
+		};
+		961F14F92A3CF28300BF9A7C /* Data Links */ = {
+			isa = PBXGroup;
+			children = (
+				961F14FC2A3CF2BC00BF9A7C /* DTO */,
+				961F14FD2A3CF2C800BF9A7C /* Model */,
+			);
+			path = "Data Links";
+			sourceTree = "<group>";
+		};
+		961F14FC2A3CF2BC00BF9A7C /* DTO */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = DTO;
+			sourceTree = "<group>";
+		};
+		961F14FD2A3CF2C800BF9A7C /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		961F14FE2A3CF2FB00BF9A7C /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				961F15002A3CF32800BF9A7C /* DetailVC+Contract.swift */,
+			);
+			path = Protocols;
+			sourceTree = "<group>";
+		};
+		961F14FF2A3CF30500BF9A7C /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				961F15022A3CF34A00BF9A7C /* Class */,
+				961F15032A3CF35000BF9A7C /* Conformances */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		961F15022A3CF34A00BF9A7C /* Class */ = {
+			isa = PBXGroup;
+			children = (
+				961F15042A3CF36800BF9A7C /* DetailVC+Extension.swift */,
+			);
+			path = Class;
+			sourceTree = "<group>";
+		};
+		961F15032A3CF35000BF9A7C /* Conformances */ = {
+			isa = PBXGroup;
+			children = (
+				961F15062A3CF38800BF9A7C /* Contract */,
+				961F15072A3CF39200BF9A7C /* Delegations */,
+			);
+			path = Conformances;
+			sourceTree = "<group>";
+		};
+		961F15062A3CF38800BF9A7C /* Contract */ = {
+			isa = PBXGroup;
+			children = (
+				961F15082A3CF3B300BF9A7C /* DetailVC+DetailVCContract.swift */,
+			);
+			path = Contract;
+			sourceTree = "<group>";
+		};
+		961F15072A3CF39200BF9A7C /* Delegations */ = {
+			isa = PBXGroup;
+			children = (
+				961F150A2A3CF3D100BF9A7C /* Communication */,
+			);
+			path = Delegations;
+			sourceTree = "<group>";
+		};
+		961F150A2A3CF3D100BF9A7C /* Communication */ = {
+			isa = PBXGroup;
+			children = (
+				961F150B2A3CF3F400BF9A7C /* DetailVC+DetailVMDelegate.swift */,
+			);
+			path = Communication;
+			sourceTree = "<group>";
+		};
+		961F150D2A3CF43500BF9A7C /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				961F150F2A3CF45D00BF9A7C /* DetailVM+Contract.swift */,
+				961F15112A3CF46C00BF9A7C /* DetailVM+Delegate.swift */,
+			);
+			path = Protocols;
+			sourceTree = "<group>";
+		};
+		961F150E2A3CF43E00BF9A7C /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				961F15132A3CF4AA00BF9A7C /* Class */,
+				961F15142A3CF4B200BF9A7C /* Conformances */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		961F15132A3CF4AA00BF9A7C /* Class */ = {
+			isa = PBXGroup;
+			children = (
+				961F15152A3CF4CF00BF9A7C /* DetailVM+Extension.swift */,
+			);
+			path = Class;
+			sourceTree = "<group>";
+		};
+		961F15142A3CF4B200BF9A7C /* Conformances */ = {
+			isa = PBXGroup;
+			children = (
+				961F15172A3CF4E900BF9A7C /* Contract */,
+				961F15182A3CF4F100BF9A7C /* Delegations */,
+			);
+			path = Conformances;
+			sourceTree = "<group>";
+		};
+		961F15172A3CF4E900BF9A7C /* Contract */ = {
+			isa = PBXGroup;
+			children = (
+				961F15192A3CF51800BF9A7C /* DetailVM+DetailVMContract.swift */,
+			);
+			path = Contract;
+			sourceTree = "<group>";
+		};
+		961F15182A3CF4F100BF9A7C /* Delegations */ = {
+			isa = PBXGroup;
+			children = (
+				961F151B2A3CF54200BF9A7C /* Communication */,
+			);
+			path = Delegations;
+			sourceTree = "<group>";
+		};
+		961F151B2A3CF54200BF9A7C /* Communication */ = {
+			isa = PBXGroup;
+			children = (
+				961F151C2A3CF56000BF9A7C /* DetailVM+DetailModelDelegate.swift */,
+			);
+			path = Communication;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -444,7 +1048,7 @@
 			files = (
 				961F146B2A3A3F6C00BF9A7C /* MockUps.png in Resources */,
 				961F14272A38D17000BF9A7C /* LaunchScreen.storyboard in Resources */,
-				961F14892A3BC36500BF9A7C /* SearchVC.xib in Resources */,
+				961F149E2A3CC94200BF9A7C /* SearchVC.xib in Resources */,
 				961F14792A3BB03800BF9A7C /* Map.storyboard in Resources */,
 				961F14242A38D17000BF9A7C /* Assets.xcassets in Resources */,
 				961F14812A3BB2C700BF9A7C /* DetailVC.xib in Resources */,
@@ -472,15 +1076,51 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				961F14D72A3CE7CC00BF9A7C /* SearchVM+Extension.swift in Sources */,
+				961F15052A3CF36800BF9A7C /* DetailVC+Extension.swift in Sources */,
+				961F14F42A3CF06F00BF9A7C /* MapVM+MapVMContract.swift in Sources */,
+				961F151A2A3CF51800BF9A7C /* DetailVM+DetailVMContract.swift in Sources */,
+				961F15092A3CF3B300BF9A7C /* DetailVC+DetailVCContract.swift in Sources */,
+				961F14F02A3CEFFB00BF9A7C /* MapVM+Extension.swift in Sources */,
+				961F149D2A3CC94200BF9A7C /* SearchVC.swift in Sources */,
+				961F14BC2A3CE26900BF9A7C /* SearchVC+SearchVCContract.swift in Sources */,
+				961F14A12A3CCA1D00BF9A7C /* MapModel.swift in Sources */,
 				961F14182A38D16E00BF9A7C /* AppDelegate.swift in Sources */,
+				961F14FB2A3CF29C00BF9A7C /* DetailModelDelegate.swift in Sources */,
+				961F150C2A3CF3F400BF9A7C /* DetailVC+DetailVMDelegate.swift in Sources */,
 				961F14692A38FD0A00BF9A7C /* Project Decisions.swift in Sources */,
+				961F14B82A3CDEE000BF9A7C /* SearchVC+SearchVMDelegate.swift in Sources */,
+				961F15162A3CF4CF00BF9A7C /* DetailVM+Extension.swift in Sources */,
 				961F14222A38D16E00BF9A7C /* TenAroundMe.xcdatamodeld in Sources */,
-				961F14882A3BC36500BF9A7C /* SearchVC.swift in Sources */,
+				961F14A32A3CCB1500BF9A7C /* MapVM.swift in Sources */,
+				961F14DB2A3CE82E00BF9A7C /* SearchVM+SearchVMContract.swift in Sources */,
+				961F15122A3CF46C00BF9A7C /* DetailVM+Delegate.swift in Sources */,
+				961F14DE2A3CE87A00BF9A7C /* SearchVM+SearchModelDelegate.swift in Sources */,
+				961F14A82A3CCB5C00BF9A7C /* DetailModel.swift in Sources */,
+				961F14952A3CC89400BF9A7C /* SearchModel.swift in Sources */,
+				961F14CA2A3CE43E00BF9A7C /* MapVC+MapVMDelegate.swift in Sources */,
+				961F14B32A3CD60900BF9A7C /* SearchVC+Extension.swift in Sources */,
+				961F14E22A3CEBA700BF9A7C /* MapModelDelegate.swift in Sources */,
+				961F14C22A3CE33500BF9A7C /* MapVC+Contract.swift in Sources */,
+				961F151D2A3CF56000BF9A7C /* DetailVM+DetailModelDelegate.swift in Sources */,
+				961F14CC2A3CE56500BF9A7C /* SearchModelDelegate.swift in Sources */,
 				961F146F2A3B90DA00BF9A7C /* Public Link.swift in Sources */,
 				961F14672A38E9E100BF9A7C /* Daily Journal.swift in Sources */,
+				961F15102A3CF45D00BF9A7C /* DetailVM+Contract.swift in Sources */,
 				961F14802A3BB2C700BF9A7C /* DetailVC.swift in Sources */,
+				961F15012A3CF32800BF9A7C /* DetailVC+Contract.swift in Sources */,
 				961F145F2A38D8BA00BF9A7C /* Project Description.swift in Sources */,
+				961F14EC2A3CEF6E00BF9A7C /* MapVM+Delegate.swift in Sources */,
+				961F14982A3CC8BD00BF9A7C /* SearchVM.swift in Sources */,
+				961F14C42A3CE38F00BF9A7C /* MapVC+Extension.swift in Sources */,
+				961F14EA2A3CEF4200BF9A7C /* MapVM+Contract.swift in Sources */,
+				961F14AD2A3CCCC900BF9A7C /* SearchVM+Delegate.swift in Sources */,
+				961F14C82A3CE3CF00BF9A7C /* MapVC+MapVCContract.swift in Sources */,
 				961F14762A3BAF7300BF9A7C /* MapVC.swift in Sources */,
+				961F14AA2A3CCB7200BF9A7C /* DetailVM.swift in Sources */,
+				961F14D32A3CE74700BF9A7C /* SearchVM+Contract.swift in Sources */,
+				961F14BA2A3CE1F700BF9A7C /* SearchVC+Contract.swift in Sources */,
+				961F14F72A3CF0E200BF9A7C /* MapVM+MapModelDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
