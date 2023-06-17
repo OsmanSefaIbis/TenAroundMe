@@ -30,7 +30,7 @@ class SearchResultsVC: UIViewController {
     func configureTableView() {
         tableView.delegate = self
         tableView.dataSource = self
-        tableView.register(.init(nibName: "SearchCell", bundle: nil), forCellReuseIdentifier: "SearchCell")
+        tableView.register(.init(nibName: HardCoded.searchCell.get(), bundle: nil), forCellReuseIdentifier: HardCoded.searchCell.get())
         tableView.backgroundColor = .clear
     }
 }
