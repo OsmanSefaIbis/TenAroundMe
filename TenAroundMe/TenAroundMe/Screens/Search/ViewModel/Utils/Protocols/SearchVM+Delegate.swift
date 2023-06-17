@@ -9,6 +9,6 @@ import Foundation
 
 protocol SearchVMDelegate: AnyObject {
     
-    func toggleUp()
-    func toggleDown()
+    func toggleUp(with: Int)
+    func toggleDown(with: Int)
 }

@@ -9,21 +9,21 @@ import Foundation
 
 final class SearchVM {
     
-    private weak var delegate: SearchVMDelegate?
+    weak var delegate: SearchVMDelegate?
     
-    private var currentFrameIndex: Int = 1
+    var currentFrameIndex: Int = 1
     
     func toggleUp() {
         if currentFrameIndex > 0 {
             currentFrameIndex -= 1
-            delegate?.toggleUp()
+            delegate?.toggleUp(with: currentFrameIndex)
         }
     }
-    
+
     func toggleDown() {
         if currentFrameIndex < 3 {
             currentFrameIndex += 1
-            delegate?.toggleDown()
+            delegate?.toggleDown(with: currentFrameIndex)
         }
     }
 }

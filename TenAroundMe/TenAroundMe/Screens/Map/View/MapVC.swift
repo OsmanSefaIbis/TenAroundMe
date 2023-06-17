@@ -11,15 +11,13 @@ import MapKit
 final class MapVC: UIViewController {
     
     @IBOutlet private weak var map: MKMapView!
-    private let topSheet = SearchVC()
+    let topSheet = SearchVC()
     
     override func viewDidLoad() {
         super.viewDidLoad()
-//        view.addSubview(topSheet)
         configureMap()
         configureTopSheet()
         configureBottomSheet()
-
     }
     
     private func configureMap() {
@@ -40,26 +38,20 @@ final class MapVC: UIViewController {
             sheet.largestUndimmedDetentIdentifier = .large
         }
         present(navigateDetail, animated: true)
-        
     }
     
     private func configureTopSheet() {
-//        let search = SearchVC()
-//
-//        let navigateSearch = UINavigationController(rootViewController: search)
-//        navigateSearch.isModalInPresentation = true
-//
-//        if let sheet = navigateSearch.sheetPresentationController {
-//            sheet.preferredCornerRadius = 40
-//            sheet.detents = [.custom(resolver: { context in
-//                0.2 * context.maximumDetentValue
-//            }), .medium() ]
-//            sheet.largestUndimmedDetentIdentifier = .large
-//        }
-//        search.modalPresentationStyle = .custom
-//        search.transitioningDelegate = self
-//        present(navigateSearch, animated: true)
-        
+        topSheet.modalPresentationStyle = .overFullScreen
+        topSheet.modalTransitionStyle = .coverVertical
+        addChild(topSheet)
+        view.addSubview(topSheet.view)
+        view.bringSubviewToFront(topSheet.topSheetView) // --> had no effect
+        topSheet.topSheetView.isUserInteractionEnabled = true // --> seems false in the view debug
+        topSheet.didMove(toParent: self)
+        topSheet.view.frame = CGRect(x: 0, y: 0, width: view.bounds.width, height: 0)
+        // 👆🏼 crucial --> height: 0 part, otherwise map panning is blocked
     }
+
 }
+
 

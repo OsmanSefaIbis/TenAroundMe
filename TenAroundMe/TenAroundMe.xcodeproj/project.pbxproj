@@ -61,6 +61,7 @@
 		961F15162A3CF4CF00BF9A7C /* DetailVM+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 961F15152A3CF4CF00BF9A7C /* DetailVM+Extension.swift */; };
 		961F151A2A3CF51800BF9A7C /* DetailVM+DetailVMContract.swift in Sources */ = {isa = PBXBuildFile; fileRef = 961F15192A3CF51800BF9A7C /* DetailVM+DetailVMContract.swift */; };
 		961F151D2A3CF56000BF9A7C /* DetailVM+DetailModelDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 961F151C2A3CF56000BF9A7C /* DetailVM+DetailModelDelegate.swift */; };
+		961F151F2A3CFF8800BF9A7C /* MapVC+SearchVMDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 961F151E2A3CFF8800BF9A7C /* MapVC+SearchVMDelegate.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -139,6 +140,7 @@
 		961F15152A3CF4CF00BF9A7C /* DetailVM+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "DetailVM+Extension.swift"; sourceTree = "<group>"; };
 		961F15192A3CF51800BF9A7C /* DetailVM+DetailVMContract.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "DetailVM+DetailVMContract.swift"; sourceTree = "<group>"; };
 		961F151C2A3CF56000BF9A7C /* DetailVM+DetailModelDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "DetailVM+DetailModelDelegate.swift"; sourceTree = "<group>"; };
+		961F151E2A3CFF8800BF9A7C /* MapVC+SearchVMDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "MapVC+SearchVMDelegate.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -602,7 +604,6 @@
 			isa = PBXGroup;
 			children = (
 				961F14E52A3CEEB700BF9A7C /* Communication */,
-				961F14C92A3CE43E00BF9A7C /* MapVC+MapVMDelegate.swift */,
 			);
 			path = Delegations;
 			sourceTree = "<group>";
@@ -722,6 +723,8 @@
 		961F14E52A3CEEB700BF9A7C /* Communication */ = {
 			isa = PBXGroup;
 			children = (
+				961F14C92A3CE43E00BF9A7C /* MapVC+MapVMDelegate.swift */,
+				961F151E2A3CFF8800BF9A7C /* MapVC+SearchVMDelegate.swift */,
 			);
 			path = Communication;
 			sourceTree = "<group>";
@@ -1087,6 +1090,7 @@
 				961F14A12A3CCA1D00BF9A7C /* MapModel.swift in Sources */,
 				961F14182A38D16E00BF9A7C /* AppDelegate.swift in Sources */,
 				961F14FB2A3CF29C00BF9A7C /* DetailModelDelegate.swift in Sources */,
+				961F151F2A3CFF8800BF9A7C /* MapVC+SearchVMDelegate.swift in Sources */,
 				961F150C2A3CF3F400BF9A7C /* DetailVC+DetailVMDelegate.swift in Sources */,
 				961F14692A38FD0A00BF9A7C /* Project Decisions.swift in Sources */,
 				961F14B82A3CDEE000BF9A7C /* SearchVC+SearchVMDelegate.swift in Sources */,

@@ -6,15 +6,9 @@
 //
 
 import Foundation
+// TODO: Below is migrated to MapVC+SearchVMDelegate
 
-extension SearchVC: SearchVMDelegate {
-    
-    func toggleUp() {
-        
-    }
-    
-    func toggleDown() {
-    
-    }
-    
-}
+//extension SearchVC: SearchVMDelegate {
+//
+//
+//}
