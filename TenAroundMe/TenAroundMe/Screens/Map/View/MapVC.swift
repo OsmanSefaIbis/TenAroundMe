@@ -11,17 +11,36 @@ import MapKit
 final class MapVC: UIViewController {
     
     @IBOutlet private weak var map: MKMapView!
-    let topSheet = SearchVC()
-    
+
+    lazy var viewModel = MapVM(view: self)
+
+    private lazy var searchResultsController: SearchResultsVC = {
+        let resultsVC = SearchResultsVC(viewModel: self.viewModel)
+        return resultsVC
+    }()
+
+    private lazy var searchController: UISearchController = {
+        let searchController = UISearchController(searchResultsController: searchResultsController)
+        searchController.searchResultsUpdater = self
+        searchController.searchBar.delegate = self
+        return searchController
+    }()
+
     override func viewDidLoad() {
         super.viewDidLoad()
         configureMap()
-        configureTopSheet()
+        configureSearchController()
         configureBottomSheet()
     }
     
     private func configureMap() {
         map.showsUserLocation = true
+    }
+    
+    private func configureSearchController() {
+        searchController.searchResultsUpdater = self
+        searchController.searchBar.delegate = self
+        navigationItem.searchController = searchController
     }
     
     private func configureBottomSheet() {
@@ -40,18 +59,6 @@ final class MapVC: UIViewController {
         present(navigateDetail, animated: true)
     }
     
-    private func configureTopSheet() {
-        topSheet.modalPresentationStyle = .overFullScreen
-        topSheet.modalTransitionStyle = .coverVertical
-        addChild(topSheet)
-        view.addSubview(topSheet.view)
-        view.bringSubviewToFront(topSheet.topSheetView) // --> had no effect
-        topSheet.topSheetView.isUserInteractionEnabled = true // --> seems false in the view debug
-        topSheet.didMove(toParent: self)
-        topSheet.view.frame = CGRect(x: 0, y: 0, width: view.bounds.width, height: 0)
-        // 👆🏼 crucial --> height: 0 part, otherwise map panning is blocked
-    }
-
 }
 
 

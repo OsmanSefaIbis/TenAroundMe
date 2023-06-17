@@ -47,7 +47,6 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="VyW-On-csz"/>
-                    <nil key="simulatedTopBarMetrics"/>
                     <connections>
                         <outlet property="map" destination="9zH-27-N4a" id="F3I-71-rwT"/>
                     </connections>

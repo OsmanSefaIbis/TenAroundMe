@@ -25,6 +25,16 @@
  June - 15
  ~~~~~~~~~~~~~~~~~~~
  • Postman collection is set.
- • 
+ 
+ 
+ June - 16
+ ~~~~~~~~~~~~~~~~~~~
+ 
+ 
+ 
+ June - 17
+ ~~~~~~~~~~~~~~~~~~~
+ 
+ • Aborted top sheet implementation. UISearchController will be used as a alternative.
  
 */

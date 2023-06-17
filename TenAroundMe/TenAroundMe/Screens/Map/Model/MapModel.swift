@@ -9,4 +9,6 @@ import Foundation
 
 final class MapModel {
     
+    weak var delegate: MapModelDelegate?
+    
 }

@@ -68,4 +68,19 @@
  
  • Starting the implementation before its too late ❗️
  
+ June - 16
+ ~~~~~~~~~~~~~~~~~~~
+ 
+ 
+ June - 17
+ ~~~~~~~~~~~~~~~~~~~
+ 
+ • Added a custom implementation for the top sheet.
+ 
+ • Had paning related problems.
+ 
+ • Will simplify the approach by aborting the top sheet approach, will continue with UISearchController.
+ 
+ • The design choices i made is causing efforts.
+ 
 */

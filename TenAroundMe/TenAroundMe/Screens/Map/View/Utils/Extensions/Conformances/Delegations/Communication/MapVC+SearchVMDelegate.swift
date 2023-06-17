@@ -9,12 +9,5 @@ import Foundation
 
 extension MapVC: SearchVMDelegate {
     
-    func toggleUp(with index: Int) {
-        topSheet.updateViewFrame(for: index)
-    }
-    
-    func toggleDown(with index: Int) {
-        topSheet.updateViewFrame(for: index)
-    }
     
 }
