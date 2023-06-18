@@ -59,6 +59,8 @@
 		96362CEF2A3F23F300E561E0 /* DetailDataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96362CEE2A3F23F300E561E0 /* DetailDataModel.swift */; };
 		96362CF12A3F3EB000E561E0 /* SearchResultsVC+Contract.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96362CF02A3F3EB000E561E0 /* SearchResultsVC+Contract.swift */; };
 		96362CF42A3F3F1700E561E0 /* SearchResultsVC+SearchResultsVCContract.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96362CF32A3F3F1700E561E0 /* SearchResultsVC+SearchResultsVCContract.swift */; };
+		96362CF62A3F567D00E561E0 /* MapVC+UISearchControllerDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96362CF52A3F567D00E561E0 /* MapVC+UISearchControllerDelegate.swift */; };
+		96362CF82A3F858500E561E0 /* AppConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96362CF72A3F858500E561E0 /* AppConstants.swift */; };
 		968625812A3DB7D700ACFC26 /* MapVC+UISearchResultsUpdating.swift in Sources */ = {isa = PBXBuildFile; fileRef = 968625802A3DB7D700ACFC26 /* MapVC+UISearchResultsUpdating.swift */; };
 		968625872A3DC00700ACFC26 /* MapVC+UISearchBarDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 968625862A3DC00600ACFC26 /* MapVC+UISearchBarDelegate.swift */; };
 		9686258A2A3DC52E00ACFC26 /* SearchResultsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 968625882A3DC52E00ACFC26 /* SearchResultsVC.swift */; };
@@ -161,6 +163,8 @@
 		96362CEE2A3F23F300E561E0 /* DetailDataModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailDataModel.swift; sourceTree = "<group>"; };
 		96362CF02A3F3EB000E561E0 /* SearchResultsVC+Contract.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "SearchResultsVC+Contract.swift"; sourceTree = "<group>"; };
 		96362CF32A3F3F1700E561E0 /* SearchResultsVC+SearchResultsVCContract.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "SearchResultsVC+SearchResultsVCContract.swift"; sourceTree = "<group>"; };
+		96362CF52A3F567D00E561E0 /* MapVC+UISearchControllerDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "MapVC+UISearchControllerDelegate.swift"; sourceTree = "<group>"; };
+		96362CF72A3F858500E561E0 /* AppConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppConstants.swift; sourceTree = "<group>"; };
 		968625802A3DB7D700ACFC26 /* MapVC+UISearchResultsUpdating.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "MapVC+UISearchResultsUpdating.swift"; sourceTree = "<group>"; };
 		968625862A3DC00600ACFC26 /* MapVC+UISearchBarDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "MapVC+UISearchBarDelegate.swift"; sourceTree = "<group>"; };
 		968625882A3DC52E00ACFC26 /* SearchResultsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchResultsVC.swift; sourceTree = "<group>"; };
@@ -813,6 +817,7 @@
 			children = (
 				968625802A3DB7D700ACFC26 /* MapVC+UISearchResultsUpdating.swift */,
 				968625862A3DC00600ACFC26 /* MapVC+UISearchBarDelegate.swift */,
+				96362CF52A3F567D00E561E0 /* MapVC+UISearchControllerDelegate.swift */,
 			);
 			path = Search;
 			sourceTree = "<group>";
@@ -1089,6 +1094,7 @@
 		96E199152A3DFC0900CBD393 /* Constants */ = {
 			isa = PBXGroup;
 			children = (
+				96362CF72A3F858500E561E0 /* AppConstants.swift */,
 			);
 			path = Constants;
 			sourceTree = "<group>";
@@ -1299,6 +1305,8 @@
 				961F14CA2A3CE43E00BF9A7C /* MapVC+MapVMDelegate.swift in Sources */,
 				961F14E22A3CEBA700BF9A7C /* MapModelDelegate.swift in Sources */,
 				961F14C22A3CE33500BF9A7C /* MapVC+Contract.swift in Sources */,
+				96362CF62A3F567D00E561E0 /* MapVC+UISearchControllerDelegate.swift in Sources */,
+				96362CF82A3F858500E561E0 /* AppConstants.swift in Sources */,
 				96362CD82A3E599C00E561E0 /* Endpoint.swift in Sources */,
 				968625872A3DC00700ACFC26 /* MapVC+UISearchBarDelegate.swift in Sources */,
 				96E1991F2A3DFDBB00CBD393 /* HardCoded+API.swift in Sources */,

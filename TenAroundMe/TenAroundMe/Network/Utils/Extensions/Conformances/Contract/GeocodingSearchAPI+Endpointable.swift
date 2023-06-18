@@ -24,11 +24,12 @@ extension GeocodingSearchAPI: Endpointable {
         
         switch self {
             case .browse(let searchInput, let location):
-            return ["name": searchInput, "at": location,"lang": "en" , "limit": 10]
+            
+            return ["name": searchInput, "at": location.get(),"lang": "en" , "limit": 10, "apiKey": AppConstants.apiKey]
             case .lookUpById(let id):
-                return ["id": id, "lang": "en" ]
+                return ["id": id, "lang": "en", "apiKey": AppConstants.apiKey ]
             case .autoSuggest(let searchInput, let location):
-                return ["q": searchInput, "at": location,"lang": "en", "limit": 30]
+            return ["q": searchInput, "at": location.get(),"lang": "en", "limit": 30, "apiKey": AppConstants.apiKey]
         }
     }
 }

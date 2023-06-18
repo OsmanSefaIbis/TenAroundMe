@@ -98,6 +98,13 @@
  
  • ❗️ Got no response for the API related situation that i faced, so i will just continue.
 
+ June - 18
+ ~~~~~~~~~~~~~~~~~~~
  
+ • Implemented network layer.
+ 
+ • Implemented auto-suggestion feature.
+ 
+ • MVVM flow cycle is established.
  
 */

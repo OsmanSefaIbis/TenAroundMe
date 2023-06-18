@@ -47,13 +47,13 @@ extension GeocodingSearchAPI {
     }
     
     /// Resource Paths
-    public var discoverPath: String { API.domain.get().appending(API.discoverPath.get()) }
-    public var browsePath: String { API.domain.get().appending(API.browsePath.get()) }
-    public var lookUpPath: String { API.domain.get().appending(API.lookupPath.get()) }
-    public var autosuggestPath: String { API.domain.get().appending(API.autosuggestPath.get()) }
-    public var autoCompletePath: String { API.domain.get().appending(API.autocompletePath.get()) }
-    public var geocodePath: String { API.domain.get().appending(API.geocodePath.get()) }
-    public var revgeocodePath: String { API.domain.get().appending(API.revgeocodePath.get()) }
+    public var discoverPath: String { API.version.get().appending(API.discoverPath.get()) }
+    public var browsePath: String { API.version.get().appending(API.browsePath.get()) }
+    public var lookUpPath: String { API.version.get().appending(API.lookupPath.get()) }
+    public var autosuggestPath: String { API.version.get().appending(API.autosuggestPath.get()) }
+    public var autoCompletePath: String { API.version.get().appending(API.autocompletePath.get()) }
+    public var geocodePath: String { API.version.get().appending(API.geocodePath.get()) }
+    public var revgeocodePath: String { API.version.get().appending(API.revgeocodePath.get()) }
     
 }
 

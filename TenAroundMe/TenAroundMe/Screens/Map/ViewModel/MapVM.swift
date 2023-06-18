@@ -15,10 +15,14 @@ final class MapVM {
     weak var searchResultView: SearchResultsVCContract?
     weak var delegate: MapVMDelegate?
     
-    var searchResults: [SearchCellModel] = [
-        .init(resultName: "N 1"),
-    ]
-    var searchResultsCount: Int { get {searchResults.count} }
+    var timeControl: Timer?
+    
+    var isSearchActive = false
+    var isTypingActive = false
+    var isNoSuggestion = false
+    
+    var suggestionResults: [SuggestDataModel] = [ ]
+    var suggestionResultsCount: Int { get {suggestionResults.count} }
     
     init(mapView:MapVCContract) {
         model.delegate = self

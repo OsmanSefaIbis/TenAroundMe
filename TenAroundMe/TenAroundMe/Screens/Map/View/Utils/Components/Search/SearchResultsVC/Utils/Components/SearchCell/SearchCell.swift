@@ -24,9 +24,9 @@ class SearchCell: UITableViewCell {
 
     }
     
-    func configure(with model: SearchCellModel) {
+    func configure(with model: SuggestDataModel) {
  
-        label_resultName.text = model.resultName
+        label_resultName.text = model.title
     }
     
     func configureCellLooks(){

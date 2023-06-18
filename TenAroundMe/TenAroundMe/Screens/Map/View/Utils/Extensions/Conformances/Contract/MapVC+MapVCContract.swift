@@ -9,6 +9,10 @@ import UIKit
 
 extension MapVC: MapVCContract {
     
+    func assignDelegates() {
+        viewModel.delegate = self
+    }
+    
     func configureMap() {
         map.showsUserLocation = true
     }
@@ -33,6 +37,17 @@ extension MapVC: MapVCContract {
             sheet.largestUndimmedDetentIdentifier = .large
         }
         present(navigateDetail, animated: true)
+    }
+    
+    func setSuggestion(_ results: [SuggestDataModel]) {
+        viewModel.setSuggestions(with: results)
+    }
+    
+    func reloadTableView() {
+        DispatchQueue.main.async { [weak self] in
+            guard let self else { return }
+            self.searchResultsController.tableView.reloadData()
+        }
     }
     
     

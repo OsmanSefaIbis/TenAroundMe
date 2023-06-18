@@ -9,9 +9,12 @@ import Foundation
 
 protocol MapVCContract: AnyObject {
     
+    func assignDelegates()
     /// configureUI
     func configureMap()
     func configureSearchController()
     func configureBottomSheet()
     
+    func reloadTableView()
+    func setSuggestion( _ results: [SuggestDataModel] )
 }

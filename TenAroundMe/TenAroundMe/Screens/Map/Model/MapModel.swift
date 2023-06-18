@@ -11,4 +11,27 @@ final class MapModel {
     
     weak var delegate: MapModelDelegate?
     
+    private(set) var suggestionResults: [Suggest_Item] = []
+    
+    private var network: NetworkAdapter { NetworkAdapter.shared }
+    private var internet: InternetManager { InternetManager.shared }
+    
+    func fetchAutoSuggest(with query: SearchQuery){
+        if internet.isOnline() {
+            network.fetchSuggestion(by: query) { [weak self] response in
+                guard let self else { return }
+                switch response {
+                    case .success(let data):
+                    guard let results = data.items else { return }
+                        self.suggestionResults = results
+                        self.delegate?.didFetchSuggest()
+                    case .failure(_):
+                        self.delegate?.didFailFetch()
+                }
+            }
+        } else {
+            delegate?.didFailFetch()
+        }
+    }
+    
 }

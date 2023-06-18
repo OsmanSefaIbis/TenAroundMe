@@ -11,7 +11,7 @@ import MapKit
 final class MapVC: UIViewController {
     
     @IBOutlet weak var map: MKMapView!
-
+    
     lazy var viewModel = MapVM(mapView: self)
     lazy var searchResultsController: SearchResultsVC = {
         let resultsVC = SearchResultsVC(viewModel: self.viewModel)
@@ -21,6 +21,7 @@ final class MapVC: UIViewController {
         let searchController = UISearchController(searchResultsController: searchResultsController)
         searchController.searchResultsUpdater = self
         searchController.searchBar.delegate = self
+        searchController.delegate = self
         return searchController
     }()
 

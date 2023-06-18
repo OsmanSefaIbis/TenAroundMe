@@ -8,6 +8,12 @@
 import Foundation
 
 public struct Position {
-    let latitude: Int
-    let longitude: Int
+    
+    let latitude: Double
+    let longitude: Double
+    
+    func get() -> String {
+        "\(latitude),\(longitude)"
+    }
 }
+

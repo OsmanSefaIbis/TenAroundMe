@@ -3,4 +3,373 @@
    uuid = "97BE8A77-E835-4FA3-863D-FAEBF30563F3"
    type = "1"
    version = "2.0">
+   <Breakpoints>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "082EFB29-4B8B-4C4D-8501-12032E1211AD"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "TenAroundMe/Screens/Map/Model/MapModel.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "25"
+            endingLineNumber = "25"
+            landmarkName = "fetchAutoSuggest(with:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "5134DBF7-8526-48B8-B554-B83DEDA9A379"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "TenAroundMe/Screens/Map/View/Utils/Extensions/Conformances/Delegations/UIKIt/Search/MapVC+UISearchBarDelegate.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "24"
+            endingLineNumber = "24"
+            landmarkName = "searchBar(_:textDidChange:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "4992E5B4-0A14-45A2-A731-D9599D248D19"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "TenAroundMe/Screens/Map/ViewModel/Utils/Extensions/Conformances/Contract/MapVM+MapVMContract.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "44"
+            endingLineNumber = "44"
+            landmarkName = "textDidChange(with:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "4992E5B4-0A14-45A2-A731-D9599D248D19 - e167acde829c21a9"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 @Sendable (__C.NSTimer) -&gt; () in TenAroundMe.MapVM.textDidChange(with: Swift.String) -&gt; ()"
+                  moduleName = "TenAroundMe"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/sefaibis/Developer/Dev%20Workspace/CaseStudy/EnglishCentral/TenAroundMe/TenAroundMe/TenAroundMe/Screens/Map/ViewModel/Utils/Extensions/Conformances/Contract/MapVM+MapVMContract.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "45"
+                  endingLineNumber = "45"
+                  offsetFromSymbolStart = "488">
+               </Location>
+               <Location
+                  uuid = "4992E5B4-0A14-45A2-A731-D9599D248D19 - e167acde829c21c8"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 @Sendable (__C.NSTimer) -&gt; () in TenAroundMe.MapVM.textDidChange(with: Swift.String) -&gt; ()"
+                  moduleName = "TenAroundMe"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/sefaibis/Developer/Dev%20Workspace/CaseStudy/EnglishCentral/TenAroundMe/TenAroundMe/TenAroundMe/Screens/Map/ViewModel/Utils/Extensions/Conformances/Contract/MapVM+MapVMContract.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "44"
+                  endingLineNumber = "44"
+                  offsetFromSymbolStart = "468">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "A9E14BBC-9E33-422C-9447-169FABD01E54"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "TenAroundMe/Screens/Map/ViewModel/Utils/Extensions/Conformances/Contract/MapVM+MapVMContract.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "51"
+            endingLineNumber = "51"
+            landmarkName = "invokeAutoSuggest(with:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "A9E14BBC-9E33-422C-9447-169FABD01E54 - 48359ad8bbb6c92f"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "TenAroundMe.MapVM.invokeAutoSuggest(with: TenAroundMe.SearchQuery) -&gt; ()"
+                  moduleName = "TenAroundMe"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/sefaibis/Developer/Dev%20Workspace/CaseStudy/EnglishCentral/TenAroundMe/TenAroundMe/TenAroundMe/Screens/Map/ViewModel/Utils/Extensions/Conformances/Contract/MapVM+MapVMContract.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "51"
+                  endingLineNumber = "51"
+                  offsetFromSymbolStart = "108">
+               </Location>
+               <Location
+                  uuid = "A9E14BBC-9E33-422C-9447-169FABD01E54 - 48359ad8bbb6c92f"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "TenAroundMe.MapVM.invokeAutoSuggest(with: TenAroundMe.SearchQuery) -&gt; ()"
+                  moduleName = "TenAroundMe"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/sefaibis/Developer/Dev%20Workspace/CaseStudy/EnglishCentral/TenAroundMe/TenAroundMe/TenAroundMe/Screens/Map/ViewModel/Utils/Extensions/Conformances/Contract/MapVM+MapVMContract.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "51"
+                  endingLineNumber = "51"
+                  offsetFromSymbolStart = "72">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "B171D371-6A0C-47DF-8DA5-89EE93897B4D"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "TenAroundMe/Screens/Map/ViewModel/Utils/Extensions/Conformances/Delegations/Communication/MapVM+MapModelDelegate.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "21"
+            endingLineNumber = "21"
+            landmarkName = "didFetchSuggest()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "5A299044-BFFD-4250-A695-FDF8FB5AA847"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "TenAroundMe/Screens/Map/View/Utils/Extensions/Conformances/Delegations/Communication/MapVC+MapVMDelegate.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "12"
+            endingLineNumber = "12"
+            landmarkName = "didRetrieveSuggest(_:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "5A299044-BFFD-4250-A695-FDF8FB5AA847 - 62eb17eb7375bd3"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "TenAroundMe.MapVC.didRetrieveSuggest(Swift.Array&lt;TenAroundMe.SuggestDataModel&gt;) -&gt; ()"
+                  moduleName = "TenAroundMe"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/sefaibis/Developer/Dev%20Workspace/CaseStudy/EnglishCentral/TenAroundMe/TenAroundMe/TenAroundMe/Screens/Map/View/Utils/Extensions/Conformances/Delegations/Communication/MapVC+MapVMDelegate.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "13"
+                  endingLineNumber = "13"
+                  offsetFromSymbolStart = "20">
+               </Location>
+               <Location
+                  uuid = "5A299044-BFFD-4250-A695-FDF8FB5AA847 - 62eb17eb7375bb2"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "TenAroundMe.MapVC.didRetrieveSuggest(Swift.Array&lt;TenAroundMe.SuggestDataModel&gt;) -&gt; ()"
+                  moduleName = "TenAroundMe"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/sefaibis/Developer/Dev%20Workspace/CaseStudy/EnglishCentral/TenAroundMe/TenAroundMe/TenAroundMe/Screens/Map/View/Utils/Extensions/Conformances/Delegations/Communication/MapVC+MapVMDelegate.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "12"
+                  endingLineNumber = "12"
+                  offsetFromSymbolStart = "36">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "538DF618-42CE-4173-B648-8AA6B95FB41E"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "TenAroundMe/Screens/Map/View/Utils/Extensions/Conformances/Contract/MapVC+MapVCContract.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "43"
+            endingLineNumber = "43"
+            landmarkName = "setSuggestion(_:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "717196B8-EBB7-48EA-B499-75B401FB7613"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "TenAroundMe/Screens/Map/ViewModel/Utils/Extensions/Conformances/Contract/MapVM+MapVMContract.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "55"
+            endingLineNumber = "55"
+            landmarkName = "setSuggestions(with:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "717196B8-EBB7-48EA-B499-75B401FB7613 - 8086bca192ec082f"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "TenAroundMe.MapVM.setSuggestions(with: Swift.Array&lt;TenAroundMe.SuggestDataModel&gt;) -&gt; ()"
+                  moduleName = "TenAroundMe"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/sefaibis/Developer/Dev%20Workspace/CaseStudy/EnglishCentral/TenAroundMe/TenAroundMe/TenAroundMe/Screens/Map/ViewModel/Utils/Extensions/Conformances/Contract/MapVM+MapVMContract.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "55"
+                  endingLineNumber = "55"
+                  offsetFromSymbolStart = "96">
+               </Location>
+               <Location
+                  uuid = "717196B8-EBB7-48EA-B499-75B401FB7613 - 8086bca192ec082f"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "TenAroundMe.MapVM.setSuggestions(with: Swift.Array&lt;TenAroundMe.SuggestDataModel&gt;) -&gt; ()"
+                  moduleName = "TenAroundMe"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/sefaibis/Developer/Dev%20Workspace/CaseStudy/EnglishCentral/TenAroundMe/TenAroundMe/TenAroundMe/Screens/Map/ViewModel/Utils/Extensions/Conformances/Contract/MapVM+MapVMContract.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "55"
+                  endingLineNumber = "55"
+                  offsetFromSymbolStart = "40">
+               </Location>
+               <Location
+                  uuid = "717196B8-EBB7-48EA-B499-75B401FB7613 - 8086bca192ec082f"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "TenAroundMe.MapVM.setSuggestions(with: Swift.Array&lt;TenAroundMe.SuggestDataModel&gt;) -&gt; ()"
+                  moduleName = "TenAroundMe"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/sefaibis/Developer/Dev%20Workspace/CaseStudy/EnglishCentral/TenAroundMe/TenAroundMe/TenAroundMe/Screens/Map/ViewModel/Utils/Extensions/Conformances/Contract/MapVM+MapVMContract.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "55"
+                  endingLineNumber = "55"
+                  offsetFromSymbolStart = "44">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "C9BD7B17-DD88-4F12-9457-FB8909FFBCDC"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "TenAroundMe/Screens/Map/Model/MapModel.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "19"
+            endingLineNumber = "19"
+            landmarkName = "fetchAutoSuggest(with:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "666373C6-577E-4054-B019-6E1B5E8232A8"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "TenAroundMe/Screens/Map/Model/MapModel.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "23"
+            endingLineNumber = "23"
+            landmarkName = "fetchAutoSuggest(with:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "30F20C23-828C-4AF3-A2EC-E121D6879FA5"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "TenAroundMe/Screens/Map/Model/MapModel.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "21"
+            endingLineNumber = "21"
+            landmarkName = "fetchAutoSuggest(with:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "30F20C23-828C-4AF3-A2EC-E121D6879FA5 - a3f9658147ec4491"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "TenAroundMe.MapModel.fetchAutoSuggest(with: TenAroundMe.SearchQuery) -&gt; ()"
+                  moduleName = "TenAroundMe"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/sefaibis/Developer/Dev%20Workspace/CaseStudy/EnglishCentral/TenAroundMe/TenAroundMe/TenAroundMe/Screens/Map/Model/MapModel.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "21"
+                  endingLineNumber = "21"
+                  offsetFromSymbolStart = "124">
+               </Location>
+               <Location
+                  uuid = "30F20C23-828C-4AF3-A2EC-E121D6879FA5 - c4965e30574fe3d5"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (Swift.Result&lt;TenAroundMe.SuggestDTO, TenAroundMe.NetworkError&gt;) -&gt; () in TenAroundMe.MapModel.fetchAutoSuggest(with: TenAroundMe.SearchQuery) -&gt; ()"
+                  moduleName = "TenAroundMe"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/sefaibis/Developer/Dev%20Workspace/CaseStudy/EnglishCentral/TenAroundMe/TenAroundMe/TenAroundMe/Screens/Map/Model/MapModel.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "21"
+                  endingLineNumber = "21"
+                  offsetFromSymbolStart = "88">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "729AF08C-2521-44C0-9789-470F68193748"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "TenAroundMe/Screens/Map/View/Utils/Extensions/Conformances/Delegations/Communication/MapVC+MapVMDelegate.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "11"
+            endingLineNumber = "11"
+            landmarkName = "didRetrieveSuggest(_:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+   </Breakpoints>
 </Bucket>

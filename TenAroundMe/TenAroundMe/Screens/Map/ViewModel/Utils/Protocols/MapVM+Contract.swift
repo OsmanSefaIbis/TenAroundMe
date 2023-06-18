@@ -11,4 +11,11 @@ protocol MapVMContract {
     
     func mapView_viewDidLoad()
     func searchResultsView_viewDidLoad()
+    func searchIsActivated()
+    func searchIsDeactivated()
+    
+    func textDidChange(with input: String)
+    func invokeAutoSuggest(with query: SearchQuery)
+    
+    func setSuggestions(with results: [SuggestDataModel])
 }

@@ -9,4 +9,8 @@ import Foundation
 
 protocol MapModelDelegate: AnyObject {
     
+    func didFetchSuggest()
+    func didFetchSearch()
+    func didFetchLookUp()
+    func didFailFetch()
 }

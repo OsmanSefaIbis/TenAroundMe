@@ -21,6 +21,6 @@ extension MapVC: UISearchBarDelegate {
     }
     
     func searchBar(_ searchBar: UISearchBar, textDidChange searchText: String) {
-//        self.searchViewModel.textDidChange(with: searchText)
+        viewModel.textDidChange(with: searchText)
     }
 }
