@@ -16,6 +16,7 @@ protocol MapVMContract {
     
     func textDidChange(with input: String)
     func invokeAutoSuggest(with query: SearchQuery)
-    
     func setSuggestions(with results: [SuggestDataModel])
+    
+    func searchPerformed(with query: SearchQuery)
 }

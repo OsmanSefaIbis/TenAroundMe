@@ -11,13 +11,10 @@ extension MapVC: UISearchResultsUpdating {
     
     func updateSearchResults(for searchController: UISearchController) {
         
-        // TODO: API has Auto complete or Auto suggest use it here to feed
-        
         guard let text = searchController.searchBar.text else { return }
         let searchResultVC = searchController.searchResultsController as? SearchResultsVC
         searchResultVC?.view.backgroundColor = .lightGray.withAlphaComponent(0.4)
         
-        print(text)
     }
     
     

@@ -6,6 +6,8 @@
 //
 
 import Foundation
+import CoreLocation
+import MapKit
 
 final class MapVM {
     

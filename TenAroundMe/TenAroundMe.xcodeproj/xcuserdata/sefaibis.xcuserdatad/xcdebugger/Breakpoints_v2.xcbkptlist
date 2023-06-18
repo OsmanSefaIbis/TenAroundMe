@@ -46,8 +46,8 @@
             filePath = "TenAroundMe/Screens/Map/ViewModel/Utils/Extensions/Conformances/Contract/MapVM+MapVMContract.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "44"
-            endingLineNumber = "44"
+            startingLineNumber = "46"
+            endingLineNumber = "46"
             landmarkName = "textDidChange(with:)"
             landmarkType = "7">
             <Locations>
@@ -81,6 +81,21 @@
                   endingLineNumber = "44"
                   offsetFromSymbolStart = "468">
                </Location>
+               <Location
+                  uuid = "4992E5B4-0A14-45A2-A731-D9599D248D19 - e167acde829c218a"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 @Sendable (__C.NSTimer) -&gt; () in TenAroundMe.MapVM.textDidChange(with: Swift.String) -&gt; ()"
+                  moduleName = "TenAroundMe"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/sefaibis/Developer/Dev%20Workspace/CaseStudy/EnglishCentral/TenAroundMe/TenAroundMe/TenAroundMe/Screens/Map/ViewModel/Utils/Extensions/Conformances/Contract/MapVM+MapVMContract.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "46"
+                  endingLineNumber = "46"
+                  offsetFromSymbolStart = "468">
+               </Location>
             </Locations>
          </BreakpointContent>
       </BreakpointProxy>
@@ -94,8 +109,8 @@
             filePath = "TenAroundMe/Screens/Map/ViewModel/Utils/Extensions/Conformances/Contract/MapVM+MapVMContract.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "51"
-            endingLineNumber = "51"
+            startingLineNumber = "53"
+            endingLineNumber = "53"
             landmarkName = "invokeAutoSuggest(with:)"
             landmarkType = "7">
             <Locations>
@@ -127,6 +142,21 @@
                   endingColumnNumber = "9223372036854775807"
                   startingLineNumber = "51"
                   endingLineNumber = "51"
+                  offsetFromSymbolStart = "72">
+               </Location>
+               <Location
+                  uuid = "A9E14BBC-9E33-422C-9447-169FABD01E54 - 48359ad8bbb6c971"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "TenAroundMe.MapVM.invokeAutoSuggest(with: TenAroundMe.SearchQuery) -&gt; ()"
+                  moduleName = "TenAroundMe"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/sefaibis/Developer/Dev%20Workspace/CaseStudy/EnglishCentral/TenAroundMe/TenAroundMe/TenAroundMe/Screens/Map/ViewModel/Utils/Extensions/Conformances/Contract/MapVM+MapVMContract.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "53"
+                  endingLineNumber = "53"
                   offsetFromSymbolStart = "72">
                </Location>
             </Locations>
@@ -206,8 +236,8 @@
             filePath = "TenAroundMe/Screens/Map/View/Utils/Extensions/Conformances/Contract/MapVC+MapVCContract.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "43"
-            endingLineNumber = "43"
+            startingLineNumber = "51"
+            endingLineNumber = "51"
             landmarkName = "setSuggestion(_:)"
             landmarkType = "7">
          </BreakpointContent>
@@ -222,8 +252,8 @@
             filePath = "TenAroundMe/Screens/Map/ViewModel/Utils/Extensions/Conformances/Contract/MapVM+MapVMContract.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "55"
-            endingLineNumber = "55"
+            startingLineNumber = "57"
+            endingLineNumber = "57"
             landmarkName = "setSuggestions(with:)"
             landmarkType = "7">
             <Locations>
@@ -270,6 +300,21 @@
                   endingColumnNumber = "9223372036854775807"
                   startingLineNumber = "55"
                   endingLineNumber = "55"
+                  offsetFromSymbolStart = "44">
+               </Location>
+               <Location
+                  uuid = "717196B8-EBB7-48EA-B499-75B401FB7613 - 8086bca192ec0869"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "TenAroundMe.MapVM.setSuggestions(with: Swift.Array&lt;TenAroundMe.SuggestDataModel&gt;) -&gt; ()"
+                  moduleName = "TenAroundMe"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/sefaibis/Developer/Dev%20Workspace/CaseStudy/EnglishCentral/TenAroundMe/TenAroundMe/TenAroundMe/Screens/Map/ViewModel/Utils/Extensions/Conformances/Contract/MapVM+MapVMContract.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "57"
+                  endingLineNumber = "57"
                   offsetFromSymbolStart = "44">
                </Location>
             </Locations>

@@ -6,11 +6,13 @@
 //
 
 import Foundation
+import CoreLocation
 
 extension MapVM: MapVMContract {
     
     func mapView_viewDidLoad() {
         mapView?.assignDelegates()
+        mapView?.configureLocationManager()
         mapView?.configureMap()
         mapView?.configureSearchController()
         mapView?.configureBottomSheet()
@@ -55,5 +57,10 @@ extension MapVM: MapVMContract {
         suggestionResults = results
         mapView?.reloadTableView()
     }
+    
+    func searchPerformed(with query: SearchQuery) {
+        
+    }
+    
 
 }

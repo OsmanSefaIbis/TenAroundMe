@@ -107,4 +107,7 @@
  
  • MVVM flow cycle is established.
  
+ •
+ 
+ 
 */

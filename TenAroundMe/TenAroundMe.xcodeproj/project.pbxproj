@@ -61,6 +61,7 @@
 		96362CF42A3F3F1700E561E0 /* SearchResultsVC+SearchResultsVCContract.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96362CF32A3F3F1700E561E0 /* SearchResultsVC+SearchResultsVCContract.swift */; };
 		96362CF62A3F567D00E561E0 /* MapVC+UISearchControllerDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96362CF52A3F567D00E561E0 /* MapVC+UISearchControllerDelegate.swift */; };
 		96362CF82A3F858500E561E0 /* AppConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96362CF72A3F858500E561E0 /* AppConstants.swift */; };
+		96362D012A3FC5A900E561E0 /* MapVC+CLLocationManagerDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96362D002A3FC5A900E561E0 /* MapVC+CLLocationManagerDelegate.swift */; };
 		968625812A3DB7D700ACFC26 /* MapVC+UISearchResultsUpdating.swift in Sources */ = {isa = PBXBuildFile; fileRef = 968625802A3DB7D700ACFC26 /* MapVC+UISearchResultsUpdating.swift */; };
 		968625872A3DC00700ACFC26 /* MapVC+UISearchBarDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 968625862A3DC00600ACFC26 /* MapVC+UISearchBarDelegate.swift */; };
 		9686258A2A3DC52E00ACFC26 /* SearchResultsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 968625882A3DC52E00ACFC26 /* SearchResultsVC.swift */; };
@@ -165,6 +166,7 @@
 		96362CF32A3F3F1700E561E0 /* SearchResultsVC+SearchResultsVCContract.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "SearchResultsVC+SearchResultsVCContract.swift"; sourceTree = "<group>"; };
 		96362CF52A3F567D00E561E0 /* MapVC+UISearchControllerDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "MapVC+UISearchControllerDelegate.swift"; sourceTree = "<group>"; };
 		96362CF72A3F858500E561E0 /* AppConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppConstants.swift; sourceTree = "<group>"; };
+		96362D002A3FC5A900E561E0 /* MapVC+CLLocationManagerDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "MapVC+CLLocationManagerDelegate.swift"; sourceTree = "<group>"; };
 		968625802A3DB7D700ACFC26 /* MapVC+UISearchResultsUpdating.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "MapVC+UISearchResultsUpdating.swift"; sourceTree = "<group>"; };
 		968625862A3DC00600ACFC26 /* MapVC+UISearchBarDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "MapVC+UISearchBarDelegate.swift"; sourceTree = "<group>"; };
 		968625882A3DC52E00ACFC26 /* SearchResultsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchResultsVC.swift; sourceTree = "<group>"; };
@@ -528,6 +530,7 @@
 			isa = PBXGroup;
 			children = (
 				9686257E2A3DB76100ACFC26 /* UIKIt */,
+				96362CFF2A3FC57100E561E0 /* Location */,
 				961F14E52A3CEEB700BF9A7C /* Communication */,
 			);
 			path = Delegations;
@@ -802,6 +805,14 @@
 				96362CF32A3F3F1700E561E0 /* SearchResultsVC+SearchResultsVCContract.swift */,
 			);
 			path = Class;
+			sourceTree = "<group>";
+		};
+		96362CFF2A3FC57100E561E0 /* Location */ = {
+			isa = PBXGroup;
+			children = (
+				96362D002A3FC5A900E561E0 /* MapVC+CLLocationManagerDelegate.swift */,
+			);
+			path = Location;
 			sourceTree = "<group>";
 		};
 		9686257E2A3DB76100ACFC26 /* UIKIt */ = {
@@ -1291,6 +1302,7 @@
 				96E1990C2A3DF5E400CBD393 /* NetworkErrorTypes.swift in Sources */,
 				961F14222A38D16E00BF9A7C /* TenAroundMe.xcdatamodeld in Sources */,
 				961F14A32A3CCB1500BF9A7C /* MapVM.swift in Sources */,
+				96362D012A3FC5A900E561E0 /* MapVC+CLLocationManagerDelegate.swift in Sources */,
 				961F15122A3CF46C00BF9A7C /* DetailVM+Delegate.swift in Sources */,
 				96E199022A3DF30D00CBD393 /* InternetManager.swift in Sources */,
 				96362CE62A3E970700E561E0 /* DetailDTO.swift in Sources */,
@@ -1509,6 +1521,7 @@
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = TenAroundMe/Info.plist;
 				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.navigation";
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "TenAroundMe requires access to your location to provide you with a personalized experience and show you the top 10 places closest to your current location.";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Map;
@@ -1541,6 +1554,7 @@
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = TenAroundMe/Info.plist;
 				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.navigation";
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "TenAroundMe requires access to your location to provide you with a personalized experience and show you the top 10 places closest to your current location.";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Map;

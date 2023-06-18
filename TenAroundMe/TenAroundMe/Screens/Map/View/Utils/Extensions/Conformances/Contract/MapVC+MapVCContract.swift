@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import MapKit
 
 extension MapVC: MapVCContract {
     
@@ -38,6 +39,13 @@ extension MapVC: MapVCContract {
         }
         present(navigateDetail, animated: true)
     }
+    func configureLocationManager(){
+        locationManager = CLLocationManager()
+        locationManager?.delegate = self
+        locationManager?.requestWhenInUseAuthorization()
+        locationManager?.requestAlwaysAuthorization()
+        locationManager?.requestLocation()
+    }
     
     func setSuggestion(_ results: [SuggestDataModel]) {
         viewModel.setSuggestions(with: results)
@@ -49,6 +57,5 @@ extension MapVC: MapVCContract {
             self.searchResultsController.tableView.reloadData()
         }
     }
-    
     
 }

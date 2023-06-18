@@ -12,6 +12,8 @@ final class MapVC: UIViewController {
     
     @IBOutlet weak var map: MKMapView!
     
+    var locationManager: CLLocationManager? // TODO: VM migrate
+    
     lazy var viewModel = MapVM(mapView: self)
     lazy var searchResultsController: SearchResultsVC = {
         let resultsVC = SearchResultsVC(viewModel: self.viewModel)
@@ -24,12 +26,11 @@ final class MapVC: UIViewController {
         searchController.delegate = self
         return searchController
     }()
-
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         viewModel.mapView_viewDidLoad()
     }
     
 }
-
 
