@@ -9,7 +9,7 @@
 
 /*
  
- June - 13 --> 6 PM --> Case Given
+ June - 13 --> 5 PM --> Case Given
  ~~~~~~~~~~~~~~~~~~~
 
  
@@ -62,7 +62,7 @@
  
  • Did the postman collection to test the api capabilities, added to the project as a public link.
  
- • Matt Austin --> Reached to me about the technical problem that i had with API key and API.
+ • ❗️ Matt Austin --> Reached to me about the technical problem that i had with API key and API.
  
  • The uncertainty cost me time so i will just continue with the HERE Geocoding & Search API v7.
  
@@ -70,6 +70,13 @@
  
  June - 16
  ~~~~~~~~~~~~~~~~~~~
+ • Started the implementation.
+ 
+ • Joined to the Slack channel and asked about the API related problem. The API key does not authenticate requests for the demo places api.
+ 
+ • After analyzing the HERE_Geocoding_Search_API_v7 decided to take the initiative to continue with it. Emailed HR no notify.
+ 
+ • Added MVVM boilerplates.
  
  
  June - 17
@@ -82,5 +89,15 @@
  • Will simplify the approach by aborting the top sheet approach, will continue with UISearchController.
  
  • The design choices i made is causing efforts.
+ 
+ • Search UI is added.
+ 
+ • Started to assemble the Network Layer.
+ 
+ • I will use URLSessions for fetching.
+ 
+ • ❗️ Got no response for the API related situation that i faced, so i will just continue.
+
+ 
  
 */

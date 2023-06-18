@@ -7,7 +7,7 @@
 
 import Foundation
 
-extension HERE_GeocodingSearchAPI_v7 {
+extension GeocodingSearchAPI {
     
     /// Base URLs
     public var discoverBaseUrl: String {
@@ -56,3 +56,4 @@ extension HERE_GeocodingSearchAPI_v7 {
     public var revgeocodePath: String { API.domain.get().appending(API.revgeocodePath.get()) }
     
 }
+

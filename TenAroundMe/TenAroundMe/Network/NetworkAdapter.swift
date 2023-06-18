@@ -12,8 +12,50 @@ final class NetworkAdapter {
     private var session: URLSession { URLSession.shared }
     static let shared = NetworkAdapter()
     
-    // TODO: ADD url constructing methods that are relevant to the API, then feed it to execute
-
+    // TODO: add more fetches
+    
+    func fetchSearch(
+        by query: SearchQuery,
+        onCompletion: @escaping (Result <SearchDTO, NetworkError> ) -> Void
+    ) {
+        
+        let type: RequestQuery = .init(search: query, endpoint: .browse)
+        guard let searchUrl = composeRequest(
+            endpoint: .browse(searchInput: query.input, location: query.location),
+            queryType: type )
+        else { onCompletion(.failure(.invalidRequest)) ; return }
+        
+        execute(request: searchUrl, dto: SearchDTO.self, onCompletion: onCompletion)
+    }
+    
+    func fetchLookUp(
+        with id: String,
+        onCompletion: @escaping (Result <DetailDTO, NetworkError> ) -> Void
+    ) {
+        
+        let type: RequestQuery = .init(id: id, endpoint: .lookUpById)
+        guard let searchUrl = composeRequest(
+            endpoint: .lookUpById(id: id),
+            queryType: type )
+        else { onCompletion(.failure(.invalidRequest)) ; return }
+        
+        execute(request: searchUrl, dto: DetailDTO.self, onCompletion: onCompletion)
+    }
+    
+    func fetchSuggestion(
+        by query: SearchQuery,
+        onCompletion: @escaping (Result <SuggestDTO, NetworkError> ) -> Void
+    ) {
+        
+        let type: RequestQuery = .init(search: query, endpoint: .autoSuggest)
+        guard let searchUrl = composeRequest(
+            endpoint: .autoSuggest(searchInput: query.input, location: query.location),
+            queryType: type )
+        else { onCompletion(.failure(.invalidRequest)) ; return }
+        
+        execute(request: searchUrl, dto: SuggestDTO.self, onCompletion: onCompletion)
+    }
+    
     private func execute<T: Decodable>(
         request: URLRequest,
         dto: T.Type,
