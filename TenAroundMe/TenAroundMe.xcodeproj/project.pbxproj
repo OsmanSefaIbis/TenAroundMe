@@ -49,11 +49,16 @@
 		961F151D2A3CF56000BF9A7C /* DetailVM+DetailModelDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 961F151C2A3CF56000BF9A7C /* DetailVM+DetailModelDelegate.swift */; };
 		96362CD82A3E599C00E561E0 /* Endpoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96362CD72A3E599C00E561E0 /* Endpoint.swift */; };
 		96362CDA2A3E5A4200E561E0 /* Use Cases & Thoughts.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96362CD92A3E5A4200E561E0 /* Use Cases & Thoughts.swift */; };
-		96362CDC2A3E719C00E561E0 /* Coordinate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96362CDB2A3E719C00E561E0 /* Coordinate.swift */; };
+		96362CDC2A3E719C00E561E0 /* Position.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96362CDB2A3E719C00E561E0 /* Position.swift */; };
 		96362CE02A3E781800E561E0 /* EndpointTypes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96362CDF2A3E781800E561E0 /* EndpointTypes.swift */; };
 		96362CE42A3E968700E561E0 /* SearchDTO.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96362CE32A3E968700E561E0 /* SearchDTO.swift */; };
 		96362CE62A3E970700E561E0 /* DetailDTO.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96362CE52A3E970700E561E0 /* DetailDTO.swift */; };
 		96362CE82A3E976800E561E0 /* SuggestDTO.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96362CE72A3E976800E561E0 /* SuggestDTO.swift */; };
+		96362CEB2A3F238600E561E0 /* SearchDataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96362CEA2A3F238600E561E0 /* SearchDataModel.swift */; };
+		96362CED2A3F23CC00E561E0 /* SuggestDataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96362CEC2A3F23CC00E561E0 /* SuggestDataModel.swift */; };
+		96362CEF2A3F23F300E561E0 /* DetailDataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96362CEE2A3F23F300E561E0 /* DetailDataModel.swift */; };
+		96362CF12A3F3EB000E561E0 /* SearchResultsVC+Contract.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96362CF02A3F3EB000E561E0 /* SearchResultsVC+Contract.swift */; };
+		96362CF42A3F3F1700E561E0 /* SearchResultsVC+SearchResultsVCContract.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96362CF32A3F3F1700E561E0 /* SearchResultsVC+SearchResultsVCContract.swift */; };
 		968625812A3DB7D700ACFC26 /* MapVC+UISearchResultsUpdating.swift in Sources */ = {isa = PBXBuildFile; fileRef = 968625802A3DB7D700ACFC26 /* MapVC+UISearchResultsUpdating.swift */; };
 		968625872A3DC00700ACFC26 /* MapVC+UISearchBarDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 968625862A3DC00600ACFC26 /* MapVC+UISearchBarDelegate.swift */; };
 		9686258A2A3DC52E00ACFC26 /* SearchResultsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 968625882A3DC52E00ACFC26 /* SearchResultsVC.swift */; };
@@ -146,11 +151,16 @@
 		961F151C2A3CF56000BF9A7C /* DetailVM+DetailModelDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "DetailVM+DetailModelDelegate.swift"; sourceTree = "<group>"; };
 		96362CD72A3E599C00E561E0 /* Endpoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Endpoint.swift; sourceTree = "<group>"; };
 		96362CD92A3E5A4200E561E0 /* Use Cases & Thoughts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Use Cases & Thoughts.swift"; sourceTree = "<group>"; };
-		96362CDB2A3E719C00E561E0 /* Coordinate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Coordinate.swift; sourceTree = "<group>"; };
+		96362CDB2A3E719C00E561E0 /* Position.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Position.swift; sourceTree = "<group>"; };
 		96362CDF2A3E781800E561E0 /* EndpointTypes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EndpointTypes.swift; sourceTree = "<group>"; };
 		96362CE32A3E968700E561E0 /* SearchDTO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchDTO.swift; sourceTree = "<group>"; };
 		96362CE52A3E970700E561E0 /* DetailDTO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailDTO.swift; sourceTree = "<group>"; };
 		96362CE72A3E976800E561E0 /* SuggestDTO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SuggestDTO.swift; sourceTree = "<group>"; };
+		96362CEA2A3F238600E561E0 /* SearchDataModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchDataModel.swift; sourceTree = "<group>"; };
+		96362CEC2A3F23CC00E561E0 /* SuggestDataModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SuggestDataModel.swift; sourceTree = "<group>"; };
+		96362CEE2A3F23F300E561E0 /* DetailDataModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailDataModel.swift; sourceTree = "<group>"; };
+		96362CF02A3F3EB000E561E0 /* SearchResultsVC+Contract.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "SearchResultsVC+Contract.swift"; sourceTree = "<group>"; };
+		96362CF32A3F3F1700E561E0 /* SearchResultsVC+SearchResultsVCContract.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "SearchResultsVC+SearchResultsVCContract.swift"; sourceTree = "<group>"; };
 		968625802A3DB7D700ACFC26 /* MapVC+UISearchResultsUpdating.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "MapVC+UISearchResultsUpdating.swift"; sourceTree = "<group>"; };
 		968625862A3DC00600ACFC26 /* MapVC+UISearchBarDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "MapVC+UISearchBarDelegate.swift"; sourceTree = "<group>"; };
 		968625882A3DC52E00ACFC26 /* SearchResultsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchResultsVC.swift; sourceTree = "<group>"; };
@@ -436,7 +446,7 @@
 			isa = PBXGroup;
 			children = (
 				961F14DF2A3CEB8200BF9A7C /* Protocols */,
-				961F14E02A3CEB8F00BF9A7C /* Data Links */,
+				961F14E42A3CEBC800BF9A7C /* DataModel */,
 			);
 			path = Utils;
 			sourceTree = "<group>";
@@ -445,7 +455,7 @@
 			isa = PBXGroup;
 			children = (
 				961F14F82A3CF27300BF9A7C /* Protocols */,
-				961F14F92A3CF28300BF9A7C /* Data Links */,
+				961F14FD2A3CF2C800BF9A7C /* DataModel */,
 			);
 			path = Utils;
 			sourceTree = "<group>";
@@ -527,29 +537,13 @@
 			path = Protocols;
 			sourceTree = "<group>";
 		};
-		961F14E02A3CEB8F00BF9A7C /* Data Links */ = {
+		961F14E42A3CEBC800BF9A7C /* DataModel */ = {
 			isa = PBXGroup;
 			children = (
-				961F14E32A3CEBAC00BF9A7C /* DTO */,
-				961F14E42A3CEBC800BF9A7C /* Model */,
+				96362CEA2A3F238600E561E0 /* SearchDataModel.swift */,
+				96362CEC2A3F23CC00E561E0 /* SuggestDataModel.swift */,
 			);
-			path = "Data Links";
-			sourceTree = "<group>";
-		};
-		961F14E32A3CEBAC00BF9A7C /* DTO */ = {
-			isa = PBXGroup;
-			children = (
-				96362CE32A3E968700E561E0 /* SearchDTO.swift */,
-				96362CE72A3E976800E561E0 /* SuggestDTO.swift */,
-			);
-			path = DTO;
-			sourceTree = "<group>";
-		};
-		961F14E42A3CEBC800BF9A7C /* Model */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Model;
+			path = DataModel;
 			sourceTree = "<group>";
 		};
 		961F14E52A3CEEB700BF9A7C /* Communication */ = {
@@ -636,28 +630,12 @@
 			path = Protocols;
 			sourceTree = "<group>";
 		};
-		961F14F92A3CF28300BF9A7C /* Data Links */ = {
+		961F14FD2A3CF2C800BF9A7C /* DataModel */ = {
 			isa = PBXGroup;
 			children = (
-				961F14FC2A3CF2BC00BF9A7C /* DTO */,
-				961F14FD2A3CF2C800BF9A7C /* Model */,
+				96362CEE2A3F23F300E561E0 /* DetailDataModel.swift */,
 			);
-			path = "Data Links";
-			sourceTree = "<group>";
-		};
-		961F14FC2A3CF2BC00BF9A7C /* DTO */ = {
-			isa = PBXGroup;
-			children = (
-				96362CE52A3E970700E561E0 /* DetailDTO.swift */,
-			);
-			path = DTO;
-			sourceTree = "<group>";
-		};
-		961F14FD2A3CF2C800BF9A7C /* Model */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Model;
+			path = DataModel;
 			sourceTree = "<group>";
 		};
 		961F14FE2A3CF2FB00BF9A7C /* Protocols */ = {
@@ -804,6 +782,24 @@
 			path = Extension;
 			sourceTree = "<group>";
 		};
+		96362CE92A3F1F9E00E561E0 /* DTOs */ = {
+			isa = PBXGroup;
+			children = (
+				96362CE32A3E968700E561E0 /* SearchDTO.swift */,
+				96362CE52A3E970700E561E0 /* DetailDTO.swift */,
+				96362CE72A3E976800E561E0 /* SuggestDTO.swift */,
+			);
+			path = DTOs;
+			sourceTree = "<group>";
+		};
+		96362CF22A3F3EE600E561E0 /* Class */ = {
+			isa = PBXGroup;
+			children = (
+				96362CF32A3F3F1700E561E0 /* SearchResultsVC+SearchResultsVCContract.swift */,
+			);
+			path = Class;
+			sourceTree = "<group>";
+		};
 		9686257E2A3DB76100ACFC26 /* UIKIt */ = {
 			isa = PBXGroup;
 			children = (
@@ -921,6 +917,7 @@
 		968625A12A3DCB9E00ACFC26 /* Protocols */ = {
 			isa = PBXGroup;
 			children = (
+				96362CF02A3F3EB000E561E0 /* SearchResultsVC+Contract.swift */,
 			);
 			path = Protocols;
 			sourceTree = "<group>";
@@ -944,6 +941,7 @@
 		968625AA2A3DCD3B00ACFC26 /* Conformances */ = {
 			isa = PBXGroup;
 			children = (
+				96362CF22A3F3EE600E561E0 /* Class */,
 				968625AB2A3DCD4900ACFC26 /* Delegations */,
 			);
 			path = Conformances;
@@ -1024,6 +1022,7 @@
 		96E198FF2A3DF1AD00CBD393 /* Structs */ = {
 			isa = PBXGroup;
 			children = (
+				96362CE92A3F1F9E00E561E0 /* DTOs */,
 				96E199202A3DFDFE00CBD393 /* HardCoded */,
 				96E1990F2A3DF73F00CBD393 /* RequestQuery.swift */,
 			);
@@ -1082,7 +1081,7 @@
 			isa = PBXGroup;
 			children = (
 				96E199162A3DFC3300CBD393 /* SearchQuery.swift */,
-				96362CDB2A3E719C00E561E0 /* Coordinate.swift */,
+				96362CDB2A3E719C00E561E0 /* Position.swift */,
 			);
 			path = Types;
 			sourceTree = "<group>";
@@ -1269,10 +1268,11 @@
 				96362CDA2A3E5A4200E561E0 /* Use Cases & Thoughts.swift in Sources */,
 				96362CE42A3E968700E561E0 /* SearchDTO.swift in Sources */,
 				961F14F42A3CF06F00BF9A7C /* MapVM+MapVMContract.swift in Sources */,
+				96362CF12A3F3EB000E561E0 /* SearchResultsVC+Contract.swift in Sources */,
 				968625A92A3DCCC100ACFC26 /* SearchResultsVC+UITableViewDatasource.swift in Sources */,
 				961F151A2A3CF51800BF9A7C /* DetailVM+DetailVMContract.swift in Sources */,
 				961F15092A3CF3B300BF9A7C /* DetailVC+DetailVCContract.swift in Sources */,
-				96362CDC2A3E719C00E561E0 /* Coordinate.swift in Sources */,
+				96362CDC2A3E719C00E561E0 /* Position.swift in Sources */,
 				961F14F02A3CEFFB00BF9A7C /* MapVM+Extension.swift in Sources */,
 				961F14A12A3CCA1D00BF9A7C /* MapModel.swift in Sources */,
 				961F14182A38D16E00BF9A7C /* AppDelegate.swift in Sources */,
@@ -1292,6 +1292,7 @@
 				9686259B2A3DCA7900ACFC26 /* SearchCell+SearchCellContract.swift in Sources */,
 				96E199062A3DF55200CBD393 /* RequestType.swift in Sources */,
 				968625982A3DCA5000ACFC26 /* SearchCellContract.swift in Sources */,
+				96362CF42A3F3F1700E561E0 /* SearchResultsVC+SearchResultsVCContract.swift in Sources */,
 				968625A72A3DCC5D00ACFC26 /* SearchResultsVC+UITableViewDelegate.swift in Sources */,
 				96E198FA2A3DF17000CBD393 /* NetworkAdapter.swift in Sources */,
 				961F14A82A3CCB5C00BF9A7C /* DetailModel.swift in Sources */,
@@ -1304,15 +1305,18 @@
 				961F151D2A3CF56000BF9A7C /* DetailVM+DetailModelDelegate.swift in Sources */,
 				961F146F2A3B90DA00BF9A7C /* Public Link.swift in Sources */,
 				961F14672A38E9E100BF9A7C /* Daily Journal.swift in Sources */,
+				96362CEF2A3F23F300E561E0 /* DetailDataModel.swift in Sources */,
 				961F15102A3CF45D00BF9A7C /* DetailVM+Contract.swift in Sources */,
 				961F14802A3BB2C700BF9A7C /* DetailVC.swift in Sources */,
 				96E1991D2A3DFD1700CBD393 /* HardCoded+String.swift in Sources */,
 				961F15012A3CF32800BF9A7C /* DetailVC+Contract.swift in Sources */,
+				96362CED2A3F23CC00E561E0 /* SuggestDataModel.swift in Sources */,
 				961F145F2A38D8BA00BF9A7C /* Project Description.swift in Sources */,
 				96E199102A3DF73F00CBD393 /* RequestQuery.swift in Sources */,
 				961F14EC2A3CEF6E00BF9A7C /* MapVM+Delegate.swift in Sources */,
 				9686259E2A3DCAC000ACFC26 /* SearchCellModel.swift in Sources */,
 				961F14C42A3CE38F00BF9A7C /* MapVC+Extension.swift in Sources */,
+				96362CEB2A3F238600E561E0 /* SearchDataModel.swift in Sources */,
 				96E1991A2A3DFCCA00CBD393 /* GeocodingSearchAPI+Endpointable.swift in Sources */,
 				96E1990E2A3DF64600CBD393 /* GeocodingSearchAPI.swift in Sources */,
 				96E199242A3E159C00CBD393 /* GeocodingSearchAPI+Extension.swift in Sources */,

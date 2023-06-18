@@ -9,5 +9,9 @@ import Foundation
 
 protocol MapVCContract: AnyObject {
     
+    /// configureUI
+    func configureMap()
+    func configureSearchController()
+    func configureBottomSheet()
     
 }

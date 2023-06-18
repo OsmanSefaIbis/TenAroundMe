@@ -9,4 +9,12 @@ import Foundation
 
 extension MapVM: MapVMContract {
     
+    func mapView_viewDidLoad() {
+        mapView?.configureMap()
+        mapView?.configureSearchController()
+        mapView?.configureBottomSheet()
+    }
+    func searchResultsView_viewDidLoad() {
+        searchResultView?.configureTableView()
+    }
 }

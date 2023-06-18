@@ -9,9 +9,9 @@ import Foundation
 
 public enum GeocodingSearchAPI{
     
-    case browse(searchInput: String, location: Coordinate)
+    case browse(searchInput: String, location: Position)
     case lookUpById(id: String)
-    case autoSuggest(searchInput: String, location: Coordinate )
+    case autoSuggest(searchInput: String, location: Position )
 }
 
 

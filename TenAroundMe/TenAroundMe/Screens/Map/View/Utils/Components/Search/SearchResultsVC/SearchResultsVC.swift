@@ -11,11 +11,12 @@ class SearchResultsVC: UIViewController {
 
     @IBOutlet weak var tableView: UITableView!
     
-    var viewModel: MapVM
+    var viewModel: MapVM!
     
     init(viewModel: MapVM) {
-        self.viewModel = viewModel
         super.init(nibName: nil, bundle: nil)
+        self.viewModel = viewModel
+        self.viewModel.searchResultView = self
     }
     
     required init?(coder: NSCoder) {
@@ -24,13 +25,7 @@ class SearchResultsVC: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        configureTableView()
+        viewModel.searchResultsView_viewDidLoad()
     }
-    
-    func configureTableView() {
-        tableView.delegate = self
-        tableView.dataSource = self
-        tableView.register(.init(nibName: HardCoded.searchCell.get(), bundle: nil), forCellReuseIdentifier: HardCoded.searchCell.get())
-        tableView.backgroundColor = .clear
-    }
+
 }

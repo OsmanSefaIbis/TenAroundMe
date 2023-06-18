@@ -11,5 +11,5 @@ struct SearchQuery {
     
     let id: String
     let input: String
-    let location: Coordinate
+    let location: Position
 }

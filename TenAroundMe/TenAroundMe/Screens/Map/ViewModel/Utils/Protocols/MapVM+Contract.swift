@@ -9,4 +9,6 @@ import Foundation
 
 protocol MapVMContract {
     
+    func mapView_viewDidLoad()
+    func searchResultsView_viewDidLoad()
 }
