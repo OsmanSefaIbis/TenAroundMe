@@ -10,12 +10,13 @@ import Foundation
 
 enum HardCoded: String {
     
-    case searchCell
+    case searchCell, placesCell
     
     func get() -> String {
         
         switch self {
             case .searchCell: return "SearchCell"
+            case .placesCell: return "PlacesCell"
         }
     }
 }

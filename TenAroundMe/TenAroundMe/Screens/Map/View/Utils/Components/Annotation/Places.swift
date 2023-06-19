@@ -10,12 +10,17 @@ import MapKit
 
 class Places: MKPointAnnotation {
     
-    let id = UUID()
+    let id: String
     let mapItem: MKMapItem
+    let placeTitle: String
+    let distance: Int
     @Flag var isFocused
     
-    init(mapItem: MKMapItem) {
+    init(id: String, mapItem: MKMapItem, title: String, distance: Int) {
+        self.id = id
         self.mapItem = mapItem
+        self.placeTitle = title
+        self.distance = distance
         super.init()
         self.coordinate = mapItem.placemark.coordinate
     }

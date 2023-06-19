@@ -9,6 +9,7 @@ import UIKit
 
 extension SearchResultsVC: UITableViewDataSource {
     
+    // TODO: Category and Places --> You need 2 Sections
     func numberOfSections(in tableView: UITableView) -> Int {
         1
     }
@@ -25,5 +26,9 @@ extension SearchResultsVC: UITableViewDataSource {
         return resultCell
     }
     
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        // TODO: autosuggest to browse api call
+    }
 
 }
+

@@ -10,3 +10,4 @@ struct SearchCellModel {
     var resultName: String
 }
 
+

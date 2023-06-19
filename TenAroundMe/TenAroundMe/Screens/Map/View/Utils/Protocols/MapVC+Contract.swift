@@ -13,16 +13,16 @@ protocol MapVCContract: AnyObject {
     /// configureUI
     func configureMap()
     func configureSearchController()
-    func configureBottomSheet()
     func configureLocationManager()
-    
     /// suggest
-    func reloadTableView()
+    func reloadSuggestions()
     func setSuggestion(with results: [SuggestDataModel] )
     /// browse
     func removeAnnotations()
     func setPlaces(with results: [SearchDataModel] )
     func addAnnotations(with places: [Places])
+    
+    func presentPlaces(with places: [Places])
     
 }
 

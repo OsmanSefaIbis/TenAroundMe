@@ -16,11 +16,15 @@ extension MapVM: MapVMContract {
         mapView?.configureLocationManager()
         mapView?.configureMap()
         mapView?.configureSearchController()
-        mapView?.configureBottomSheet()
+//        mapView?.configureBottomSheet()
     }
     
     func searchResultsView_viewDidLoad() {
         searchResultView?.configureTableView()
+    }
+    
+    func placesResultsView_viewDidLoad() {
+        placesResultView?.configureTableView()
     }
     
     func searchIsActivated() {
@@ -44,8 +48,10 @@ extension MapVM: MapVMContract {
                     print("Implement Later")
             default:
                 guard let position = latestLocation else { return } //?
-                let query: SearchQuery = .init(input: search, location: position)
-                performAutoSuggest(with: query)
+                // TODO: Improve later, try to only autosuggest from the categories
+                
+//                let query: SearchQuery = .init(input: search, location: position)
+//                performAutoSuggest(with: query)
             }
         } )
         
@@ -57,7 +63,7 @@ extension MapVM: MapVMContract {
     
     func setSuggestions(with results: [SuggestDataModel]) {
         suggestionResults = results
-        mapView?.reloadTableView()
+        mapView?.reloadSuggestions()
     }
     
     func performSearch(with query: SearchQuery) {
@@ -67,16 +73,20 @@ extension MapVM: MapVMContract {
     
     func setPlaces(with results: [SearchDataModel]) {
         
-        let places = results.map { searchDataModel -> Places in
+        latestPlaces = results.map { searchDataModel -> Places in
+            let id = searchDataModel.id
+            let title = searchDataModel.title
+            let distance = searchDataModel.distance
             let coordinates = CLLocationCoordinate2D(latitude: searchDataModel.position.latitude,
                                                      longitude: searchDataModel.position.longitude)
             let placemark = MKPlacemark(coordinate: coordinates)
             let mapItem = MKMapItem(placemark: placemark)
             
-            return Places(mapItem: mapItem)
+            return Places(id: id, mapItem: mapItem, title: title, distance: distance)
         }
         
-        mapView?.addAnnotations(with: places)
+        mapView?.addAnnotations(with: latestPlaces)
+        mapView?.presentPlaces(with: latestPlaces)
     }
 
 }

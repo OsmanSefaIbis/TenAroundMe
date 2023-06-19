@@ -11,7 +11,7 @@ import MapKit
 extension MapVC: CLLocationManagerDelegate {
     
     func locationManager(_ manager: CLLocationManager, didUpdateLocations locations: [CLLocation]) {
-        
+        // Core Data ?
     }
 
     func locationManagerDidChangeAuthorization(_ manager: CLLocationManager) {

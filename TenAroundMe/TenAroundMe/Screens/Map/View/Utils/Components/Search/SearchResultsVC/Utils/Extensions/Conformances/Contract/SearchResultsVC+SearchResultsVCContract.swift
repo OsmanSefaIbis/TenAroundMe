@@ -16,3 +16,4 @@ extension SearchResultsVC: SearchResultsVCContract {
         tableView.backgroundColor = .clear
     }
 }
+

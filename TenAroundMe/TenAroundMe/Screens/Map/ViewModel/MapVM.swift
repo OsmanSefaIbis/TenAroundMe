@@ -15,6 +15,7 @@ final class MapVM {
     
     weak var mapView: MapVCContract?
     weak var searchResultView: SearchResultsVCContract?
+    weak var placesResultView: PlacesResultsVCContract?
     weak var delegate: MapVMDelegate?
     
     var timeControl: Timer?
@@ -28,6 +29,7 @@ final class MapVM {
     var suggestionResultsCount: Int { get {suggestionResults.count} }
     
     var latestLocation: Position?
+    var latestPlaces: [Places] = []
     
     init(mapView:MapVCContract) {
         model.delegate = self

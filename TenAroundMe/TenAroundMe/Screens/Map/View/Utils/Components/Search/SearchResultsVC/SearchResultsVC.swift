@@ -13,7 +13,7 @@ class SearchResultsVC: UIViewController {
     
     var viewModel: MapVM!
     
-    init(viewModel: MapVM) {
+    init(pass viewModel: MapVM) {
         super.init(nibName: nil, bundle: nil)
         self.viewModel = viewModel
         self.viewModel.searchResultView = self

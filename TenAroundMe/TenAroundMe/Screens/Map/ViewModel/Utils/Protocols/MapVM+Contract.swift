@@ -11,6 +11,7 @@ protocol MapVMContract {
     
     func mapView_viewDidLoad()
     func searchResultsView_viewDidLoad()
+    func placesResultsView_viewDidLoad()
     func searchIsActivated()
     func searchIsDeactivated()
     

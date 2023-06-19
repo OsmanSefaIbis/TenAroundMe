@@ -16,7 +16,7 @@ final class MapVC: UIViewController {
     
     lazy var viewModel = MapVM(mapView: self)
     lazy var searchResultsController: SearchResultsVC = {
-        let resultsVC = SearchResultsVC(viewModel: self.viewModel)
+        let resultsVC = SearchResultsVC(pass: self.viewModel)
         return resultsVC
     }()
     lazy var searchController: UISearchController = {
