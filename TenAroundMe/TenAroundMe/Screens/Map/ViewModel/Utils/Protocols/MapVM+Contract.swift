@@ -15,8 +15,11 @@ protocol MapVMContract {
     func searchIsDeactivated()
     
     func textDidChange(with input: String)
-    func invokeAutoSuggest(with query: SearchQuery)
+    func performAutoSuggest(with query: SearchQuery)
     func setSuggestions(with results: [SuggestDataModel])
     
-    func searchPerformed(with query: SearchQuery)
+    func performSearch(with query: SearchQuery)
+    func setPlaces(with results: [SearchDataModel])
+    
+    
 }

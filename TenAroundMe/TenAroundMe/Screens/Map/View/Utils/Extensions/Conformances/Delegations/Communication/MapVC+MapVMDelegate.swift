@@ -9,11 +9,11 @@ import Foundation
 
 extension MapVC: MapVMDelegate {
     func didRetrieveSuggest(_ data: [SuggestDataModel]) {
-        setSuggestion(data)
+        setSuggestion(with: data)
     }
     
     func didRetrieveSearch(_ data: [SearchDataModel]) {
-        print("Implement didRetrieveSearch()")
+        setPlaces(with: data)
     }
     
     func didRetrieveDetail(_ data: [DetailDataModel]) {

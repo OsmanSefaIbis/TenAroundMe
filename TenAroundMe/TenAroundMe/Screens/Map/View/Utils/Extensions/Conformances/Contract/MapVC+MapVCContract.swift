@@ -9,7 +9,7 @@ import UIKit
 import MapKit
 
 extension MapVC: MapVCContract {
-    
+
     func assignDelegates() {
         viewModel.delegate = self
     }
@@ -47,7 +47,7 @@ extension MapVC: MapVCContract {
         locationManager?.requestLocation()
     }
     
-    func setSuggestion(_ results: [SuggestDataModel]) {
+    func setSuggestion(with results: [SuggestDataModel]) {
         viewModel.setSuggestions(with: results)
     }
     
@@ -58,4 +58,18 @@ extension MapVC: MapVCContract {
         }
     }
     
+    func removeAnnotations() {
+        map.removeAnnotations(map.annotations)
+    }
+    
+    func setPlaces(with results: [SearchDataModel]) {
+        viewModel.setPlaces(with: results)
+    }
+    
+    func addAnnotations(with places: [Places]){
+        places.forEach { place in
+            map.addAnnotation(place)
+        }
+        
+    }
 }

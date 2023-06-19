@@ -62,6 +62,9 @@
 		96362CF62A3F567D00E561E0 /* MapVC+UISearchControllerDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96362CF52A3F567D00E561E0 /* MapVC+UISearchControllerDelegate.swift */; };
 		96362CF82A3F858500E561E0 /* AppConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96362CF72A3F858500E561E0 /* AppConstants.swift */; };
 		96362D012A3FC5A900E561E0 /* MapVC+CLLocationManagerDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96362D002A3FC5A900E561E0 /* MapVC+CLLocationManagerDelegate.swift */; };
+		9672E0F52A3FD92A005A8822 /* Flag.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9672E0F42A3FD92A005A8822 /* Flag.swift */; };
+		9672E0F82A3FDC40005A8822 /* Places.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9672E0F72A3FDC40005A8822 /* Places.swift */; };
+		9672E0FA2A3FDF4E005A8822 /* CLLocation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9672E0F92A3FDF4E005A8822 /* CLLocation.swift */; };
 		968625812A3DB7D700ACFC26 /* MapVC+UISearchResultsUpdating.swift in Sources */ = {isa = PBXBuildFile; fileRef = 968625802A3DB7D700ACFC26 /* MapVC+UISearchResultsUpdating.swift */; };
 		968625872A3DC00700ACFC26 /* MapVC+UISearchBarDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 968625862A3DC00600ACFC26 /* MapVC+UISearchBarDelegate.swift */; };
 		9686258A2A3DC52E00ACFC26 /* SearchResultsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 968625882A3DC52E00ACFC26 /* SearchResultsVC.swift */; };
@@ -167,6 +170,9 @@
 		96362CF52A3F567D00E561E0 /* MapVC+UISearchControllerDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "MapVC+UISearchControllerDelegate.swift"; sourceTree = "<group>"; };
 		96362CF72A3F858500E561E0 /* AppConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppConstants.swift; sourceTree = "<group>"; };
 		96362D002A3FC5A900E561E0 /* MapVC+CLLocationManagerDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "MapVC+CLLocationManagerDelegate.swift"; sourceTree = "<group>"; };
+		9672E0F42A3FD92A005A8822 /* Flag.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Flag.swift; sourceTree = "<group>"; };
+		9672E0F72A3FDC40005A8822 /* Places.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Places.swift; sourceTree = "<group>"; };
+		9672E0F92A3FDF4E005A8822 /* CLLocation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CLLocation.swift; sourceTree = "<group>"; };
 		968625802A3DB7D700ACFC26 /* MapVC+UISearchResultsUpdating.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "MapVC+UISearchResultsUpdating.swift"; sourceTree = "<group>"; };
 		968625862A3DC00600ACFC26 /* MapVC+UISearchBarDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "MapVC+UISearchBarDelegate.swift"; sourceTree = "<group>"; };
 		968625882A3DC52E00ACFC26 /* SearchResultsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchResultsVC.swift; sourceTree = "<group>"; };
@@ -815,6 +821,14 @@
 			path = Location;
 			sourceTree = "<group>";
 		};
+		9672E0F62A3FDBED005A8822 /* Annotation */ = {
+			isa = PBXGroup;
+			children = (
+				9672E0F72A3FDC40005A8822 /* Places.swift */,
+			);
+			path = Annotation;
+			sourceTree = "<group>";
+		};
 		9686257E2A3DB76100ACFC26 /* UIKIt */ = {
 			isa = PBXGroup;
 			children = (
@@ -837,6 +851,7 @@
 			isa = PBXGroup;
 			children = (
 				9686258C2A3DC94600ACFC26 /* Search */,
+				9672E0F62A3FDBED005A8822 /* Annotation */,
 			);
 			path = Components;
 			sourceTree = "<group>";
@@ -1080,6 +1095,7 @@
 		96E199122A3DF7C600CBD393 /* Extensions+SDK */ = {
 			isa = PBXGroup;
 			children = (
+				9672E0F92A3FDF4E005A8822 /* CLLocation.swift */,
 			);
 			path = "Extensions+SDK";
 			sourceTree = "<group>";
@@ -1098,6 +1114,7 @@
 			children = (
 				96E199162A3DFC3300CBD393 /* SearchQuery.swift */,
 				96362CDB2A3E719C00E561E0 /* Position.swift */,
+				9672E0F42A3FD92A005A8822 /* Flag.swift */,
 			);
 			path = Types;
 			sourceTree = "<group>";
@@ -1309,6 +1326,7 @@
 				96E198F52A3DDDC200CBD393 /* SearchCell+Delegate.swift in Sources */,
 				9686259B2A3DCA7900ACFC26 /* SearchCell+SearchCellContract.swift in Sources */,
 				96E199062A3DF55200CBD393 /* RequestType.swift in Sources */,
+				9672E0F52A3FD92A005A8822 /* Flag.swift in Sources */,
 				968625982A3DCA5000ACFC26 /* SearchCellContract.swift in Sources */,
 				96362CF42A3F3F1700E561E0 /* SearchResultsVC+SearchResultsVCContract.swift in Sources */,
 				968625A72A3DCC5D00ACFC26 /* SearchResultsVC+UITableViewDelegate.swift in Sources */,
@@ -1336,7 +1354,9 @@
 				961F14EC2A3CEF6E00BF9A7C /* MapVM+Delegate.swift in Sources */,
 				9686259E2A3DCAC000ACFC26 /* SearchCellModel.swift in Sources */,
 				961F14C42A3CE38F00BF9A7C /* MapVC+Extension.swift in Sources */,
+				9672E0FA2A3FDF4E005A8822 /* CLLocation.swift in Sources */,
 				96362CEB2A3F238600E561E0 /* SearchDataModel.swift in Sources */,
+				9672E0F82A3FDC40005A8822 /* Places.swift in Sources */,
 				96E1991A2A3DFCCA00CBD393 /* GeocodingSearchAPI+Endpointable.swift in Sources */,
 				96E1990E2A3DF64600CBD393 /* GeocodingSearchAPI.swift in Sources */,
 				96E199242A3E159C00CBD393 /* GeocodingSearchAPI+Extension.swift in Sources */,

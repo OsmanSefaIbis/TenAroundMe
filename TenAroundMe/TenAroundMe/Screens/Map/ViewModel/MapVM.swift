@@ -19,12 +19,15 @@ final class MapVM {
     
     var timeControl: Timer?
     
-    var isSearchActive = false
-    var isTypingActive = false
-    var isNoSuggestion = false
+    @Flag var isSearchActive
+    @Flag var isTypingActive
+    @Flag var isNoSuggestion
+    @Flag var isNoPlaces
     
     var suggestionResults: [SuggestDataModel] = [ ]
     var suggestionResultsCount: Int { get {suggestionResults.count} }
+    
+    var latestLocation: Position?
     
     init(mapView:MapVCContract) {
         model.delegate = self

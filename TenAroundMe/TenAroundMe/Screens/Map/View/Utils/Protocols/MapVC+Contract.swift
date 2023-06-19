@@ -15,9 +15,14 @@ protocol MapVCContract: AnyObject {
     func configureSearchController()
     func configureBottomSheet()
     func configureLocationManager()
-
+    
+    /// suggest
     func reloadTableView()
-    func setSuggestion( _ results: [SuggestDataModel] )
+    func setSuggestion(with results: [SuggestDataModel] )
+    /// browse
+    func removeAnnotations()
+    func setPlaces(with results: [SearchDataModel] )
+    func addAnnotations(with places: [Places])
     
 }
 

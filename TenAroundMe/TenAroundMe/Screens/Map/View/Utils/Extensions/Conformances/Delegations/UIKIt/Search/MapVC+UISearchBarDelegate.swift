@@ -11,13 +11,17 @@ extension MapVC: UISearchBarDelegate {
     
     func searchBarSearchButtonClicked(_ searchBar: UISearchBar) {
         searchBar.resignFirstResponder()
-        guard let searchText = searchBar.text?.replacingOccurrences(of: "\\s+", with: "+", options: .regularExpression) else { return }
-//        searchViewModel.searchBarSearchButtonClicked(with: searchText)
+        guard let latitude = locationManager?.location?.coordinate.latitude,
+              let longitude = locationManager?.location?.coordinate.longitude else { return }
+        guard let input = searchBar.text?.replacingOccurrences(of: "\\s+", with: "+", options: .regularExpression) else { return }
+        let location: Position = .init(latitude: latitude, longitude: longitude)
+        let query: SearchQuery = .init(input: input, location: location)
+        viewModel.latestLocation = location //?
+        viewModel.performSearch(with: query)
     }
     
     func searchBarCancelButtonClicked(_ searchBar: UISearchBar) {
         searchBar.text = nil
-//        searchViewModel.searchBarCancelButtonClicked()
     }
     
     func searchBar(_ searchBar: UISearchBar, textDidChange searchText: String) {

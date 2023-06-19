@@ -7,6 +7,7 @@
 
 import Foundation
 import CoreLocation
+import MapKit
 
 extension MapVM: MapVMContract {
     
@@ -42,14 +43,15 @@ extension MapVM: MapVMContract {
                 case 0:
                     print("Implement Later")
             default:
-                let query: SearchQuery = .init(input: search, location: .init(latitude: 39.9091, longitude: 32.8618))
-                invokeAutoSuggest(with: query)
+                guard let position = latestLocation else { return } //?
+                let query: SearchQuery = .init(input: search, location: position)
+                performAutoSuggest(with: query)
             }
         } )
         
     }
     
-    func invokeAutoSuggest(with query: SearchQuery) {
+    func performAutoSuggest(with query: SearchQuery) {
         model.fetchAutoSuggest(with: query)
     }
     
@@ -58,9 +60,23 @@ extension MapVM: MapVMContract {
         mapView?.reloadTableView()
     }
     
-    func searchPerformed(with query: SearchQuery) {
-        
+    func performSearch(with query: SearchQuery) {
+        mapView?.removeAnnotations()
+        model.fetchSearch(with: query)
     }
     
+    func setPlaces(with results: [SearchDataModel]) {
+        
+        let places = results.map { searchDataModel -> Places in
+            let coordinates = CLLocationCoordinate2D(latitude: searchDataModel.position.latitude,
+                                                     longitude: searchDataModel.position.longitude)
+            let placemark = MKPlacemark(coordinate: coordinates)
+            let mapItem = MKMapItem(placemark: placemark)
+            
+            return Places(mapItem: mapItem)
+        }
+        
+        mapView?.addAnnotations(with: places)
+    }
 
 }
