@@ -17,6 +17,21 @@ extension MapVC: MapVCContract {
     
     func configureMap() {
         map.showsUserLocation = true
+        map.showsCompass = true
+        map.showsScale = true
+        
+        
+        let locateUserButton = MKUserTrackingButton(mapView: map)
+        locateUserButton.translatesAutoresizingMaskIntoConstraints = false
+        locateUserButton.tintColor = .lightGray.withAlphaComponent(0.55)
+        map.addSubview(locateUserButton)
+        
+        mapStyleSegment.selectedSegmentTintColor = .lightGray.withAlphaComponent(0.55)
+        
+        NSLayoutConstraint.activate([
+            locateUserButton.trailingAnchor.constraint(equalTo: map.trailingAnchor, constant: -6),
+            locateUserButton.bottomAnchor.constraint(equalTo: map.topAnchor, constant: 270)
+        ])
     }
     
     func configureSearchController() {
@@ -45,7 +60,10 @@ extension MapVC: MapVCContract {
     }
     
     func removeAnnotations() {
-        map.removeAnnotations(map.annotations)
+        DispatchQueue.main.async { [weak self] in
+            guard let self else { return }
+            self.map.removeAnnotations(map.annotations)
+        }
     }
     
     func setPlaces(with results: [SearchDataModel]) {
@@ -53,8 +71,11 @@ extension MapVC: MapVCContract {
     }
     
     func addAnnotations(with places: [Places]){
-        places.forEach { place in
-            map.addAnnotation(place)
+        DispatchQueue.main.async { [weak self] in
+            guard let self else { return }
+            places.forEach { place in
+                self.map.addAnnotation(place)
+            }
         }
     }
     
@@ -62,17 +83,43 @@ extension MapVC: MapVCContract {
         
         DispatchQueue.main.async { [weak self] in
             guard let self else { return }
-            let placesTableVC = PlacesResultsVC(with : places, pass: self.viewModel)
+            let placesTableVC = PlacesResultsVC(pass: self.viewModel)
             placesTableVC.modalPresentationStyle = .pageSheet
             
             if let sheet = placesTableVC.sheetPresentationController {
-                sheet.preferredCornerRadius = 20
+                sheet.preferredCornerRadius = 40
                 sheet.largestUndimmedDetentIdentifier = .large
                 sheet.prefersGrabberVisible = true
                 sheet.detents = [.custom(resolver: { context in
-                    0.3 * context.maximumDetentValue}), .large()]
+                    0.2 * context.maximumDetentValue}), .large()]
+                self.modalTransitionStyle = .crossDissolve
                 self.present(placesTableVC, animated: true)
             }
         }
     }
+    
+    func dismissPresentingSuggestionsList() {
+        DispatchQueue.main.async { [weak self] in
+            guard let self else { return }
+            if let presentingVC = self.presentedViewController {
+                self.modalTransitionStyle = .crossDissolve
+                presentingVC.dismiss(animated: true, completion: nil)
+            }
+        }
+    }
+    
+    func dismissPresentingPlacesList() {
+        DispatchQueue.main.async { [weak self] in
+            guard let self else { return }
+            if let presentingVC = self.sheetPresentationController?.presentedViewController {
+                self.modalTransitionStyle = .crossDissolve
+                presentingVC.dismiss(animated: true, completion: nil)
+            }
+        }
+    }
+    
+    func mapStyleToggled() {
+        
+    }
+    
 }

@@ -107,7 +107,27 @@
  
  • MVVM flow cycle is established.
  
- •
+ June - 19
+ ~~~~~~~~~~~~~~~~~~~
+ 
+ • Implemented top 10 places to the user feature. Will implement the closest requirement later.
+ 
+ • ❗️ Got response from HR that i can use this API. More time was given :)
+ 
+ • Developed map related parts.
+ 
+ • Annotations and table list work correspondingly.
+ 
+ • Map related development was a challenge but its done.
+ 
+ June - 20
+ ~~~~~~~~~~~~~~~~~~~
+ 
+ •Transitions between views are done.
+ 
+ • User can select from auto suggestions.
+ 
+ 
  
  
 */

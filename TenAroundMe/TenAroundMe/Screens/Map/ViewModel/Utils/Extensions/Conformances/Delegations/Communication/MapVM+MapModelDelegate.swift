@@ -11,14 +11,27 @@ extension MapVM: MapModelDelegate {
     
     func didFetchSuggest() {
         let suggestData: [SuggestDataModel] = model.suggestionResults.map {
-            .init(
+            
+            let categories = $0.categories?.map { category in
+                return SuggestCategory(id: category.id ?? "", name: category.name ?? "", primary: category.primary ?? false)
+            } ?? []
+            
+            let chains = $0.chains?.map { chain in
+                return SuggestChain(id: chain.id ?? "", name: chain.name ?? "")
+            } ?? []
+            
+            return SuggestDataModel(
                 id: $0.id ?? "",
                 title: $0.title ?? "",
-                resutlType: $0.resultType ?? ""
+                resutlType: $0.resultType ?? "",
+                distance: $0.distance ?? 0,
+                categories: categories,
+                chains: chains
             )
         }
         isNoSuggestion = suggestData.isEmpty
-        self.delegate?.didRetrieveSuggest(suggestData)
+        let sortedSuggestData = sortSuggestionForCategory(with: suggestData)
+        self.delegate?.didRetrieveSuggest(sortedSuggestData)
     }
     
     func didFetchSearch() {
@@ -43,5 +56,26 @@ extension MapVM: MapModelDelegate {
         print("Implement didFailFetch()")
     }
     
+    /// helper --> Sort the suggestData array to place "categoryQuery" elements at the beginning
+    private func sortSuggestionForCategory(with data: [SuggestDataModel]) -> [SuggestDataModel] {
+        var sortedData = data
+        sortedData.sort { (item1, item2) -> Bool in
+            let type1 = item1.resutlType
+            let type2 = item2.resutlType
+            
+            if type1 == "categoryQuery" && type2 != "categoryQuery" {
+                return true
+            } else if type1 != "categoryQuery" && type2 == "categoryQuery" {
+                return false
+            } else if type1 == "chainQuery" && type2 != "chainQuery" {
+                return true
+            } else if type1 != "chainQuery" && type2 == "chainQuery" {
+                return false
+            } else {
+                return false // Preserve the original order for other elements
+            }
+        }
+        return sortedData
+    }
     
 }

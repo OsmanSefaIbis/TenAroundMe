@@ -14,14 +14,14 @@ class PlacesResultsVC: UIViewController {
     
     var viewModel: MapVM!
     
-    var places: [Places] // migrate to VM
+    var places: [Places]
     
     private var indexForFocusedRow: Int? { 
         places.firstIndex { $0.isFocused == true  }
     }
     
-    init(with places: [Places], pass viewModel: MapVM) {
-        self.places = places
+    init(pass viewModel: MapVM) {
+        self.places = viewModel.latestPlaces
         super.init(nibName: nil, bundle: nil)
         self.viewModel = viewModel
         self.viewModel.placesResultView = self

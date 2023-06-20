@@ -27,7 +27,9 @@ extension SearchResultsVC: UITableViewDataSource {
     }
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        // TODO: autosuggest to browse api call
+        viewModel.mapView?.dismissPresentingSuggestionsList()
+        let selectedRowIndex = indexPath.row
+        viewModel.suggestionSelected(with: selectedRowIndex)
     }
 
 }

@@ -11,8 +11,10 @@ import MapKit
 final class MapVC: UIViewController {
     
     @IBOutlet weak var map: MKMapView!
+    @IBOutlet weak var mapStyleSegment: UISegmentedControl!
     
     var locationManager: CLLocationManager? // TODO: VM migrate
+    
     
     lazy var viewModel = MapVM(mapView: self)
     lazy var searchResultsController: SearchResultsVC = {

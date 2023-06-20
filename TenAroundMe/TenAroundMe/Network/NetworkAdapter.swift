@@ -21,7 +21,7 @@ final class NetworkAdapter {
         
         let type: RequestQuery = .init(search: query, endpoint: .browse)
         guard let searchUrl = composeRequest(
-            endpoint: .browse(searchInput: query.input, location: query.location),
+            endpoint: .browse(searchInput: query.input ?? "", location: query.location),
             queryType: type )
         else { onCompletion(.failure(.invalidRequest)) ; return }
         
@@ -49,7 +49,7 @@ final class NetworkAdapter {
         
         let type: RequestQuery = .init(search: query, endpoint: .autoSuggest)
         guard let searchUrl = composeRequest(
-            endpoint: .autoSuggest(searchInput: query.input, location: query.location),
+            endpoint: .autoSuggest(suggestInput: query.input ?? "", location: query.location),
             queryType: type )
         else { onCompletion(.failure(.invalidRequest)) ; return }
         

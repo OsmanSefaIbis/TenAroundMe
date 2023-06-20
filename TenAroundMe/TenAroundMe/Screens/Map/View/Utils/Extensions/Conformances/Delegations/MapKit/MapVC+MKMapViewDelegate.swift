@@ -12,7 +12,7 @@ extension MapVC: MKMapViewDelegate {
     // TODO: Take advantage of this delegate !
     
     func mapView(_ mapView: MKMapView, didSelect annotation: MKAnnotation) {
-        
+        self.dismissPresentingPlacesList()
         resetFocuses()
         
         guard let placesAnnotation = annotation as? Places else { return }

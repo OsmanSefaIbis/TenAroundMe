@@ -32,7 +32,7 @@ extension MapVM: MapVMContract {
     }
     
     func searchIsDeactivated() {
-        // TODO: think later
+        self.mapView?.dismissPresentingPlacesList()
     }
     
     func textDidChange(with input: String) {
@@ -45,13 +45,11 @@ extension MapVM: MapVMContract {
             guard let self else { return }
             switch search.count {
                 case 0:
-                    print("Implement Later")
+                searchIsDeactivated() ; searchIsDeactivated()
             default:
-                guard let position = latestLocation else { return } //?
-                // TODO: Improve later, try to only autosuggest from the categories
-                
-//                let query: SearchQuery = .init(input: search, location: position)
-//                performAutoSuggest(with: query)
+                guard let position = self.latestLocation else { return } //?
+                let query: SearchQuery = .init(input: search, location: position)
+                performAutoSuggest(with: query)
             }
         } )
         
@@ -64,6 +62,31 @@ extension MapVM: MapVMContract {
     func setSuggestions(with results: [SuggestDataModel]) {
         suggestionResults = results
         mapView?.reloadSuggestions()
+    }
+    
+    func suggestionSelected(with rowIndex: Int) {
+        
+        guard let position = self.latestLocation else { return }
+        let selectedData = suggestionResults[rowIndex]
+        let selectedResultType = selectedData.resutlType
+        
+        let query: SearchQuery = .init(input: selectedData.title, location: position )
+        
+        switch selectedResultType {
+        case "categoryQuery":
+            // TODO: AutoSuggest does not give category ID, so you just passed the title as a input
+            // TODO: Think later, you asked on Slack to HERE!
+            print("Category Selected")
+        case "chainQuery":
+            // TODO: AutoSuggest does not give chain ID, so you just passed the title as a input
+            print("Chain Selected")
+        default:
+            print("Place selected")
+            // TODO: Either a "place" or "chainQuery"
+            // TODO: Think about the chainQuery later !
+        }
+        self.mapView?.dismissPresentingPlacesList()
+        performSearch(with: query)
     }
     
     func performSearch(with query: SearchQuery) {

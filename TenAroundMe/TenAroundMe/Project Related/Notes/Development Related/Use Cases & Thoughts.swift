@@ -30,6 +30,10 @@
        Use-case B: TODO: Think later
 
 • Use-case 1: User tapped search.
+ 
+    Do nothing.
+ 
+ ~~~~~~~~~~~~~~~~~~~~~ Aborted Below ~~~~~~~~~~~~~~~~~~~~~
    --> Show the most relevent places that the user would choose, when no text input.
 
 Restaurants, Cafes, Hotels, Gas Stations, Airports, Shopping Malls, Supermarkets, Pharmacies, Banks, Hospitals,
@@ -46,14 +50,18 @@ Yoga Studios, Pilates Studios, CrossFit Gyms, Boxing Gyms, Martial Arts Studios,
 Comedy Clubs, Theaters, Art Museums, Science Museums, Children's Museums, Botanical Parks, National Parks,
 Wildlife Sanctuaries, Aquariums, Wineries/Vineyards, Beer Gardens, Historical Monuments, Architectural Landmarks,
 Picnic Areas, Beach Resorts, Luxury Hotels.
+ ~~~~~~~~~~~~~~~~~~~~~ Aborted Above ~~~~~~~~~~~~~~~~~~~~~
 
 • Use-case 2: User started writing.
+ 
+    --> Autosuggest response has a resultType so i will use that to show categories 
+ ~~~~~~~~~~~~~~~~~~~~~ Aborted Below ~~~~~~~~~~~~~~~~~~~~~
    --> Segmented control for category <--> suggestion. For category have a exhaustive options to choose from.
 
         Use-case A: User is in category segment. Feed the tableview accordingly.
 
         Use-case B: User is in suggestion segment. Fee the tableview. * Initial State
-
+ ~~~~~~~~~~~~~~~~~~~~~ Aborted Above ~~~~~~~~~~~~~~~~~~~~~
 • Use-case 3: User wrote and searched.
    --> Browse endpoint --> at & name
 

@@ -19,15 +19,28 @@
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="rns-Mi-gco" userLabel="Container View">
-                                <rect key="frame" x="0.0" y="0.0" width="393" height="818"/>
+                                <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                                 <subviews>
-                                    <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="9zH-27-N4a">
-                                        <rect key="frame" x="0.0" y="0.0" width="393" height="818"/>
+                                    <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsUserLocation="YES" translatesAutoresizingMaskIntoConstraints="NO" id="9zH-27-N4a">
+                                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                                         <standardMapConfiguration key="preferredConfiguration"/>
                                     </mapView>
+                                    <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="6RO-pm-Z0d">
+                                        <rect key="frame" x="327" y="200" width="60" height="31"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="60" id="7JL-T4-Mgp"/>
+                                            <constraint firstAttribute="height" constant="30" id="hjb-Zp-N1R"/>
+                                        </constraints>
+                                        <segments>
+                                            <segment title="" image="map.fill" catalog="system"/>
+                                            <segment title="" image="map" catalog="system"/>
+                                        </segments>
+                                    </segmentedControl>
                                 </subviews>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="6RO-pm-Z0d" secondAttribute="trailing" constant="6" id="Ayt-H5-qeo"/>
+                                    <constraint firstItem="6RO-pm-Z0d" firstAttribute="top" secondItem="rns-Mi-gco" secondAttribute="top" constant="200" id="Hcl-hQ-fix"/>
                                     <constraint firstItem="9zH-27-N4a" firstAttribute="centerY" secondItem="rns-Mi-gco" secondAttribute="centerY" id="IY7-jh-VbH"/>
                                     <constraint firstAttribute="bottom" secondItem="9zH-27-N4a" secondAttribute="bottom" id="Irh-Sw-vKS"/>
                                     <constraint firstItem="9zH-27-N4a" firstAttribute="leading" secondItem="rns-Mi-gco" secondAttribute="leading" id="QuB-5e-48q"/>
@@ -40,7 +53,7 @@
                         <viewLayoutGuide key="safeArea" id="HBe-Yz-Vzn"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="HBe-Yz-Vzn" firstAttribute="bottom" secondItem="rns-Mi-gco" secondAttribute="bottom" id="51i-Ma-Uew"/>
+                            <constraint firstAttribute="bottom" secondItem="rns-Mi-gco" secondAttribute="bottom" id="51i-Ma-Uew"/>
                             <constraint firstItem="HBe-Yz-Vzn" firstAttribute="trailing" secondItem="rns-Mi-gco" secondAttribute="trailing" id="7Ce-iU-vAW"/>
                             <constraint firstItem="rns-Mi-gco" firstAttribute="leading" secondItem="HBe-Yz-Vzn" secondAttribute="leading" id="Moy-Ma-i3B"/>
                             <constraint firstItem="rns-Mi-gco" firstAttribute="top" secondItem="2Uj-0d-6dx" secondAttribute="top" id="TH7-Uf-7Th"/>
@@ -49,11 +62,12 @@
                     <navigationItem key="navigationItem" id="VyW-On-csz"/>
                     <connections>
                         <outlet property="map" destination="9zH-27-N4a" id="F3I-71-rwT"/>
+                        <outlet property="mapStyleSegment" destination="6RO-pm-Z0d" id="BfU-qk-2mp"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1057.2519083969464" y="-34.507042253521128"/>
+            <point key="canvasLocation" x="1055.7251908396945" y="-34.507042253521128"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="mkG-jc-VOT">
@@ -75,6 +89,8 @@
         </scene>
     </scenes>
     <resources>
+        <image name="map" catalog="system" width="128" height="112"/>
+        <image name="map.fill" catalog="system" width="128" height="110"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>

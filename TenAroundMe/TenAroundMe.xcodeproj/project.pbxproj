@@ -323,7 +323,6 @@
 				961F144F2A38D34100BF9A7C /* Notes */,
 				961F14502A38D35100BF9A7C /* Figma */,
 				961F14642A38DB7200BF9A7C /* Postman Collection */,
-				961F14512A38D35800BF9A7C /* Pseudocodes */,
 			);
 			path = "Project Related";
 			sourceTree = "<group>";
@@ -371,13 +370,6 @@
 				961F146A2A3A3F6C00BF9A7C /* MockUps.png */,
 			);
 			path = Figma;
-			sourceTree = "<group>";
-		};
-		961F14512A38D35800BF9A7C /* Pseudocodes */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Pseudocodes;
 			sourceTree = "<group>";
 		};
 		961F14522A38D3AF00BF9A7C /* Map */ = {

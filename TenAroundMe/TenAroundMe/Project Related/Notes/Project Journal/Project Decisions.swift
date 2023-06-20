@@ -46,4 +46,16 @@
  ~~~~~~~~~~~~~~~~~~~
  • Nothing specific, just coded today.
  
+ June - 19
+ ~~~~~~~~~~~~~~~~~~~
+ • Wanted to develop a carousel look upon pin selection but decided to continue with tableView
+ to save time and focus on finishing.
+ 
+ • My initial design is not aligning with what i have done.
+ 
+ June - 20
+ ~~~~~~~~~~~~~~~~~~~
+ • Nothing specific, just coded today.
+ 
+ 
 */
