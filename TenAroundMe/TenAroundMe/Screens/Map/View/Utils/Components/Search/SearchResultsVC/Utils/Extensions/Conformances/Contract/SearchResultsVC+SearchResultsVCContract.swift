@@ -15,5 +15,9 @@ extension SearchResultsVC: SearchResultsVCContract {
         tableView.register(.init(nibName: HardCoded.searchCell.get(), bundle: nil), forCellReuseIdentifier: HardCoded.searchCell.get())
         tableView.backgroundColor = .clear
     }
+    func dumpData() {
+        viewModel.suggestionResults.removeAll()
+        tableView.reloadData()
+    }
 }
 

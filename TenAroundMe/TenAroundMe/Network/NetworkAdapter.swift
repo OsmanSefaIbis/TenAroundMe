@@ -21,21 +21,19 @@ final class NetworkAdapter {
         
         let type: RequestQuery = .init(search: query, endpoint: .browse)
         guard let searchUrl = composeRequest(
-            endpoint: .browse(searchInput: query.input ?? "", location: query.location),
+            endpoint: .browse(searchInput: query.input ?? "", location: query.location, country: query.country ?? ""),
             queryType: type )
         else { onCompletion(.failure(.invalidRequest)) ; return }
         
         execute(request: searchUrl, dto: SearchDTO.self, onCompletion: onCompletion)
     }
-    
     func fetchLookUp(
-        with id: String,
+        by query: SearchQuery,
         onCompletion: @escaping (Result <DetailDTO, NetworkError> ) -> Void
     ) {
-        
-        let type: RequestQuery = .init(id: id, endpoint: .lookUpById)
+        let type: RequestQuery = .init(id: query.id, endpoint: .lookUpById)
         guard let searchUrl = composeRequest(
-            endpoint: .lookUpById(id: id),
+            endpoint: .lookUpById(id: query.id ?? "", country: query.country ?? ""),
             queryType: type )
         else { onCompletion(.failure(.invalidRequest)) ; return }
         
@@ -49,7 +47,7 @@ final class NetworkAdapter {
         
         let type: RequestQuery = .init(search: query, endpoint: .autoSuggest)
         guard let searchUrl = composeRequest(
-            endpoint: .autoSuggest(suggestInput: query.input ?? "", location: query.location),
+            endpoint: .autoSuggest(suggestInput: query.input ?? "", location: query.location, country: query.country ?? ""),
             queryType: type )
         else { onCompletion(.failure(.invalidRequest)) ; return }
         

@@ -34,5 +34,17 @@ final class MapVC: UIViewController {
         viewModel.mapView_viewDidLoad()
     }
     
+    @IBAction func toggleMapStyle(_ sender: Any) {
+        if let segmentedControl = sender as? UISegmentedControl {
+                switch segmentedControl.selectedSegmentIndex {
+                    case 0:
+                        map.mapType = .standard
+                    case 1:
+                        map.mapType = .satelliteFlyover
+                    default:
+                        break
+                }
+        }
+    }
 }
 

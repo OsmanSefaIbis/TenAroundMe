@@ -12,6 +12,18 @@ extension MapVC: CLLocationManagerDelegate {
     
     func locationManager(_ manager: CLLocationManager, didUpdateLocations locations: [CLLocation]) {
         // Core Data ?
+        
+        if let location = locations.first {
+            let geocoder = CLGeocoder()
+            geocoder.reverseGeocodeLocation(location) { [weak self] (placemarks, error) in
+                guard let self else { return }
+                if let country = placemarks?.first?.isoCountryCode {
+                    guard let country = Alpha3.alpha2Conversion[country] else { return }
+                    viewModel.latestCountryCode = country
+                    print(country)
+                }
+            }
+        }
     }
 
     func locationManagerDidChangeAuthorization(_ manager: CLLocationManager) {

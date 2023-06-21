@@ -42,7 +42,7 @@
 
 
 /*
- API Related
+ HERE API Related
  ~~~~~~~~~~~
  
  • https://developer.here.com/tutorials/getting-here-credentials/
@@ -54,5 +54,12 @@
  • Access key id: G2kLcH_uymDG6yM0nHrWiw
  
  • Access key secret: dtXMtgQ9RY6jj6_j4Sv8GIUAP62CSpzWezazwVIoYPMlsQ4i4NuwbGltRciXhb4U45rF7htkkD7xp6fI9kOPIA
+ 
+ YELP API Related
+ ~~~~~~~~~~~
+ 
+ • API_KEY: VSByqNIHQ6nvtiTvjfEX0Q
+ 
+ • Client ID: VSByqNIHQ6nvtiTvjfEX0Q
  
 */

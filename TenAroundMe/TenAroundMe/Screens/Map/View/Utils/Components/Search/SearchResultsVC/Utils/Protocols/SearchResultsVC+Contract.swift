@@ -10,4 +10,5 @@ import Foundation
 protocol SearchResultsVCContract: AnyObject {
     
     func configureTableView()
+    func dumpData()
 }

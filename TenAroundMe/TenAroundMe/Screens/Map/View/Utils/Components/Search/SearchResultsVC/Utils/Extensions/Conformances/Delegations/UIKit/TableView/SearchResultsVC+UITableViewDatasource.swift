@@ -23,6 +23,7 @@ extension SearchResultsVC: UITableViewDataSource {
         resultCell.indexPath = indexPath
         resultCell.delegate = self
         resultCell.configure(with: viewModel.suggestionResults[indexPath.row])
+        
         return resultCell
     }
     

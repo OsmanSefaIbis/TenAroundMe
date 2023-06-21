@@ -25,8 +25,6 @@ protocol MapVCContract: AnyObject {
     
     func dismissPresentingSuggestionsList()
     func dismissPresentingPlacesList()
-
-    func mapStyleToggled()
     
 }
 

@@ -35,6 +35,9 @@
                                             <segment title="" image="map.fill" catalog="system"/>
                                             <segment title="" image="map" catalog="system"/>
                                         </segments>
+                                        <connections>
+                                            <action selector="toggleMapStyle:" destination="Y6W-OH-hqX" eventType="valueChanged" id="ido-Cw-iIq"/>
+                                        </connections>
                                     </segmentedControl>
                                 </subviews>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>

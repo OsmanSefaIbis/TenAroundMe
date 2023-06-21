@@ -18,6 +18,7 @@ struct RequestQuery{
         self.search = search
         self.id = id
         self.endpoint = endpoint
+        
     }
 
 }

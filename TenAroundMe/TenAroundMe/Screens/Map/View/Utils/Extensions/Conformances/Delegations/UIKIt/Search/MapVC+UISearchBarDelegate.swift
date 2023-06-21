@@ -13,7 +13,8 @@ extension MapVC: UISearchBarDelegate {
         searchBar.resignFirstResponder()
         guard let input = searchBar.text?.replacingOccurrences(of: "\\s+", with: "+", options: .regularExpression) else { return }
         guard let location = viewModel.latestLocation else { return }
-        let query: SearchQuery = .init(input: input, location: location)
+        guard let country = viewModel.latestCountryCode else { return }
+        let query: SearchQuery = .init(input: input, location: location, country: country)
 //        viewModel.performSearch(with: query)
     }
     

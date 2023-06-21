@@ -29,6 +29,7 @@ final class MapVM {
     var suggestionResultsCount: Int { get {suggestionResults.count} }
     
     var latestLocation: Position?
+    var latestCountryCode: String?
     var latestPlaces: [Places] = []
     
     init(mapView:MapVCContract) {

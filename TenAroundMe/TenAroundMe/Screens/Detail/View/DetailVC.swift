@@ -8,6 +8,19 @@
 import UIKit
 
 final class DetailVC: UIViewController {
+    
+    /*
+     TODO: Precache the image when searchPerfom is invoked
+     
+     YELP API Related
+     ~~~~~~~~~~~
+     
+     • API_KEY: VSByqNIHQ6nvtiTvjfEX0Q
+     
+     • Client ID: VSByqNIHQ6nvtiTvjfEX0Q
+     
+     
+     */
 
     let place: Places
     
@@ -45,3 +58,4 @@ final class DetailVC: UIViewController {
 
 
 }
+

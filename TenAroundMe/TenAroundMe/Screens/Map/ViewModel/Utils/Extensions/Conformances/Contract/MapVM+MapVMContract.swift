@@ -37,6 +37,10 @@ extension MapVM: MapVMContract {
     
     func textDidChange(with input: String) {
         
+        if input.count == 0 { /// minor case
+            self.searchResultView?.dumpData()
+        }
+        
         let search = input.replacingOccurrences(of: "\\s+", with: "+", options: .regularExpression)
         isTypingActive = true
         
@@ -47,8 +51,9 @@ extension MapVM: MapVMContract {
                 case 0:
                 searchIsDeactivated() ; searchIsDeactivated()
             default:
-                guard let position = self.latestLocation else { return } //?
-                let query: SearchQuery = .init(input: search, location: position)
+                guard let position = self.latestLocation else { return }
+                guard let country = self.latestCountryCode else { return }
+                let query: SearchQuery = .init(input: search, location: position, country: country)
                 performAutoSuggest(with: query)
             }
         } )
@@ -67,10 +72,11 @@ extension MapVM: MapVMContract {
     func suggestionSelected(with rowIndex: Int) {
         
         guard let position = self.latestLocation else { return }
+        guard let country = self.latestCountryCode else { return }
         let selectedData = suggestionResults[rowIndex]
         let selectedResultType = selectedData.resutlType
         
-        let query: SearchQuery = .init(input: selectedData.title, location: position )
+        let query: SearchQuery = .init(input: selectedData.title, location: position, country: country)
         
         switch selectedResultType {
         case "categoryQuery":

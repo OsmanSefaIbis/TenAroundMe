@@ -118,8 +118,4 @@ extension MapVC: MapVCContract {
         }
     }
     
-    func mapStyleToggled() {
-        
-    }
-    
 }

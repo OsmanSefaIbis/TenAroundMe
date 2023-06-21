@@ -30,7 +30,7 @@ extension MapVM: MapModelDelegate {
             )
         }
         isNoSuggestion = suggestData.isEmpty
-        let sortedSuggestData = sortSuggestionForCategory(with: suggestData)
+        let sortedSuggestData = sortSuggestion(with: suggestData)
         self.delegate?.didRetrieveSuggest(sortedSuggestData)
     }
     
@@ -56,9 +56,10 @@ extension MapVM: MapModelDelegate {
         print("Implement didFailFetch()")
     }
     
-    /// helper --> Sort the suggestData array to place "categoryQuery" elements at the beginning
-    private func sortSuggestionForCategory(with data: [SuggestDataModel]) -> [SuggestDataModel] {
+    /// helper --> Sort the suggestData, order: category -> chain -> POI
+    private func sortSuggestion(with data: [SuggestDataModel]) -> [SuggestDataModel] {
         var sortedData = data
+        
         sortedData.sort { (item1, item2) -> Bool in
             let type1 = item1.resutlType
             let type2 = item2.resutlType
@@ -71,11 +72,15 @@ extension MapVM: MapModelDelegate {
                 return true
             } else if type1 != "chainQuery" && type2 == "chainQuery" {
                 return false
+            } else if type1 != "categoryQuery" && type1 != "chainQuery" && type2 != "categoryQuery" && type2 != "chainQuery" {
+                return item1.distance < item2.distance /// sort POI
             } else {
-                return false // Preserve the original order for other elements
+                return false
             }
         }
+        
         return sortedData
     }
+
     
 }
