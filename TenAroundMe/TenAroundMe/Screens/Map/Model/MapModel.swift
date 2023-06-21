@@ -12,7 +12,7 @@ final class MapModel {
     weak var delegate: MapModelDelegate?
     
     private(set) var suggestionResults: [SuggestItem] = []
-    private(set) var searchResults: [SearchItem] = []
+    private(set) var searchResults: [PlacesItem] = []
     
     private var network: NetworkAdapter { NetworkAdapter.shared }
     private var internet: InternetManager { InternetManager.shared }

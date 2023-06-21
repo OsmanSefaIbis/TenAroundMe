@@ -7,10 +7,13 @@
 
 import Foundation
 
-struct SearchDataModel{
+struct PlacesDataModel{
     
     let id: String
     let title: String
     let position: Position
     let distance: Int
+    let categories: [PlacesCategory]
+    let openingHours: [PlacesOpeningHour]
+    let address: PlacesAddress
 }

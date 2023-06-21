@@ -19,7 +19,7 @@ protocol MapVCContract: AnyObject {
     func setSuggestion(with results: [SuggestDataModel] )
     /// browse
     func removeAnnotations()
-    func setPlaces(with results: [SearchDataModel] )
+    func setPlaces(with results: [PlacesDataModel] )
     func addAnnotations(with places: [Places])
     func presentPlaces(with places: [Places])
     

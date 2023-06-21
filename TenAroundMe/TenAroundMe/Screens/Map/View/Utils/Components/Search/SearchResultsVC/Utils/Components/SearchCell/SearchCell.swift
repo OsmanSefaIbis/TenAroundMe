@@ -9,7 +9,7 @@ import UIKit
 
 class SearchCell: UITableViewCell {
 
-    @IBOutlet weak var label_resultName: UILabel!
+    @IBOutlet weak var labelSuggestTitle: UILabel!
     
     var indexPath: IndexPath?
     weak var delegate: SearchCellDelegate?
@@ -26,9 +26,9 @@ class SearchCell: UITableViewCell {
     func configure(with model: SuggestDataModel) {
         var content = self.defaultContentConfiguration()
         content.prefersSideBySideTextAndSecondaryText = true
-        let maxTitleLength = 35
         
         // optionalTODO: This works with devices, but can be done with custom canvas
+        let maxTitleLength = 33
         if model.title.count > maxTitleLength {
             let truncatedTitle = String(model.title.prefix(maxTitleLength-3)) + "..."
             content.text = truncatedTitle.capitalizeFirstCharacter()

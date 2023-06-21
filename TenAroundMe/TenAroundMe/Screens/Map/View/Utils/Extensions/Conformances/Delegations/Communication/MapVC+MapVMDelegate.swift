@@ -12,7 +12,7 @@ extension MapVC: MapVMDelegate {
         setSuggestion(with: data)
     }
     
-    func didRetrieveSearch(_ data: [SearchDataModel]) {
+    func didRetrieveSearch(_ data: [PlacesDataModel]) {
         setPlaces(with: data)
     }
     

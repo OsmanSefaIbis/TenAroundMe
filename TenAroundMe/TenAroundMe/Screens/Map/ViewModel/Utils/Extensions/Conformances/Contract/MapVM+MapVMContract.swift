@@ -100,7 +100,7 @@ extension MapVM: MapVMContract {
         model.fetchSearch(with: query)
     }
     
-    func setPlaces(with results: [SearchDataModel]) {
+    func setPlaces(with results: [PlacesDataModel]) {
         
         latestPlaces = results.map { searchDataModel -> Places in
             let id = searchDataModel.id
@@ -111,7 +111,7 @@ extension MapVM: MapVMContract {
             let placemark = MKPlacemark(coordinate: coordinates)
             let mapItem = MKMapItem(placemark: placemark)
             
-            return Places(id: id, mapItem: mapItem, title: title, distance: distance)
+            return Places(id: id, mapItem: mapItem, title: title, distance: distance, dataModel: searchDataModel)
         }
         
         mapView?.addAnnotations(with: latestPlaces)

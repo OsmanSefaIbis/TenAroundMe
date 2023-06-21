@@ -35,13 +35,41 @@ extension MapVM: MapModelDelegate {
     }
     
     func didFetchSearch() {
-        let searchData: [SearchDataModel] = model.searchResults.map {
-            .init(
+        let searchData: [PlacesDataModel] = model.searchResults.map {
+            
+            let placeCategories = $0.categories?.map { category in
+                return PlacesCategory(id: category.id ?? "",
+                                      name: category.name ?? "",
+                                      primary: category.primary ?? false)
+            } ?? []
+            
+            let placeOpeningHours = $0.openingHours?.map { hours in
+                return PlacesOpeningHour(text: hours.text ?? [],
+                                         isOpen: hours.isOpen ?? false,
+                                         structured: hours.structured ?? [])
+            } ?? []
+            
+            
+            let placeAddress: PlacesAddress =
+                .init(label: nil,
+                      countryCode: nil,
+                      countryName: nil,
+                      county: nil,
+                      city: nil,
+                      district: $0.address?.district,
+                      street: $0.address?.street,
+                      postalCode: nil,
+                      houseNumber: nil)
+            
+            return PlacesDataModel(
                 id: $0.id ?? "",
                 title: $0.title ?? "",
                 position: .init(latitude: $0.position?.lat ?? 0,
                                 longitude: $0.position?.lng ?? 0),
-                distance: $0.distance ?? 0
+                distance: $0.distance ?? 0,
+                categories: placeCategories,
+                openingHours: placeOpeningHours,
+                address: placeAddress
             )
         }
         isNoPlaces = searchData.isEmpty

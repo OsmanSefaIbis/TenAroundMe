@@ -9,8 +9,6 @@ import MapKit
 
 extension MapVC: MKMapViewDelegate {
     
-    // TODO: Take advantage of this delegate !
-    
     func mapView(_ mapView: MKMapView, didSelect annotation: MKAnnotation) {
         self.dismissPresentingPlacesList()
         resetFocuses()
@@ -18,7 +16,7 @@ extension MapVC: MKMapViewDelegate {
         guard let placesAnnotation = annotation as? Places else { return }
         let selectedPlace = viewModel.latestPlaces.first { $0.id == placesAnnotation.id }
         selectedPlace?.isFocused = true
-        
+        viewModel.latestSelectedPlace = selectedPlace
         presentPlaces(with: viewModel.latestPlaces)
     }
     

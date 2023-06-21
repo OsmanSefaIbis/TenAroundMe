@@ -14,13 +14,15 @@ class Places: MKPointAnnotation {
     let mapItem: MKMapItem
     let placeTitle: String
     let distance: Int
+    let dataModel: PlacesDataModel
     @Flag var isFocused
     
-    init(id: String, mapItem: MKMapItem, title: String, distance: Int) {
+    init(id: String, mapItem: MKMapItem, title: String, distance: Int, dataModel: PlacesDataModel) {
         self.id = id
         self.mapItem = mapItem
         self.placeTitle = title
         self.distance = distance
+        self.dataModel = dataModel
         super.init()
         self.coordinate = mapItem.placemark.coordinate
     }

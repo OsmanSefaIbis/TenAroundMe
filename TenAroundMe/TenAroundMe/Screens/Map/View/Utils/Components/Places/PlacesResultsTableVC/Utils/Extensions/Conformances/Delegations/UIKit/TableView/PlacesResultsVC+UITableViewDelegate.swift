@@ -10,6 +10,6 @@ import UIKit
 extension PlacesResultsVC: UITableViewDelegate {
     
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
-        60
+        120
     }
 }

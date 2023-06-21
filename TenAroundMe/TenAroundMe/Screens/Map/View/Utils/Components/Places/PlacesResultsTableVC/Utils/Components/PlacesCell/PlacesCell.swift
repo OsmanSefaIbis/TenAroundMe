@@ -7,9 +7,20 @@
 
 import UIKit
 
+typealias PlacesCellModel = PlacesDataModel
+
 class PlacesCell: UITableViewCell {
 
-    @IBOutlet weak var label_resultName: UILabel!
+    
+    @IBOutlet weak var viewSeperating: UIView!
+    @IBOutlet weak var labelPrimaryCategory: UILabel!
+    @IBOutlet weak var labelStatus: UILabel!
+    @IBOutlet weak var labelDistance: UILabel!
+    @IBOutlet weak var labelPlacesTitle: UILabel!
+    @IBOutlet weak var labelDistrict: UILabel!
+    @IBOutlet weak var labelStreet: UILabel!
+    @IBOutlet weak var buttonDetail: UIButton!
+    
     
     var indexPath: IndexPath?
     weak var delegate: PlacesCellDelegate?
@@ -19,20 +30,51 @@ class PlacesCell: UITableViewCell {
         configureCellLooks()
     }
 
+    @IBAction func buttonDetailPressed(_ sender: Any) {
+        // TODO: present detail
+    }
     override func setSelected(_ selected: Bool, animated: Bool) {
         super.setSelected(selected, animated: animated)
 
     }
     
-    func configure(with model: SuggestDataModel) {
- 
-        label_resultName.text = model.title
+    func configure(with model: PlacesCellModel) {
+        
+        ///Category
+        if let primaryCategory = model.categories.first(where: { $0.primary == true }) {
+            labelPrimaryCategory.text = primaryCategory.name ?? ""
+        } else {
+            labelPrimaryCategory.text = "N/A"
+            
+        }
+        labelPrimaryCategory.font = UIFont.systemFont(ofSize: 15, weight: .semibold)
+        /// Status
+        if let isOpen = model.openingHours.first?.isOpen {
+            labelStatus.text = isOpen ? "Open" : "Closed"
+            labelStatus.textColor = isOpen ? .green : .red
+            labelStatus.font = UIFont.systemFont(ofSize: 15, weight: .regular)
+        } else {
+            labelStatus.text = "N/A"
+            labelStatus.font = UIFont.systemFont(ofSize: 10, weight: .ultraLight)
+        }
+        /// Distance
+        labelDistance.text = String(model.distance).appending(" m")
+        labelDistance.font = UIFont.systemFont(ofSize: 15, weight: .bold)
+        /// Place Title
+        labelPlacesTitle.text = model.title
+        labelPlacesTitle.font = UIFont.systemFont(ofSize: 24, weight: .semibold)
+        /// District
+        labelDistrict.text = model.address.district
+        labelDistrict.font = UIFont.systemFont(ofSize: 20, weight: .thin)
+        /// Street
+        labelStreet.text = model.address.street
+        labelStreet.font = UIFont.systemFont(ofSize: 18, weight: .ultraLight)
     }
     
     func configureCellLooks(){
-        let blurEffect = UIBlurEffect(style: .systemUltraThinMaterialLight)
-        let blurView = UIVisualEffectView(effect: blurEffect)
-        backgroundView = blurView
+        self.contentView.backgroundColor = .clear
+        viewSeperating.backgroundColor = .lightGray
+        viewSeperating.layer.cornerRadius = 15
         backgroundColor = .clear
     }
     

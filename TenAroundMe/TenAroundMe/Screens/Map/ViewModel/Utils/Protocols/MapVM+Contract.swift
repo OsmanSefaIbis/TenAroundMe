@@ -21,7 +21,7 @@ protocol MapVMContract {
     func suggestionSelected(with rowIndex: Int)
     
     func performSearch(with query: SearchQuery)
-    func setPlaces(with results: [SearchDataModel])
+    func setPlaces(with results: [PlacesDataModel])
     
     
 }

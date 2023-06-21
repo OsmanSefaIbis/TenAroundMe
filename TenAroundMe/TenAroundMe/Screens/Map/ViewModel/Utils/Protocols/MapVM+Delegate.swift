@@ -10,7 +10,7 @@ import Foundation
 protocol MapVMDelegate: AnyObject {
     
     func didRetrieveSuggest(_ data: [SuggestDataModel])
-    func didRetrieveSearch(_ data: [SearchDataModel])
+    func didRetrieveSearch(_ data: [PlacesDataModel])
     func didRetrieveDetail(_ data: [DetailDataModel])
 //    func didConnectionHalt(_ prompt: String)
 }

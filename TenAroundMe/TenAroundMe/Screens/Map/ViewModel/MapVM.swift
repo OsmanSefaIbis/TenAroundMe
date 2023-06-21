@@ -31,6 +31,7 @@ final class MapVM {
     var latestLocation: Position?
     var latestCountryCode: String?
     var latestPlaces: [Places] = []
+    var latestSelectedPlace: Places? // optionalTODO: Focused pin green
     
     init(mapView:MapVCContract) {
         model.delegate = self

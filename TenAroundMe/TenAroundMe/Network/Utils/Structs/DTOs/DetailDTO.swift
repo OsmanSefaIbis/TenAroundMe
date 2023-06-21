@@ -9,46 +9,46 @@ import Foundation
 
 struct DetailDTO: Decodable {
     let title, id, language, resultType: String?
-    let address: Detail_Address?
-    let position: Detail_Position?
-    let access: [Detail_Position]?
-    let categories: [Detail_Category]?
-    let chains: [Detail_Chain]?
-    let references: [Detail_Reference]?
-    let contacts: [Detail_Contact]?
+    let address: DetailAddress?
+    let position: DetailPosition?
+    let access: [DetailPosition]?
+    let categories: [DetailCategory]?
+    let chains: [DetailChain]?
+    let references: [DetailReference]?
+    let contacts: [DetailContact]?
 }
 
-struct Detail_Position: Decodable {
+struct DetailPosition: Decodable {
     let lat, lng: Double?
 }
 
-struct Detail_Address: Decodable {
+struct DetailAddress: Decodable {
     let label, countryCode, countryName, county: String?
     let city, district, street, postalCode: String?
 }
 
-struct Detail_Category: Decodable {
+struct DetailCategory: Decodable {
     let id, name: String?
     let primary: Bool?
 }
 
-struct Detail_Chain: Decodable {
+struct DetailChain: Decodable {
     let id, name: String?
 }
 
-struct Detail_Contact: Decodable {
-    let phone: [Detail_Phone]?
+struct DetailContact: Decodable {
+    let phone: [DetailPhone]?
 }
 
-struct Detail_Phone: Decodable {
+struct DetailPhone: Decodable {
     let value: String?
 }
 
-struct Detail_Reference: Decodable {
-    let supplier: Detail_Supplier?
+struct DetailReference: Decodable {
+    let supplier: DetailSupplier?
     let id: String?
 }
 
-struct Detail_Supplier: Decodable {
+struct DetailSupplier: Decodable {
     let id: String?
 }

@@ -17,12 +17,7 @@ extension PlacesResultsVC: UITableViewDataSource {
         
         let cell = self.tableView.dequeueReusableCell(withIdentifier: HardCoded.placesCell.get(), for: indexPath) as! PlacesCell
         let place = places[indexPath.row]
-        
-        var content = cell.defaultContentConfiguration()
-        content.prefersSideBySideTextAndSecondaryText = true
-        content.text = place.placeTitle
-        content.secondaryText = String(place.distance).appending(" m")
-        cell.contentConfiguration = content
+        cell.configure(with: place.dataModel)
         
         cell.backgroundColor = place.isFocused ? UIColor.lightGray.withAlphaComponent(0.5) : UIColor.clear
         

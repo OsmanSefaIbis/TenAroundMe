@@ -16,7 +16,7 @@ final class NetworkAdapter {
     
     func fetchSearch(
         by query: SearchQuery,
-        onCompletion: @escaping (Result <SearchDTO, NetworkError> ) -> Void
+        onCompletion: @escaping (Result <PlacesDTO, NetworkError> ) -> Void
     ) {
         
         let type: RequestQuery = .init(search: query, endpoint: .browse)
@@ -25,7 +25,7 @@ final class NetworkAdapter {
             queryType: type )
         else { onCompletion(.failure(.invalidRequest)) ; return }
         
-        execute(request: searchUrl, dto: SearchDTO.self, onCompletion: onCompletion)
+        execute(request: searchUrl, dto: PlacesDTO.self, onCompletion: onCompletion)
     }
     func fetchLookUp(
         by query: SearchQuery,

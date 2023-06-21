@@ -34,6 +34,12 @@ class PlacesResultsVC: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        configureLooks()
         viewModel.placesResultsView_viewDidLoad()
+    }
+    func configureLooks() {
+        let transparent: UIColor = .clear.withAlphaComponent(0.15)
+        self.view.backgroundColor = transparent
+        self.tableView.separatorStyle = .none
     }
 }
