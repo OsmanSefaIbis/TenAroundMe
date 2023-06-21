@@ -20,7 +20,6 @@ extension MapVC: MapVCContract {
         map.showsCompass = true
         map.showsScale = true
         
-        
         let locateUserButton = MKUserTrackingButton(mapView: map)
         locateUserButton.translatesAutoresizingMaskIntoConstraints = false
         locateUserButton.tintColor = .lightGray.withAlphaComponent(0.55)
@@ -35,7 +34,6 @@ extension MapVC: MapVCContract {
     }
     
     func configureSearchController() {
-        searchController.searchResultsUpdater = self
         searchController.searchBar.delegate = self
         navigationItem.searchController = searchController
     }
@@ -87,7 +85,7 @@ extension MapVC: MapVCContract {
             placesTableVC.modalPresentationStyle = .pageSheet
             
             let cornerRadius: CGFloat = 40
-            let contentInsets = UIEdgeInsets(top: cornerRadius+5, left: 0, bottom: 0, right: 0)
+            let contentInsets = UIEdgeInsets(top: cornerRadius-25, left: 0, bottom: 0, right: 0)
             placesTableVC.loadViewIfNeeded()
             placesTableVC.tableView.contentInset = contentInsets
             placesTableVC.tableView.scrollIndicatorInsets = contentInsets
@@ -125,6 +123,12 @@ extension MapVC: MapVCContract {
                 presentingVC.dismiss(animated: true, completion: nil)
             }
         }
+    }
+    
+    func presentCoreDataTable() {
+        let coreDataTable = CoreDataTableVC(pass: viewModel)
+        self.modalPresentationStyle = .pageSheet
+        present(coreDataTable, animated: true)
     }
     
 }

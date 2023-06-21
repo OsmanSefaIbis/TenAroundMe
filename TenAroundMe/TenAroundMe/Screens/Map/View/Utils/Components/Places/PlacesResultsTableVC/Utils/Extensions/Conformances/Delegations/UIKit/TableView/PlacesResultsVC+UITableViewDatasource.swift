@@ -26,9 +26,9 @@ extension PlacesResultsVC: UITableViewDataSource {
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         // TODO: Assemble the design for detail
         // TODO: Prefetch data based on autosuggestion and search
-        let place = places[indexPath.row]
-        let detailVC = DetailVC(place: place)
-        present(detailVC, animated: true)
+//        let place = places[indexPath.row]
+//        let detailVC = DetailVC(place: place)
+//        present(detailVC, animated: true)
     }
 
 }

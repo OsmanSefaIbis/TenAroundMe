@@ -11,7 +11,13 @@ import MapKit
 extension MapVC: CLLocationManagerDelegate {
     
     func locationManager(_ manager: CLLocationManager, didUpdateLocations locations: [CLLocation]) {
-        // Core Data ?
+        
+        if let location = locations.first {
+            let coreDataObject: CoreDataModel = .init(latitude: 0, longitude: 0, timestamp: Date())
+            viewModel.coreDataSave(with: coreDataObject, for: location)
+        }
+        
+        let archivedLocation = try? NSKeyedArchiver.archivedData(withRootObject: locations, requiringSecureCoding: false)
         
         if let location = locations.first {
             let geocoder = CLGeocoder()
@@ -20,7 +26,6 @@ extension MapVC: CLLocationManagerDelegate {
                 if let country = placemarks?.first?.isoCountryCode {
                     guard let country = Alpha3.alpha2Conversion[country] else { return }
                     viewModel.latestCountryCode = country
-                    print(country)
                 }
             }
         }

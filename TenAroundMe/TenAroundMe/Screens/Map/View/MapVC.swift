@@ -13,7 +13,7 @@ final class MapVC: UIViewController {
     @IBOutlet weak var map: MKMapView!
     @IBOutlet weak var mapStyleSegment: UISegmentedControl!
     
-    var locationManager: CLLocationManager? // TODO: VM migrate
+    var locationManager: CLLocationManager? 
     
     
     lazy var viewModel = MapVM(mapView: self)
@@ -23,8 +23,6 @@ final class MapVC: UIViewController {
     }()
     lazy var searchController: UISearchController = {
         let searchController = UISearchController(searchResultsController: searchResultsController)
-        searchController.searchResultsUpdater = self
-        searchController.searchBar.delegate = self
         searchController.delegate = self
         return searchController
     }()
@@ -32,6 +30,7 @@ final class MapVC: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         viewModel.mapView_viewDidLoad()
+//        presentCoreDataTable() --> TODO: Done
     }
     
     @IBAction func toggleMapStyle(_ sender: Any) {

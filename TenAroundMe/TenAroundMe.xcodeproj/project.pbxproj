@@ -80,7 +80,6 @@
 		9672E12C2A40ED57005A8822 /* PlacesCell+Delegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9672E12B2A40ED57005A8822 /* PlacesCell+Delegate.swift */; };
 		9672E12F2A40EDB6005A8822 /* PlacesCell+PlacesCellContract.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9672E12E2A40EDB6005A8822 /* PlacesCell+PlacesCellContract.swift */; };
 		9672E13C2A425A15005A8822 /* Alpha3.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9672E13B2A425A15005A8822 /* Alpha3.swift */; };
-		968625812A3DB7D700ACFC26 /* MapVC+UISearchResultsUpdating.swift in Sources */ = {isa = PBXBuildFile; fileRef = 968625802A3DB7D700ACFC26 /* MapVC+UISearchResultsUpdating.swift */; };
 		968625872A3DC00700ACFC26 /* MapVC+UISearchBarDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 968625862A3DC00600ACFC26 /* MapVC+UISearchBarDelegate.swift */; };
 		9686258A2A3DC52E00ACFC26 /* SearchResultsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 968625882A3DC52E00ACFC26 /* SearchResultsVC.swift */; };
 		9686258B2A3DC52E00ACFC26 /* SearchResultsVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 968625892A3DC52E00ACFC26 /* SearchResultsVC.xib */; };
@@ -91,6 +90,8 @@
 		9686259E2A3DCAC000ACFC26 /* SearchCellModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9686259D2A3DCAC000ACFC26 /* SearchCellModel.swift */; };
 		968625A72A3DCC5D00ACFC26 /* SearchResultsVC+UITableViewDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 968625A62A3DCC5D00ACFC26 /* SearchResultsVC+UITableViewDelegate.swift */; };
 		968625A92A3DCCC100ACFC26 /* SearchResultsVC+UITableViewDatasource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 968625A82A3DCCC100ACFC26 /* SearchResultsVC+UITableViewDatasource.swift */; };
+		96BA72082A43615300442923 /* CoreDataTableVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96BA72072A43615300442923 /* CoreDataTableVC.swift */; };
+		96BA720A2A438B0E00442923 /* CoreDataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96BA72092A438B0E00442923 /* CoreDataModel.swift */; };
 		96E198F52A3DDDC200CBD393 /* SearchCell+Delegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96E198F42A3DDDC200CBD393 /* SearchCell+Delegate.swift */; };
 		96E198F82A3DDED700CBD393 /* SearchResultsVC+SearchCellDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96E198F72A3DDED700CBD393 /* SearchResultsVC+SearchCellDelegate.swift */; };
 		96E198FA2A3DF17000CBD393 /* NetworkAdapter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96E198F92A3DF17000CBD393 /* NetworkAdapter.swift */; };
@@ -203,7 +204,6 @@
 		9672E12B2A40ED57005A8822 /* PlacesCell+Delegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "PlacesCell+Delegate.swift"; sourceTree = "<group>"; };
 		9672E12E2A40EDB6005A8822 /* PlacesCell+PlacesCellContract.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "PlacesCell+PlacesCellContract.swift"; sourceTree = "<group>"; };
 		9672E13B2A425A15005A8822 /* Alpha3.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Alpha3.swift; sourceTree = "<group>"; };
-		968625802A3DB7D700ACFC26 /* MapVC+UISearchResultsUpdating.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "MapVC+UISearchResultsUpdating.swift"; sourceTree = "<group>"; };
 		968625862A3DC00600ACFC26 /* MapVC+UISearchBarDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "MapVC+UISearchBarDelegate.swift"; sourceTree = "<group>"; };
 		968625882A3DC52E00ACFC26 /* SearchResultsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchResultsVC.swift; sourceTree = "<group>"; };
 		968625892A3DC52E00ACFC26 /* SearchResultsVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SearchResultsVC.xib; sourceTree = "<group>"; };
@@ -214,6 +214,8 @@
 		9686259D2A3DCAC000ACFC26 /* SearchCellModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchCellModel.swift; sourceTree = "<group>"; };
 		968625A62A3DCC5D00ACFC26 /* SearchResultsVC+UITableViewDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "SearchResultsVC+UITableViewDelegate.swift"; sourceTree = "<group>"; };
 		968625A82A3DCCC100ACFC26 /* SearchResultsVC+UITableViewDatasource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "SearchResultsVC+UITableViewDatasource.swift"; sourceTree = "<group>"; };
+		96BA72072A43615300442923 /* CoreDataTableVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataTableVC.swift; sourceTree = "<group>"; };
+		96BA72092A438B0E00442923 /* CoreDataModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataModel.swift; sourceTree = "<group>"; };
 		96E198F42A3DDDC200CBD393 /* SearchCell+Delegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "SearchCell+Delegate.swift"; sourceTree = "<group>"; };
 		96E198F72A3DDED700CBD393 /* SearchResultsVC+SearchCellDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "SearchResultsVC+SearchCellDelegate.swift"; sourceTree = "<group>"; };
 		96E198F92A3DF17000CBD393 /* NetworkAdapter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkAdapter.swift; sourceTree = "<group>"; };
@@ -1011,7 +1013,6 @@
 		9686257F2A3DB76C00ACFC26 /* Search */ = {
 			isa = PBXGroup;
 			children = (
-				968625802A3DB7D700ACFC26 /* MapVC+UISearchResultsUpdating.swift */,
 				968625862A3DC00600ACFC26 /* MapVC+UISearchBarDelegate.swift */,
 				96362CF52A3F567D00E561E0 /* MapVC+UISearchControllerDelegate.swift */,
 			);
@@ -1021,8 +1022,9 @@
 		968625822A3DBDEA00ACFC26 /* Components */ = {
 			isa = PBXGroup;
 			children = (
-				9672E0FB2A406F08005A8822 /* Places */,
 				9686258C2A3DC94600ACFC26 /* Search */,
+				9672E0FB2A406F08005A8822 /* Places */,
+				96BA72062A43614100442923 /* CoreData */,
 			);
 			path = Components;
 			sourceTree = "<group>";
@@ -1173,6 +1175,15 @@
 				968625AC2A3DCD5000ACFC26 /* TableView */,
 			);
 			path = UIKit;
+			sourceTree = "<group>";
+		};
+		96BA72062A43614100442923 /* CoreData */ = {
+			isa = PBXGroup;
+			children = (
+				96BA72072A43615300442923 /* CoreDataTableVC.swift */,
+				96BA72092A438B0E00442923 /* CoreDataModel.swift */,
+			);
+			path = CoreData;
 			sourceTree = "<group>";
 		};
 		96E198F62A3DDE9D00CBD393 /* Communication */ = {
@@ -1474,6 +1485,7 @@
 				96E198F82A3DDED700CBD393 /* SearchResultsVC+SearchCellDelegate.swift in Sources */,
 				9672E11C2A40EA8D005A8822 /* PlacesResultsVC+UITableViewDatasource.swift in Sources */,
 				9686258A2A3DC52E00ACFC26 /* SearchResultsVC.swift in Sources */,
+				96BA72082A43615300442923 /* CoreDataTableVC.swift in Sources */,
 				961F15052A3CF36800BF9A7C /* DetailVC+Extension.swift in Sources */,
 				96362CDA2A3E5A4200E561E0 /* Use Cases & Thoughts.swift in Sources */,
 				9672E12C2A40ED57005A8822 /* PlacesCell+Delegate.swift in Sources */,
@@ -1490,13 +1502,13 @@
 				9672E11A2A40EA73005A8822 /* PlacesResultsVC+UITableViewDelegate.swift in Sources */,
 				961F14182A38D16E00BF9A7C /* AppDelegate.swift in Sources */,
 				968625922A3DC9DB00ACFC26 /* SearchCell.swift in Sources */,
-				968625812A3DB7D700ACFC26 /* MapVC+UISearchResultsUpdating.swift in Sources */,
 				961F14FB2A3CF29C00BF9A7C /* DetailModelDelegate.swift in Sources */,
 				961F150C2A3CF3F400BF9A7C /* DetailVC+DetailVMDelegate.swift in Sources */,
 				961F14692A38FD0A00BF9A7C /* Project Decisions.swift in Sources */,
 				961F15162A3CF4CF00BF9A7C /* DetailVM+Extension.swift in Sources */,
 				96E1990C2A3DF5E400CBD393 /* NetworkErrorTypes.swift in Sources */,
 				961F14222A38D16E00BF9A7C /* TenAroundMe.xcdatamodeld in Sources */,
+				96BA720A2A438B0E00442923 /* CoreDataModel.swift in Sources */,
 				961F14A32A3CCB1500BF9A7C /* MapVM.swift in Sources */,
 				96362D012A3FC5A900E561E0 /* MapVC+CLLocationManagerDelegate.swift in Sources */,
 				9672E1152A40E937005A8822 /* PlacesResultsVC+PlacesResultsVCContract.swift in Sources */,
