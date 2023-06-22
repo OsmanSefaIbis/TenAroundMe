@@ -15,7 +15,7 @@ extension MapVC: UISearchBarDelegate {
         guard let location = viewModel.latestLocation else { return }
         guard let country = viewModel.latestCountryCode else { return }
         let query: SearchQuery = .init(input: input, location: location, country: country)
-//        viewModel.performSearch(with: query)
+        viewModel.performSearch(with: query)
     }
     
     func searchBarCancelButtonClicked(_ searchBar: UISearchBar) {

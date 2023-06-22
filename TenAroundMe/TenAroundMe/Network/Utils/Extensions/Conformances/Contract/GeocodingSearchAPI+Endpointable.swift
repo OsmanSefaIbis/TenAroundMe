@@ -13,7 +13,7 @@ extension GeocodingSearchAPI: Endpointable {
     public var baseUrls: Endpoints { [
         .browse : browseBaseUrl,
         .lookUpById : lookUpBaseUrl,
-        .autoSuggest : autosuggestBaseUrl
+        .autoSuggest : autosuggestBaseUrl,
     ] }
     public var resourcePaths: Endpoints { [
         .browse : browsePath,
@@ -24,7 +24,7 @@ extension GeocodingSearchAPI: Endpointable {
         
         switch self {
             case .browse(let searchInput, let location, let isoCountryCode):
-            return ["name": searchInput, "at": location.get(),"lang": "en","in": isoCountryCode, "limit": 10, "apiKey": AppConstants.apiKey]
+                return ["name": searchInput, "at": location.get(),"lang": "en","in": isoCountryCode, "limit": 10, "apiKey": AppConstants.apiKey]
             case .lookUpById(let id, let isoCountryCode):
                 return ["id": id, "lang": "en", "in": isoCountryCode, "apiKey": AppConstants.apiKey ]
             case .autoSuggest(let suggestInput, let location, let isoCountryCode):

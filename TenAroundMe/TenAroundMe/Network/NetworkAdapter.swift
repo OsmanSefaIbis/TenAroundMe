@@ -18,10 +18,10 @@ final class NetworkAdapter {
         by query: SearchQuery,
         onCompletion: @escaping (Result <PlacesDTO, NetworkError> ) -> Void
     ) {
-        
         let type: RequestQuery = .init(search: query, endpoint: .browse)
+        guard let location = query.location else { return }
         guard let searchUrl = composeRequest(
-            endpoint: .browse(searchInput: query.input ?? "", location: query.location, country: query.country ?? ""),
+            endpoint: .browse(searchInput: query.input ?? "", location: location , country: query.country ?? ""),
             queryType: type )
         else { onCompletion(.failure(.invalidRequest)) ; return }
         
@@ -46,12 +46,24 @@ final class NetworkAdapter {
     ) {
         
         let type: RequestQuery = .init(search: query, endpoint: .autoSuggest)
+        guard let location = query.location else { return }
         guard let searchUrl = composeRequest(
-            endpoint: .autoSuggest(suggestInput: query.input ?? "", location: query.location, country: query.country ?? ""),
+            endpoint: .autoSuggest(suggestInput: query.input ?? "", location: location, country: query.country ?? ""),
             queryType: type )
         else { onCompletion(.failure(.invalidRequest)) ; return }
         
         execute(request: searchUrl, dto: SuggestDTO.self, onCompletion: onCompletion)
+    }
+    
+    func fetchSuggestionSearch(
+            by query: SearchQuery,
+            onCompletion: @escaping (Result <PlacesDTO, NetworkError> ) -> Void
+        ) {
+            guard let hrefCategoryUrl = query.hrefCategory else { return }
+            let hrefUrl = hrefCategoryUrl.appending("&apiKey=\(AppConstants.apiKey)")
+            guard let url = URL(string: hrefUrl) else { return }
+            let request = URLRequest(url: url)
+            execute(request: request, dto: PlacesDTO.self, onCompletion: onCompletion)
     }
     
     private func execute<T: Decodable>(

@@ -77,6 +77,11 @@ extension MapVC: MapVCContract {
         }
     }
     
+    func selectAnnotation(by place: Places) {
+        self.map.selectAnnotation(place, animated: true)
+        self.map.setCenter(place.coordinate, animated: true)
+    }
+    
     func presentPlaces(with places: [Places]) {
         
         DispatchQueue.main.async { [weak self] in
@@ -126,9 +131,13 @@ extension MapVC: MapVCContract {
     }
     
     func presentCoreDataTable() {
-        let coreDataTable = CoreDataTableVC(pass: viewModel)
-        self.modalPresentationStyle = .pageSheet
-        present(coreDataTable, animated: true)
+        DispatchQueue.main.async { [weak self] in
+            guard let self else { return }
+            let coreDataTable = CoreDataTableVC(pass: viewModel)
+            self.modalPresentationStyle = .pageSheet
+            present(coreDataTable, animated: true)
+        }
+        
     }
     
 }

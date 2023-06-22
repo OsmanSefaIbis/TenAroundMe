@@ -9,5 +9,10 @@ import Foundation
 
 extension PlacesResultsVC: PlacesCellDelegate {
     
-    // TODO: what is cell capable of ?
+    func buttonDetailPressed(at indexPath: IndexPath) {
+        let place = self.places[indexPath.row]
+        let detailVC = DetailVC(pass: self.viewModel, place: place.dataModel)
+        present(detailVC, animated: true)
+    }
 }
+

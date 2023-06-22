@@ -24,6 +24,7 @@ extension MapVM: MapModelDelegate {
                 id: $0.id ?? "",
                 title: $0.title ?? "",
                 resutlType: $0.resultType ?? "",
+                hrefCategory: $0.href ?? "",
                 distance: $0.distance ?? 0,
                 categories: categories,
                 chains: chains
@@ -49,6 +50,12 @@ extension MapVM: MapModelDelegate {
                                          structured: hours.structured ?? [])
             } ?? []
             
+            let contacts = $0.contacts?.map { contact in
+                return PlacesContact(phone: contact.phone,
+                                     mobile: contact.mobile,
+                                     www: contact.www)
+            } ?? []
+            
             
             let placeAddress: PlacesAddress =
                 .init(label: nil,
@@ -67,6 +74,8 @@ extension MapVM: MapModelDelegate {
                 position: .init(latitude: $0.position?.lat ?? 0,
                                 longitude: $0.position?.lng ?? 0),
                 distance: $0.distance ?? 0,
+                website: contacts.first?.www?.first?.value ?? "",
+                phone: contacts.first?.phone?.first?.value ?? "",
                 categories: placeCategories,
                 openingHours: placeOpeningHours,
                 address: placeAddress
@@ -76,12 +85,8 @@ extension MapVM: MapModelDelegate {
         self.delegate?.didRetrieveSearch(searchData)
     }
     
-    func didFetchLookUp() {
-        print("Implement didFetchLookUp()")
-    }
-    
     func didFailFetch() {
-        print("Implement didFailFetch()")
+        self.delegate?.didConnectionHalt(HardCoded.offlinePrompt.get())
     }
     
     /// helper --> Sort the suggestData, order: category -> chain -> POI

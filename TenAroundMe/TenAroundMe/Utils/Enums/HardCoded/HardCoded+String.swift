@@ -10,16 +10,17 @@ import Foundation
 
 enum HardCoded: String {
     
-    case searchCell, placesCell
+    case searchCell, placesCell, offlinePrompt, offLineAlertTitlePrompt, offLineActionTitlePrompt
     
     func get() -> String {
         
         switch self {
             case .searchCell: return "SearchCell"
             case .placesCell: return "PlacesCell"
+            case .offlinePrompt: return "Turn on mobile data or connect to Wi-Fi"
+            case .offLineAlertTitlePrompt: return "No internet connection"
+            case .offLineActionTitlePrompt: return "Ok"
         }
     }
 }
-
-
 

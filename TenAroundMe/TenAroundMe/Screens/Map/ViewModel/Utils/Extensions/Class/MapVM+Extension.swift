@@ -10,7 +10,7 @@ import CoreData
 import CoreLocation
 
 extension MapVM {
-    
+        
     /// CRUD CoreData
     func manuallySetID(with greatestCoreDataID: Int64) {
         let initiateWithID = greatestCoreDataID + 1
@@ -114,8 +114,27 @@ extension MapVM {
         do {
             try persistentStoreCoordinator.execute(batchDeleteRequest, with: appDelegate.persistentContainer.viewContext)
             print(" ~~~~~~ Core Data dumped ~~~~~~ \n")
+            CoreDataModel.resetId()
         } catch {
             fatalError("Core Data dump gone bad ... ")
         }
+    }
+    
+    func modifyURLQueryString(_ urlString: String) -> String? {
+        guard var urlComponents = URLComponents(string: urlString) else {
+            return nil
+        }
+        
+        let queryItems = urlComponents.queryItems?.map { item -> URLQueryItem in
+            if item.name == "limit" {
+                return URLQueryItem(name: item.name, value: "10")
+            } else {
+                return item
+            }
+        }
+
+        urlComponents.queryItems = queryItems
+
+        return urlComponents.url?.absoluteString
     }
 }

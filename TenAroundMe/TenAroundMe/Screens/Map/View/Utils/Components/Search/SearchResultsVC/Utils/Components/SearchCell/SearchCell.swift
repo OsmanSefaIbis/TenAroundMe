@@ -37,7 +37,7 @@ class SearchCell: UITableViewCell {
         }
         
         if model.distance != 0 {
-            content.secondaryText = String(model.distance).appending(" m")
+            content.secondaryText = model.distance.formatDistance()
             content.secondaryTextProperties.font = UIFont.systemFont(ofSize: 12, weight: .ultraLight)
         } else {
             switch model.resutlType {

@@ -16,7 +16,6 @@ extension MapVM: MapVMContract {
         mapView?.configureLocationManager()
         mapView?.configureMap()
         mapView?.configureSearchController()
-//        mapView?.configureBottomSheet()
     }
     
     func searchResultsView_viewDidLoad() {
@@ -75,29 +74,31 @@ extension MapVM: MapVMContract {
         guard let country = self.latestCountryCode else { return }
         let selectedData = suggestionResults[rowIndex]
         let selectedResultType = selectedData.resutlType
-        
-        let query: SearchQuery = .init(input: selectedData.title, location: position, country: country)
-        
+                
         switch selectedResultType {
-        case "categoryQuery":
-            // TODO: AutoSuggest does not give category ID, so you just passed the title as a input
-            // TODO: Think later, you asked on Slack to HERE!
-            print("Category Selected")
-        case "chainQuery":
-            // TODO: AutoSuggest does not give chain ID, so you just passed the title as a input
-            print("Chain Selected")
+        case "categoryQuery","chainQuery" :
+            // INFO: AutoSuggest endpoint does not give category id, so i used the href
+            self.mapView?.dismissPresentingPlacesList()
+            // since autosuggest is limited to 50, the href also takes the limit, so i had to inject 10 for TOP10
+            guard let modifiedUrl = modifyURLQueryString(selectedData.hrefCategory) else { return }
+            let query: SearchQuery = .init(hrefCategory: modifiedUrl)
+            performSuggestSearch(with: query)
         default:
-            print("Place selected")
-            // TODO: Either a "place" or "chainQuery"
-            // TODO: Think about the chainQuery later !
+            // INFO: Either a "place" or "chainQuery"
+            self.mapView?.dismissPresentingPlacesList()
+            let query: SearchQuery = .init(input: selectedData.title, location: position, country: country)
+            performSearch(with: query)
         }
-        self.mapView?.dismissPresentingPlacesList()
-        performSearch(with: query)
     }
     
     func performSearch(with query: SearchQuery) {
         mapView?.removeAnnotations()
         model.fetchSearch(with: query)
+    }
+    
+    func performSuggestSearch(with query: SearchQuery) {
+        mapView?.removeAnnotations()
+        model.fetchSuggestSearch(with: query)
     }
     
     func setPlaces(with results: [PlacesDataModel]) {

@@ -8,5 +8,7 @@
 import Foundation
 
 protocol PlacesCellDelegate: AnyObject {
-    // TODO: What is cell capable ?
+    
+    func buttonDetailPressed(at indexPath: IndexPath)
 }
+

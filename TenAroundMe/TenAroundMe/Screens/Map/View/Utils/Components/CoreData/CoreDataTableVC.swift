@@ -4,18 +4,13 @@
 //
 //  Created by Sefa İbiş on 21.06.2023.
 //
-
 import UIKit
-import CoreData
-import CoreLocation
-
-// TODO: Make a viewController to edit persistent data
 
 class CoreDataTableVC: UITableViewController {
     
+    private var addButton: UIButton!
     private(set) var persistentData: [UserLocationEntity] = []
     public var tableviewData: [CoreDataModel] = []
-    
     var viewModel: MapVM!
     
     init(pass viewModel: MapVM) {
@@ -34,19 +29,13 @@ class CoreDataTableVC: UITableViewController {
     }
     
     func setup() {
+        configureDumpButton()
         tableviewSetup()
         initiateTableViewWithCoreData()
     }
     
-    func testing(value test: Bool){
-        if test {
-            CoreDataModel.resetId()
-            viewModel.coreDataDump()
-        }
-    }
     
     func initiateTableViewWithCoreData() {
-        testing(value: false) /* To reset CoreData set true */
         viewModel.coreDataRetrieve(to: &persistentData)
         var dataFetchedFromCoreData: [CoreDataModel] = persistentData.map {
             .init(id: $0.id, latitude: $0.latitude, longitude: $0.longitude, timestamp: $0.timestamp ?? Date())
@@ -64,6 +53,25 @@ class CoreDataTableVC: UITableViewController {
         tableView.delegate = self
         tableView.dataSource = self
         tableView.register(UITableViewCell.self, forCellReuseIdentifier: "Cell")
+        tableView.contentInset.bottom = addButton.bounds.height
+    }
+    
+    func configureDumpButton() {
+        addButton = UIButton(type: .system)
+        addButton.setTitle("Dump", for: .normal)
+        addButton.addTarget(self, action: #selector(dumpButtonPressed), for: .touchUpInside)
+        addButton.translatesAutoresizingMaskIntoConstraints = false
+        view.addSubview(addButton)
+        
+        NSLayoutConstraint.activate([
+            addButton.centerXAnchor.constraint(equalTo: view.centerXAnchor),
+            addButton.bottomAnchor.constraint(equalTo: view.safeAreaLayoutGuide.bottomAnchor, constant: -16),
+        ])
+    }
+    
+    @objc private func dumpButtonPressed() {
+        viewModel.coreDataDump() /// Console 
+        dismiss(animated: true)
     }
     
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
@@ -85,5 +93,4 @@ class CoreDataTableVC: UITableViewController {
         cell.contentConfiguration = content
         return cell
     }
-    
 }

@@ -49,7 +49,6 @@ extension MapVC: CLLocationManagerDelegate {
             map.setRegion(region, animated: true)
         case .denied:
             print("Location service is denied.")
-            //TODO: Alert user to enable location.
         case .notDetermined:
             print("Location service is not determined.")
         case .restricted:

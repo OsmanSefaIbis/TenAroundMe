@@ -16,6 +16,7 @@ final class MapVM {
     weak var mapView: MapVCContract?
     weak var searchResultView: SearchResultsVCContract?
     weak var placesResultView: PlacesResultsVCContract?
+    weak var detailView: DetailVCContract?
     weak var coreDataResultView: CoreDataTableVC?
     weak var delegate: MapVMDelegate?
     
@@ -39,4 +40,5 @@ final class MapVM {
         model.delegate = self
         self.mapView = mapView
     }
+    
 }

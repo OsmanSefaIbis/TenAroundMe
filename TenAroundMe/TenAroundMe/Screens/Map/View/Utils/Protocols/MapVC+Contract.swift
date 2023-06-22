@@ -21,6 +21,7 @@ protocol MapVCContract: AnyObject {
     func removeAnnotations()
     func setPlaces(with results: [PlacesDataModel] )
     func addAnnotations(with places: [Places])
+    func selectAnnotation(by place: Places)
     func presentPlaces(with places: [Places])
     
     func dismissPresentingSuggestionsList()

@@ -11,14 +11,14 @@ struct SearchQuery {
     
     let id: String?
     let input: String?
-    let category: String?
-    let location: Position
+    let hrefCategory: String?
+    let location: Position?
     let country: String?
     
-    init(id: String? = nil, input: String? = nil, category: String? = nil, location: Position, country: String? = nil) {
+    init(id: String? = nil, input: String? = nil, hrefCategory: String? = nil, location: Position? = nil, country: String? = nil) {
         self.id = id
         self.input = input
-        self.category = category
+        self.hrefCategory = hrefCategory
         self.location = location
         self.country = country
     }

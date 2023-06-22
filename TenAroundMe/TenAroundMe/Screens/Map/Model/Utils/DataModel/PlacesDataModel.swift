@@ -13,6 +13,8 @@ struct PlacesDataModel{
     let title: String
     let position: Position
     let distance: Int
+    let website: String
+    let phone: String
     let categories: [PlacesCategory]
     let openingHours: [PlacesOpeningHour]
     let address: PlacesAddress

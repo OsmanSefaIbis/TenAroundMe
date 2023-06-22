@@ -24,6 +24,7 @@ class PlacesCell: UITableViewCell {
     
     var indexPath: IndexPath?
     weak var delegate: PlacesCellDelegate?
+    private var place: PlacesCellModel?
     
     override func awakeFromNib() {
         super.awakeFromNib()
@@ -31,7 +32,9 @@ class PlacesCell: UITableViewCell {
     }
 
     @IBAction func buttonDetailPressed(_ sender: Any) {
-        // TODO: present detail
+        guard let indexPath = self.indexPath else { return }
+        guard let place = self.place else { return }
+        self.delegate?.buttonDetailPressed(at: indexPath)
     }
     override func setSelected(_ selected: Bool, animated: Bool) {
         super.setSelected(selected, animated: animated)
@@ -39,6 +42,9 @@ class PlacesCell: UITableViewCell {
     }
     
     func configure(with model: PlacesCellModel) {
+        
+        
+        place = model
         
         ///Category
         if let primaryCategory = model.categories.first(where: { $0.primary == true }) {
@@ -58,7 +64,7 @@ class PlacesCell: UITableViewCell {
             labelStatus.font = UIFont.systemFont(ofSize: 10, weight: .ultraLight)
         }
         /// Distance
-        labelDistance.text = String(model.distance).appending(" m")
+        labelDistance.text = model.distance.formatDistance()
         labelDistance.font = UIFont.systemFont(ofSize: 15, weight: .bold)
         /// Place Title
         labelPlacesTitle.text = model.title

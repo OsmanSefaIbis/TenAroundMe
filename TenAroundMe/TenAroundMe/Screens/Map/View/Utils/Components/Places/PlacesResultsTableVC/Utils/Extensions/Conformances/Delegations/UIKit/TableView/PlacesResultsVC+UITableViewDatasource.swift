@@ -16,6 +16,8 @@ extension PlacesResultsVC: UITableViewDataSource {
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         
         let cell = self.tableView.dequeueReusableCell(withIdentifier: HardCoded.placesCell.get(), for: indexPath) as! PlacesCell
+        cell.indexPath = indexPath
+        cell.delegate = self
         let place = places[indexPath.row]
         cell.configure(with: place.dataModel)
         
@@ -24,11 +26,9 @@ extension PlacesResultsVC: UITableViewDataSource {
         return cell
     }
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        // TODO: Assemble the design for detail
-        // TODO: Prefetch data based on autosuggestion and search
-//        let place = places[indexPath.row]
-//        let detailVC = DetailVC(place: place)
-//        present(detailVC, animated: true)
+        
+        let selectedPlace = viewModel.latestPlaces[indexPath.row]
+        viewModel.mapView?.selectAnnotation(by: selectedPlace)
     }
 
 }

@@ -25,8 +25,6 @@
 		961F14812A3BB2C700BF9A7C /* DetailVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 961F147F2A3BB2C700BF9A7C /* DetailVC.xib */; };
 		961F14A12A3CCA1D00BF9A7C /* MapModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 961F14A02A3CCA1D00BF9A7C /* MapModel.swift */; };
 		961F14A32A3CCB1500BF9A7C /* MapVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = 961F14A22A3CCB1500BF9A7C /* MapVM.swift */; };
-		961F14A82A3CCB5C00BF9A7C /* DetailModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 961F14A72A3CCB5C00BF9A7C /* DetailModel.swift */; };
-		961F14AA2A3CCB7200BF9A7C /* DetailVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = 961F14A92A3CCB7200BF9A7C /* DetailVM.swift */; };
 		961F14C22A3CE33500BF9A7C /* MapVC+Contract.swift in Sources */ = {isa = PBXBuildFile; fileRef = 961F14C12A3CE33500BF9A7C /* MapVC+Contract.swift */; };
 		961F14C42A3CE38F00BF9A7C /* MapVC+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 961F14C32A3CE38F00BF9A7C /* MapVC+Extension.swift */; };
 		961F14C82A3CE3CF00BF9A7C /* MapVC+MapVCContract.swift in Sources */ = {isa = PBXBuildFile; fileRef = 961F14C72A3CE3CF00BF9A7C /* MapVC+MapVCContract.swift */; };
@@ -37,16 +35,6 @@
 		961F14F02A3CEFFB00BF9A7C /* MapVM+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 961F14EF2A3CEFFB00BF9A7C /* MapVM+Extension.swift */; };
 		961F14F42A3CF06F00BF9A7C /* MapVM+MapVMContract.swift in Sources */ = {isa = PBXBuildFile; fileRef = 961F14F32A3CF06F00BF9A7C /* MapVM+MapVMContract.swift */; };
 		961F14F72A3CF0E200BF9A7C /* MapVM+MapModelDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 961F14F62A3CF0E200BF9A7C /* MapVM+MapModelDelegate.swift */; };
-		961F14FB2A3CF29C00BF9A7C /* DetailModelDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 961F14FA2A3CF29C00BF9A7C /* DetailModelDelegate.swift */; };
-		961F15012A3CF32800BF9A7C /* DetailVC+Contract.swift in Sources */ = {isa = PBXBuildFile; fileRef = 961F15002A3CF32800BF9A7C /* DetailVC+Contract.swift */; };
-		961F15052A3CF36800BF9A7C /* DetailVC+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 961F15042A3CF36800BF9A7C /* DetailVC+Extension.swift */; };
-		961F15092A3CF3B300BF9A7C /* DetailVC+DetailVCContract.swift in Sources */ = {isa = PBXBuildFile; fileRef = 961F15082A3CF3B300BF9A7C /* DetailVC+DetailVCContract.swift */; };
-		961F150C2A3CF3F400BF9A7C /* DetailVC+DetailVMDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 961F150B2A3CF3F400BF9A7C /* DetailVC+DetailVMDelegate.swift */; };
-		961F15102A3CF45D00BF9A7C /* DetailVM+Contract.swift in Sources */ = {isa = PBXBuildFile; fileRef = 961F150F2A3CF45D00BF9A7C /* DetailVM+Contract.swift */; };
-		961F15122A3CF46C00BF9A7C /* DetailVM+Delegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 961F15112A3CF46C00BF9A7C /* DetailVM+Delegate.swift */; };
-		961F15162A3CF4CF00BF9A7C /* DetailVM+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 961F15152A3CF4CF00BF9A7C /* DetailVM+Extension.swift */; };
-		961F151A2A3CF51800BF9A7C /* DetailVM+DetailVMContract.swift in Sources */ = {isa = PBXBuildFile; fileRef = 961F15192A3CF51800BF9A7C /* DetailVM+DetailVMContract.swift */; };
-		961F151D2A3CF56000BF9A7C /* DetailVM+DetailModelDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 961F151C2A3CF56000BF9A7C /* DetailVM+DetailModelDelegate.swift */; };
 		96362CD82A3E599C00E561E0 /* Endpoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96362CD72A3E599C00E561E0 /* Endpoint.swift */; };
 		96362CDA2A3E5A4200E561E0 /* Use Cases & Thoughts.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96362CD92A3E5A4200E561E0 /* Use Cases & Thoughts.swift */; };
 		96362CDC2A3E719C00E561E0 /* Position.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96362CDB2A3E719C00E561E0 /* Position.swift */; };
@@ -56,7 +44,6 @@
 		96362CE82A3E976800E561E0 /* SuggestDTO.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96362CE72A3E976800E561E0 /* SuggestDTO.swift */; };
 		96362CEB2A3F238600E561E0 /* PlacesDataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96362CEA2A3F238600E561E0 /* PlacesDataModel.swift */; };
 		96362CED2A3F23CC00E561E0 /* SuggestDataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96362CEC2A3F23CC00E561E0 /* SuggestDataModel.swift */; };
-		96362CEF2A3F23F300E561E0 /* DetailDataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96362CEE2A3F23F300E561E0 /* DetailDataModel.swift */; };
 		96362CF12A3F3EB000E561E0 /* SearchResultsVC+Contract.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96362CF02A3F3EB000E561E0 /* SearchResultsVC+Contract.swift */; };
 		96362CF42A3F3F1700E561E0 /* SearchResultsVC+SearchResultsVCContract.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96362CF32A3F3F1700E561E0 /* SearchResultsVC+SearchResultsVCContract.swift */; };
 		96362CF62A3F567D00E561E0 /* MapVC+UISearchControllerDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96362CF52A3F567D00E561E0 /* MapVC+UISearchControllerDelegate.swift */; };
@@ -92,6 +79,10 @@
 		968625A92A3DCCC100ACFC26 /* SearchResultsVC+UITableViewDatasource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 968625A82A3DCCC100ACFC26 /* SearchResultsVC+UITableViewDatasource.swift */; };
 		96BA72082A43615300442923 /* CoreDataTableVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96BA72072A43615300442923 /* CoreDataTableVC.swift */; };
 		96BA720A2A438B0E00442923 /* CoreDataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96BA72092A438B0E00442923 /* CoreDataModel.swift */; };
+		96BA720C2A446C9B00442923 /* Int.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96BA720B2A446C9B00442923 /* Int.swift */; };
+		96BA720E2A446FFE00442923 /* Double.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96BA720D2A446FFE00442923 /* Double.swift */; };
+		96BA72142A449FF100442923 /* DetailVC+Contract.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96BA72132A449FF100442923 /* DetailVC+Contract.swift */; };
+		96BA72192A44A09100442923 /* DetailVC+DetailVCContract.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96BA72182A44A09100442923 /* DetailVC+DetailVCContract.swift */; };
 		96E198F52A3DDDC200CBD393 /* SearchCell+Delegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96E198F42A3DDDC200CBD393 /* SearchCell+Delegate.swift */; };
 		96E198F82A3DDED700CBD393 /* SearchResultsVC+SearchCellDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96E198F72A3DDED700CBD393 /* SearchResultsVC+SearchCellDelegate.swift */; };
 		96E198FA2A3DF17000CBD393 /* NetworkAdapter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96E198F92A3DF17000CBD393 /* NetworkAdapter.swift */; };
@@ -149,8 +140,6 @@
 		961F147F2A3BB2C700BF9A7C /* DetailVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DetailVC.xib; sourceTree = "<group>"; };
 		961F14A02A3CCA1D00BF9A7C /* MapModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapModel.swift; sourceTree = "<group>"; };
 		961F14A22A3CCB1500BF9A7C /* MapVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapVM.swift; sourceTree = "<group>"; };
-		961F14A72A3CCB5C00BF9A7C /* DetailModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailModel.swift; sourceTree = "<group>"; };
-		961F14A92A3CCB7200BF9A7C /* DetailVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailVM.swift; sourceTree = "<group>"; };
 		961F14C12A3CE33500BF9A7C /* MapVC+Contract.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "MapVC+Contract.swift"; sourceTree = "<group>"; };
 		961F14C32A3CE38F00BF9A7C /* MapVC+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "MapVC+Extension.swift"; sourceTree = "<group>"; };
 		961F14C72A3CE3CF00BF9A7C /* MapVC+MapVCContract.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "MapVC+MapVCContract.swift"; sourceTree = "<group>"; };
@@ -161,16 +150,6 @@
 		961F14EF2A3CEFFB00BF9A7C /* MapVM+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "MapVM+Extension.swift"; sourceTree = "<group>"; };
 		961F14F32A3CF06F00BF9A7C /* MapVM+MapVMContract.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "MapVM+MapVMContract.swift"; sourceTree = "<group>"; };
 		961F14F62A3CF0E200BF9A7C /* MapVM+MapModelDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "MapVM+MapModelDelegate.swift"; sourceTree = "<group>"; };
-		961F14FA2A3CF29C00BF9A7C /* DetailModelDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailModelDelegate.swift; sourceTree = "<group>"; };
-		961F15002A3CF32800BF9A7C /* DetailVC+Contract.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "DetailVC+Contract.swift"; sourceTree = "<group>"; };
-		961F15042A3CF36800BF9A7C /* DetailVC+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "DetailVC+Extension.swift"; sourceTree = "<group>"; };
-		961F15082A3CF3B300BF9A7C /* DetailVC+DetailVCContract.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "DetailVC+DetailVCContract.swift"; sourceTree = "<group>"; };
-		961F150B2A3CF3F400BF9A7C /* DetailVC+DetailVMDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "DetailVC+DetailVMDelegate.swift"; sourceTree = "<group>"; };
-		961F150F2A3CF45D00BF9A7C /* DetailVM+Contract.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "DetailVM+Contract.swift"; sourceTree = "<group>"; };
-		961F15112A3CF46C00BF9A7C /* DetailVM+Delegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "DetailVM+Delegate.swift"; sourceTree = "<group>"; };
-		961F15152A3CF4CF00BF9A7C /* DetailVM+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "DetailVM+Extension.swift"; sourceTree = "<group>"; };
-		961F15192A3CF51800BF9A7C /* DetailVM+DetailVMContract.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "DetailVM+DetailVMContract.swift"; sourceTree = "<group>"; };
-		961F151C2A3CF56000BF9A7C /* DetailVM+DetailModelDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "DetailVM+DetailModelDelegate.swift"; sourceTree = "<group>"; };
 		96362CD72A3E599C00E561E0 /* Endpoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Endpoint.swift; sourceTree = "<group>"; };
 		96362CD92A3E5A4200E561E0 /* Use Cases & Thoughts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Use Cases & Thoughts.swift"; sourceTree = "<group>"; };
 		96362CDB2A3E719C00E561E0 /* Position.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Position.swift; sourceTree = "<group>"; };
@@ -180,7 +159,6 @@
 		96362CE72A3E976800E561E0 /* SuggestDTO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SuggestDTO.swift; sourceTree = "<group>"; };
 		96362CEA2A3F238600E561E0 /* PlacesDataModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlacesDataModel.swift; sourceTree = "<group>"; };
 		96362CEC2A3F23CC00E561E0 /* SuggestDataModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SuggestDataModel.swift; sourceTree = "<group>"; };
-		96362CEE2A3F23F300E561E0 /* DetailDataModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailDataModel.swift; sourceTree = "<group>"; };
 		96362CF02A3F3EB000E561E0 /* SearchResultsVC+Contract.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "SearchResultsVC+Contract.swift"; sourceTree = "<group>"; };
 		96362CF32A3F3F1700E561E0 /* SearchResultsVC+SearchResultsVCContract.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "SearchResultsVC+SearchResultsVCContract.swift"; sourceTree = "<group>"; };
 		96362CF52A3F567D00E561E0 /* MapVC+UISearchControllerDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "MapVC+UISearchControllerDelegate.swift"; sourceTree = "<group>"; };
@@ -216,6 +194,10 @@
 		968625A82A3DCCC100ACFC26 /* SearchResultsVC+UITableViewDatasource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "SearchResultsVC+UITableViewDatasource.swift"; sourceTree = "<group>"; };
 		96BA72072A43615300442923 /* CoreDataTableVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataTableVC.swift; sourceTree = "<group>"; };
 		96BA72092A438B0E00442923 /* CoreDataModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataModel.swift; sourceTree = "<group>"; };
+		96BA720B2A446C9B00442923 /* Int.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Int.swift; sourceTree = "<group>"; };
+		96BA720D2A446FFE00442923 /* Double.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Double.swift; sourceTree = "<group>"; };
+		96BA72132A449FF100442923 /* DetailVC+Contract.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "DetailVC+Contract.swift"; sourceTree = "<group>"; };
+		96BA72182A44A09100442923 /* DetailVC+DetailVCContract.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "DetailVC+DetailVCContract.swift"; sourceTree = "<group>"; };
 		96E198F42A3DDDC200CBD393 /* SearchCell+Delegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "SearchCell+Delegate.swift"; sourceTree = "<group>"; };
 		96E198F72A3DDED700CBD393 /* SearchResultsVC+SearchCellDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "SearchResultsVC+SearchCellDelegate.swift"; sourceTree = "<group>"; };
 		96E198F92A3DF17000CBD393 /* NetworkAdapter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkAdapter.swift; sourceTree = "<group>"; };
@@ -352,7 +334,6 @@
 			isa = PBXGroup;
 			children = (
 				961F14522A38D3AF00BF9A7C /* Map */,
-				961F14702A3BAE1000BF9A7C /* Detail */,
 			);
 			path = Screens;
 			sourceTree = "<group>";
@@ -430,44 +411,6 @@
 			path = "Project Journal";
 			sourceTree = "<group>";
 		};
-		961F14702A3BAE1000BF9A7C /* Detail */ = {
-			isa = PBXGroup;
-			children = (
-				961F14712A3BAE2E00BF9A7C /* Model */,
-				961F14732A3BAE3D00BF9A7C /* View */,
-				961F14722A3BAE3600BF9A7C /* ViewModel */,
-			);
-			path = Detail;
-			sourceTree = "<group>";
-		};
-		961F14712A3BAE2E00BF9A7C /* Model */ = {
-			isa = PBXGroup;
-			children = (
-				961F14A42A3CCB2C00BF9A7C /* Utils */,
-				961F14A72A3CCB5C00BF9A7C /* DetailModel.swift */,
-			);
-			path = Model;
-			sourceTree = "<group>";
-		};
-		961F14722A3BAE3600BF9A7C /* ViewModel */ = {
-			isa = PBXGroup;
-			children = (
-				961F14A62A3CCB3900BF9A7C /* Utils */,
-				961F14A92A3CCB7200BF9A7C /* DetailVM.swift */,
-			);
-			path = ViewModel;
-			sourceTree = "<group>";
-		};
-		961F14732A3BAE3D00BF9A7C /* View */ = {
-			isa = PBXGroup;
-			children = (
-				961F14A52A3CCB3400BF9A7C /* Utils */,
-				961F147E2A3BB2C700BF9A7C /* DetailVC.swift */,
-				961F147F2A3BB2C700BF9A7C /* DetailVC.xib */,
-			);
-			path = View;
-			sourceTree = "<group>";
-		};
 		961F148A2A3BC63E00BF9A7C /* Utils */ = {
 			isa = PBXGroup;
 			children = (
@@ -483,33 +426,6 @@
 			children = (
 				961F14DF2A3CEB8200BF9A7C /* Protocols */,
 				961F14E42A3CEBC800BF9A7C /* DataModel */,
-			);
-			path = Utils;
-			sourceTree = "<group>";
-		};
-		961F14A42A3CCB2C00BF9A7C /* Utils */ = {
-			isa = PBXGroup;
-			children = (
-				961F14F82A3CF27300BF9A7C /* Protocols */,
-				961F14FD2A3CF2C800BF9A7C /* DataModel */,
-			);
-			path = Utils;
-			sourceTree = "<group>";
-		};
-		961F14A52A3CCB3400BF9A7C /* Utils */ = {
-			isa = PBXGroup;
-			children = (
-				961F14FE2A3CF2FB00BF9A7C /* Protocols */,
-				961F14FF2A3CF30500BF9A7C /* Extensions */,
-			);
-			path = Utils;
-			sourceTree = "<group>";
-		};
-		961F14A62A3CCB3900BF9A7C /* Utils */ = {
-			isa = PBXGroup;
-			children = (
-				961F150D2A3CF43500BF9A7C /* Protocols */,
-				961F150E2A3CF43E00BF9A7C /* Extensions */,
 			);
 			path = Utils;
 			sourceTree = "<group>";
@@ -655,139 +571,6 @@
 			isa = PBXGroup;
 			children = (
 				961F14F62A3CF0E200BF9A7C /* MapVM+MapModelDelegate.swift */,
-			);
-			path = Communication;
-			sourceTree = "<group>";
-		};
-		961F14F82A3CF27300BF9A7C /* Protocols */ = {
-			isa = PBXGroup;
-			children = (
-				961F14FA2A3CF29C00BF9A7C /* DetailModelDelegate.swift */,
-			);
-			path = Protocols;
-			sourceTree = "<group>";
-		};
-		961F14FD2A3CF2C800BF9A7C /* DataModel */ = {
-			isa = PBXGroup;
-			children = (
-				96362CEE2A3F23F300E561E0 /* DetailDataModel.swift */,
-			);
-			path = DataModel;
-			sourceTree = "<group>";
-		};
-		961F14FE2A3CF2FB00BF9A7C /* Protocols */ = {
-			isa = PBXGroup;
-			children = (
-				961F15002A3CF32800BF9A7C /* DetailVC+Contract.swift */,
-			);
-			path = Protocols;
-			sourceTree = "<group>";
-		};
-		961F14FF2A3CF30500BF9A7C /* Extensions */ = {
-			isa = PBXGroup;
-			children = (
-				961F15022A3CF34A00BF9A7C /* Class */,
-				961F15032A3CF35000BF9A7C /* Conformances */,
-			);
-			path = Extensions;
-			sourceTree = "<group>";
-		};
-		961F15022A3CF34A00BF9A7C /* Class */ = {
-			isa = PBXGroup;
-			children = (
-				961F15042A3CF36800BF9A7C /* DetailVC+Extension.swift */,
-			);
-			path = Class;
-			sourceTree = "<group>";
-		};
-		961F15032A3CF35000BF9A7C /* Conformances */ = {
-			isa = PBXGroup;
-			children = (
-				961F15062A3CF38800BF9A7C /* Contract */,
-				961F15072A3CF39200BF9A7C /* Delegations */,
-			);
-			path = Conformances;
-			sourceTree = "<group>";
-		};
-		961F15062A3CF38800BF9A7C /* Contract */ = {
-			isa = PBXGroup;
-			children = (
-				961F15082A3CF3B300BF9A7C /* DetailVC+DetailVCContract.swift */,
-			);
-			path = Contract;
-			sourceTree = "<group>";
-		};
-		961F15072A3CF39200BF9A7C /* Delegations */ = {
-			isa = PBXGroup;
-			children = (
-				961F150A2A3CF3D100BF9A7C /* Communication */,
-			);
-			path = Delegations;
-			sourceTree = "<group>";
-		};
-		961F150A2A3CF3D100BF9A7C /* Communication */ = {
-			isa = PBXGroup;
-			children = (
-				961F150B2A3CF3F400BF9A7C /* DetailVC+DetailVMDelegate.swift */,
-			);
-			path = Communication;
-			sourceTree = "<group>";
-		};
-		961F150D2A3CF43500BF9A7C /* Protocols */ = {
-			isa = PBXGroup;
-			children = (
-				961F150F2A3CF45D00BF9A7C /* DetailVM+Contract.swift */,
-				961F15112A3CF46C00BF9A7C /* DetailVM+Delegate.swift */,
-			);
-			path = Protocols;
-			sourceTree = "<group>";
-		};
-		961F150E2A3CF43E00BF9A7C /* Extensions */ = {
-			isa = PBXGroup;
-			children = (
-				961F15132A3CF4AA00BF9A7C /* Class */,
-				961F15142A3CF4B200BF9A7C /* Conformances */,
-			);
-			path = Extensions;
-			sourceTree = "<group>";
-		};
-		961F15132A3CF4AA00BF9A7C /* Class */ = {
-			isa = PBXGroup;
-			children = (
-				961F15152A3CF4CF00BF9A7C /* DetailVM+Extension.swift */,
-			);
-			path = Class;
-			sourceTree = "<group>";
-		};
-		961F15142A3CF4B200BF9A7C /* Conformances */ = {
-			isa = PBXGroup;
-			children = (
-				961F15172A3CF4E900BF9A7C /* Contract */,
-				961F15182A3CF4F100BF9A7C /* Delegations */,
-			);
-			path = Conformances;
-			sourceTree = "<group>";
-		};
-		961F15172A3CF4E900BF9A7C /* Contract */ = {
-			isa = PBXGroup;
-			children = (
-				961F15192A3CF51800BF9A7C /* DetailVM+DetailVMContract.swift */,
-			);
-			path = Contract;
-			sourceTree = "<group>";
-		};
-		961F15182A3CF4F100BF9A7C /* Delegations */ = {
-			isa = PBXGroup;
-			children = (
-				961F151B2A3CF54200BF9A7C /* Communication */,
-			);
-			path = Delegations;
-			sourceTree = "<group>";
-		};
-		961F151B2A3CF54200BF9A7C /* Communication */ = {
-			isa = PBXGroup;
-			children = (
-				961F151C2A3CF56000BF9A7C /* DetailVM+DetailModelDelegate.swift */,
 			);
 			path = Communication;
 			sourceTree = "<group>";
@@ -1022,6 +805,7 @@
 		968625822A3DBDEA00ACFC26 /* Components */ = {
 			isa = PBXGroup;
 			children = (
+				96BA720F2A4492F500442923 /* Detail */,
 				9686258C2A3DC94600ACFC26 /* Search */,
 				9672E0FB2A406F08005A8822 /* Places */,
 				96BA72062A43614100442923 /* CoreData */,
@@ -1186,6 +970,57 @@
 			path = CoreData;
 			sourceTree = "<group>";
 		};
+		96BA720F2A4492F500442923 /* Detail */ = {
+			isa = PBXGroup;
+			children = (
+				96BA72102A449DA400442923 /* Utils */,
+				961F147E2A3BB2C700BF9A7C /* DetailVC.swift */,
+				961F147F2A3BB2C700BF9A7C /* DetailVC.xib */,
+			);
+			path = Detail;
+			sourceTree = "<group>";
+		};
+		96BA72102A449DA400442923 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				96BA72122A449FD300442923 /* Protocols */,
+				96BA72152A44A02200442923 /* Extensions */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		96BA72122A449FD300442923 /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				96BA72132A449FF100442923 /* DetailVC+Contract.swift */,
+			);
+			path = Protocols;
+			sourceTree = "<group>";
+		};
+		96BA72152A44A02200442923 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				96BA72162A44A04F00442923 /* Conformances */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		96BA72162A44A04F00442923 /* Conformances */ = {
+			isa = PBXGroup;
+			children = (
+				96BA72172A44A05A00442923 /* Contract */,
+			);
+			path = Conformances;
+			sourceTree = "<group>";
+		};
+		96BA72172A44A05A00442923 /* Contract */ = {
+			isa = PBXGroup;
+			children = (
+				96BA72182A44A09100442923 /* DetailVC+DetailVCContract.swift */,
+			);
+			path = Contract;
+			sourceTree = "<group>";
+		};
 		96E198F62A3DDE9D00CBD393 /* Communication */ = {
 			isa = PBXGroup;
 			children = (
@@ -1277,8 +1112,10 @@
 		96E199122A3DF7C600CBD393 /* Extensions+SDK */ = {
 			isa = PBXGroup;
 			children = (
-				9672E0F92A3FDF4E005A8822 /* CLLocation.swift */,
 				9672E1052A40B209005A8822 /* String.swift */,
+				96BA720B2A446C9B00442923 /* Int.swift */,
+				96BA720D2A446FFE00442923 /* Double.swift */,
+				9672E0F92A3FDF4E005A8822 /* CLLocation.swift */,
 			);
 			path = "Extensions+SDK";
 			sourceTree = "<group>";
@@ -1481,20 +1318,18 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				96BA720C2A446C9B00442923 /* Int.swift in Sources */,
 				96362CE82A3E976800E561E0 /* SuggestDTO.swift in Sources */,
 				96E198F82A3DDED700CBD393 /* SearchResultsVC+SearchCellDelegate.swift in Sources */,
 				9672E11C2A40EA8D005A8822 /* PlacesResultsVC+UITableViewDatasource.swift in Sources */,
 				9686258A2A3DC52E00ACFC26 /* SearchResultsVC.swift in Sources */,
 				96BA72082A43615300442923 /* CoreDataTableVC.swift in Sources */,
-				961F15052A3CF36800BF9A7C /* DetailVC+Extension.swift in Sources */,
 				96362CDA2A3E5A4200E561E0 /* Use Cases & Thoughts.swift in Sources */,
 				9672E12C2A40ED57005A8822 /* PlacesCell+Delegate.swift in Sources */,
 				96362CE42A3E968700E561E0 /* PlacesDTO.swift in Sources */,
 				961F14F42A3CF06F00BF9A7C /* MapVM+MapVMContract.swift in Sources */,
 				96362CF12A3F3EB000E561E0 /* SearchResultsVC+Contract.swift in Sources */,
 				968625A92A3DCCC100ACFC26 /* SearchResultsVC+UITableViewDatasource.swift in Sources */,
-				961F151A2A3CF51800BF9A7C /* DetailVM+DetailVMContract.swift in Sources */,
-				961F15092A3CF3B300BF9A7C /* DetailVC+DetailVCContract.swift in Sources */,
 				96362CDC2A3E719C00E561E0 /* Position.swift in Sources */,
 				961F14F02A3CEFFB00BF9A7C /* MapVM+Extension.swift in Sources */,
 				9672E11E2A40EB1A005A8822 /* PlacesResultsVC+PlacesCellDelegate.swift in Sources */,
@@ -1502,17 +1337,13 @@
 				9672E11A2A40EA73005A8822 /* PlacesResultsVC+UITableViewDelegate.swift in Sources */,
 				961F14182A38D16E00BF9A7C /* AppDelegate.swift in Sources */,
 				968625922A3DC9DB00ACFC26 /* SearchCell.swift in Sources */,
-				961F14FB2A3CF29C00BF9A7C /* DetailModelDelegate.swift in Sources */,
-				961F150C2A3CF3F400BF9A7C /* DetailVC+DetailVMDelegate.swift in Sources */,
 				961F14692A38FD0A00BF9A7C /* Project Decisions.swift in Sources */,
-				961F15162A3CF4CF00BF9A7C /* DetailVM+Extension.swift in Sources */,
 				96E1990C2A3DF5E400CBD393 /* NetworkErrorTypes.swift in Sources */,
 				961F14222A38D16E00BF9A7C /* TenAroundMe.xcdatamodeld in Sources */,
 				96BA720A2A438B0E00442923 /* CoreDataModel.swift in Sources */,
 				961F14A32A3CCB1500BF9A7C /* MapVM.swift in Sources */,
 				96362D012A3FC5A900E561E0 /* MapVC+CLLocationManagerDelegate.swift in Sources */,
 				9672E1152A40E937005A8822 /* PlacesResultsVC+PlacesResultsVCContract.swift in Sources */,
-				961F15122A3CF46C00BF9A7C /* DetailVM+Delegate.swift in Sources */,
 				96E199022A3DF30D00CBD393 /* InternetManager.swift in Sources */,
 				9672E1222A40EBCD005A8822 /* PlacesCell.swift in Sources */,
 				96362CE62A3E970700E561E0 /* DetailDTO.swift in Sources */,
@@ -1525,7 +1356,6 @@
 				96362CF42A3F3F1700E561E0 /* SearchResultsVC+SearchResultsVCContract.swift in Sources */,
 				968625A72A3DCC5D00ACFC26 /* SearchResultsVC+UITableViewDelegate.swift in Sources */,
 				96E198FA2A3DF17000CBD393 /* NetworkAdapter.swift in Sources */,
-				961F14A82A3CCB5C00BF9A7C /* DetailModel.swift in Sources */,
 				961F14CA2A3CE43E00BF9A7C /* MapVC+MapVMDelegate.swift in Sources */,
 				961F14E22A3CEBA700BF9A7C /* MapModelDelegate.swift in Sources */,
 				961F14C22A3CE33500BF9A7C /* MapVC+Contract.swift in Sources */,
@@ -1534,14 +1364,10 @@
 				96362CD82A3E599C00E561E0 /* Endpoint.swift in Sources */,
 				968625872A3DC00700ACFC26 /* MapVC+UISearchBarDelegate.swift in Sources */,
 				96E1991F2A3DFDBB00CBD393 /* HardCoded+API.swift in Sources */,
-				961F151D2A3CF56000BF9A7C /* DetailVM+DetailModelDelegate.swift in Sources */,
 				961F146F2A3B90DA00BF9A7C /* Public Link.swift in Sources */,
 				961F14672A38E9E100BF9A7C /* Daily Journal.swift in Sources */,
-				96362CEF2A3F23F300E561E0 /* DetailDataModel.swift in Sources */,
-				961F15102A3CF45D00BF9A7C /* DetailVM+Contract.swift in Sources */,
 				961F14802A3BB2C700BF9A7C /* DetailVC.swift in Sources */,
 				96E1991D2A3DFD1700CBD393 /* HardCoded+String.swift in Sources */,
-				961F15012A3CF32800BF9A7C /* DetailVC+Contract.swift in Sources */,
 				96362CED2A3F23CC00E561E0 /* SuggestDataModel.swift in Sources */,
 				961F145F2A38D8BA00BF9A7C /* Project Description.swift in Sources */,
 				96E199102A3DF73F00CBD393 /* RequestQuery.swift in Sources */,
@@ -1549,6 +1375,7 @@
 				961F14EC2A3CEF6E00BF9A7C /* MapVM+Delegate.swift in Sources */,
 				9672E1042A408B10005A8822 /* MapVC+MKMapViewDelegate.swift in Sources */,
 				9686259E2A3DCAC000ACFC26 /* SearchCellModel.swift in Sources */,
+				96BA72192A44A09100442923 /* DetailVC+DetailVCContract.swift in Sources */,
 				9672E10F2A40E6DD005A8822 /* PlacesResultsVC.swift in Sources */,
 				961F14C42A3CE38F00BF9A7C /* MapVC+Extension.swift in Sources */,
 				9672E0FA2A3FDF4E005A8822 /* CLLocation.swift in Sources */,
@@ -1567,7 +1394,8 @@
 				96E199042A3DF4BC00CBD393 /* Endpointable+Contract.swift in Sources */,
 				96E1990A2A3DF58D00CBD393 /* NetworkAdapter+Extension.swift in Sources */,
 				9672E1292A40ED30005A8822 /* PlacesCell+Contract.swift in Sources */,
-				961F14AA2A3CCB7200BF9A7C /* DetailVM.swift in Sources */,
+				96BA72142A449FF100442923 /* DetailVC+Contract.swift in Sources */,
+				96BA720E2A446FFE00442923 /* Double.swift in Sources */,
 				961F14F72A3CF0E200BF9A7C /* MapVM+MapModelDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

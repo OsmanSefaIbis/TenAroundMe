@@ -17,12 +17,9 @@ extension MapVC: UISearchControllerDelegate {
         viewModel.latestLocation = location
         
         viewModel.isSearchActive = true
-        print("Search is activated")
-        
     }
     
     func didDismissSearchController(_ searchController: UISearchController) {
         viewModel.isSearchActive = false
-        print("Search is de-activated")
     }
 }

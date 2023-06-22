@@ -8,12 +8,7 @@
 import UIKit
 
 extension SearchResultsVC: UITableViewDataSource {
-    
-    // TODO: Category and Places --> You need 2 Sections
-    func numberOfSections(in tableView: UITableView) -> Int {
-        1
-    }
-    
+        
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         viewModel.suggestionResultsCount
     }
