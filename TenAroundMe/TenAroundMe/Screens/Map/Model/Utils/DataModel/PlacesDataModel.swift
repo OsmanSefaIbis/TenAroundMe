@@ -15,7 +15,10 @@ struct PlacesDataModel{
     let distance: Int
     let website: String
     let phone: String
+    let openHour: String
     let categories: [PlacesCategory]
+    let categoryLabel: String
     let openingHours: [PlacesOpeningHour]
     let address: PlacesAddress
+    let addressLabel: String
 }

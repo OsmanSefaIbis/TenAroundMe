@@ -20,6 +20,7 @@ final class DetailVC: UIViewController {
     @IBOutlet private weak var labelPlaceTitle: UILabel!
     @IBOutlet private weak var labelAddress: UILabel!
     @IBOutlet private weak var labelDistance: UILabel!
+    @IBOutlet private weak var labelOpenHours: UILabel!
     @IBOutlet private weak var labelLatitude: UILabel!
     @IBOutlet private weak var labelLongitude: UILabel!
     @IBOutlet private weak var buttonWebsite: UIButton!
@@ -59,26 +60,32 @@ final class DetailVC: UIViewController {
         viewModel.mapView?.presentCoreDataTable()
     }
     @IBAction func buttonWebsitePressed(_ sender: Any) {
-        if !place.website.isEmpty {
+        if place.website != "N/A" {
             guard let url = URL(string: "\(place.website)") else { return }
             UIApplication.shared.open(url) /// WebKit?
         }
     }
     @IBAction func buttonPhonePressed(_ sender: Any) {
-        guard let url = URL(string: "tel://\(place.phone.numberFormatter)") else { return }
-        UIApplication.shared.open(url)
+        if place.phone != "N/A" {
+            guard let url = URL(string: "tel://\(place.phone.numberFormatter)") else { return }
+            UIApplication.shared.open(url)
+        }
     }
 
     
     private func configureDetail() {
         loadViewIfNeeded()
         labelPlaceTitle.text = place.title
-        labelAddress.text = place.address.label
+        labelAddress.text = place.addressLabel.isEmpty ? "N/A" : place.addressLabel
         labelDistance.text = place.distance.formatDistance()
+        labelOpenHours.text = place.openHour.isEmpty ? "N/A" : place.openHour
         labelLatitude.text = place.position.latitude.formatCoordinate()
         labelLongitude.text = place.position.longitude.formatCoordinate()
-        buttonWebsite.setTitle(place.website, for: .normal)
-        buttonPhone.setTitle(place.phone, for: .normal)
+        labelCategories.text = place.categoryLabel
+        let website = place.website.isEmpty ? "N/A" : place.website
+        buttonWebsite.setTitle(website, for: .normal)
+        let phone = place.phone.isEmpty ? "N/A" : place.phone
+        buttonPhone.setTitle(phone, for: .normal)
     }
 
 }

@@ -43,6 +43,8 @@ extension MapVM: MapModelDelegate {
                                       name: category.name ?? "",
                                       primary: category.primary ?? false)
             } ?? []
+            let categoryNames = placeCategories.compactMap { $0.name }
+            let categoriesString = categoryNames.joined(separator: " • ")
             
             let placeOpeningHours = $0.openingHours?.map { hours in
                 return PlacesOpeningHour(text: hours.text ?? [],
@@ -58,7 +60,7 @@ extension MapVM: MapModelDelegate {
             
             
             let placeAddress: PlacesAddress =
-                .init(label: nil,
+                .init(label: $0.address?.label,
                       countryCode: nil,
                       countryName: nil,
                       county: nil,
@@ -76,9 +78,12 @@ extension MapVM: MapModelDelegate {
                 distance: $0.distance ?? 0,
                 website: contacts.first?.www?.first?.value ?? "",
                 phone: contacts.first?.phone?.first?.value ?? "",
+                openHour: placeOpeningHours.first?.text?.first ?? "",
                 categories: placeCategories,
+                categoryLabel: categoriesString,
                 openingHours: placeOpeningHours,
-                address: placeAddress
+                address: placeAddress,
+                addressLabel: placeAddress.label ?? ""
             )
         }
         isNoPlaces = searchData.isEmpty
