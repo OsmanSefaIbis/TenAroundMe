@@ -8,7 +8,8 @@
 import UIKit
 
 final class SearchResultsVC: UIViewController {
-
+    
+    var spinner: UIActivityIndicatorView!
     @IBOutlet weak var tableView: UITableView!
     
     var viewModel: MapVM!

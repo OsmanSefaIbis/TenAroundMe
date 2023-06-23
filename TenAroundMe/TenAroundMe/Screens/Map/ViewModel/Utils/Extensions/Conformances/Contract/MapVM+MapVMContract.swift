@@ -50,6 +50,7 @@ extension MapVM: MapVMContract {
                 guard let country = self.latestCountryCode else { return }
                 let query: SearchQuery = .init(input: search, location: position, country: country)
                 performAutoSuggest(with: query)
+                self.mapView?.dismissKeyboard()
             }
         } )
         
@@ -57,10 +58,12 @@ extension MapVM: MapVMContract {
     
     func performAutoSuggest(with query: SearchQuery) {
         model.fetchAutoSuggest(with: query)
+        self.searchResultView?.startSpinner()
     }
     
     func setSuggestions(with results: [SuggestDataModel]) {
         suggestionResults = results
+        self.searchResultView?.stopSpinner()
         mapView?.reloadSuggestions()
     }
     

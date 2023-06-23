@@ -11,4 +11,6 @@ protocol SearchResultsVCContract: AnyObject {
     
     func configureTableView()
     func dumpData()
+    func startSpinner()
+    func stopSpinner()
 }

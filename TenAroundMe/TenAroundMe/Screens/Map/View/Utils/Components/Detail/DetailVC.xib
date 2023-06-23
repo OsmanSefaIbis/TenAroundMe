@@ -155,7 +155,7 @@
                                                         <stackView opaque="NO" contentMode="scaleToFill" distribution="equalCentering" translatesAutoresizingMaskIntoConstraints="NO" id="hFB-JA-vIQ" userLabel="long">
                                                             <rect key="frame" x="0.0" y="503.33333333333337" width="333" height="72"/>
                                                             <subviews>
-                                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" horizontalCompressionResistancePriority="751" image="circle.righthalf.fill" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="boo-v6-1Jy">
+                                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" horizontalCompressionResistancePriority="751" image="circle.righthalf.filled" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="boo-v6-1Jy">
                                                                     <rect key="frame" x="0.0" y="1" width="19.666666666666668" height="70.666666666666671"/>
                                                                     <color key="tintColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                                 </imageView>
@@ -242,7 +242,7 @@
     <resources>
         <image name="calendar.badge.clock" catalog="system" width="128" height="108"/>
         <image name="circle.and.line.horizontal" catalog="system" width="128" height="88"/>
-        <image name="circle.righthalf.fill" catalog="system" width="128" height="123"/>
+        <image name="circle.righthalf.filled" catalog="system" width="128" height="123"/>
         <image name="mappin.and.ellipse" catalog="system" width="117" height="128"/>
         <image name="network" catalog="system" width="128" height="123"/>
         <image name="phone.arrow.up.right.fill" catalog="system" width="128" height="115"/>

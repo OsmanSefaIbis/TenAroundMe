@@ -131,4 +131,8 @@
  ~~~~~~~~~~~~~~~~~~~
  • Just coded, i couldnt journal.
  
+ June - 23
+ ~~~~~~~~~~~~~~~~~~~
+ • Did minor refactors before unit testing.
+ • Unit testing --> i am not skilled in this subject.
 */

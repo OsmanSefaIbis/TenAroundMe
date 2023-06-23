@@ -130,6 +130,12 @@ extension MapVC: MapVCContract {
         }
     }
     
+    func dismissKeyboard() {
+        DispatchQueue.main.async { [weak self] in
+            self?.searchController.searchBar.resignFirstResponder()
+        }
+    }
+    
     func presentCoreDataTable() {
         DispatchQueue.main.async { [weak self] in
             guard let self = self else { return }

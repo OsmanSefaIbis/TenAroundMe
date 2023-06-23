@@ -11,9 +11,6 @@
 		961F14222A38D16E00BF9A7C /* TenAroundMe.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 961F14202A38D16E00BF9A7C /* TenAroundMe.xcdatamodeld */; };
 		961F14242A38D17000BF9A7C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 961F14232A38D17000BF9A7C /* Assets.xcassets */; };
 		961F14272A38D17000BF9A7C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 961F14252A38D17000BF9A7C /* LaunchScreen.storyboard */; };
-		961F14322A38D17000BF9A7C /* TenAroundMeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 961F14312A38D17000BF9A7C /* TenAroundMeTests.swift */; };
-		961F143C2A38D17000BF9A7C /* TenAroundMeUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 961F143B2A38D17000BF9A7C /* TenAroundMeUITests.swift */; };
-		961F143E2A38D17000BF9A7C /* TenAroundMeUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 961F143D2A38D17000BF9A7C /* TenAroundMeUITestsLaunchTests.swift */; };
 		961F145F2A38D8BA00BF9A7C /* Project Description.swift in Sources */ = {isa = PBXBuildFile; fileRef = 961F145E2A38D8BA00BF9A7C /* Project Description.swift */; };
 		961F14672A38E9E100BF9A7C /* Daily Journal.swift in Sources */ = {isa = PBXBuildFile; fileRef = 961F14662A38E9E100BF9A7C /* Daily Journal.swift */; };
 		961F14692A38FD0A00BF9A7C /* Project Decisions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 961F14682A38FD0A00BF9A7C /* Project Decisions.swift */; };
@@ -79,6 +76,10 @@
 		96BA720E2A446FFE00442923 /* Double.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96BA720D2A446FFE00442923 /* Double.swift */; };
 		96BA72142A449FF100442923 /* DetailVC+Contract.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96BA72132A449FF100442923 /* DetailVC+Contract.swift */; };
 		96BA72192A44A09100442923 /* DetailVC+DetailVCContract.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96BA72182A44A09100442923 /* DetailVC+DetailVCContract.swift */; };
+		96BA72262A45842300442923 /* MapVMTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96BA72252A45842300442923 /* MapVMTests.swift */; };
+		96BA72282A45847A00442923 /* MockMapVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96BA72272A45847A00442923 /* MockMapVC.swift */; };
+		96BA722A2A45848800442923 /* MockSearchResultsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96BA72292A45848800442923 /* MockSearchResultsVC.swift */; };
+		96BA722C2A4584A300442923 /* MockPlacesResultsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96BA722B2A4584A300442923 /* MockPlacesResultsVC.swift */; };
 		96E198FA2A3DF17000CBD393 /* NetworkAdapter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96E198F92A3DF17000CBD393 /* NetworkAdapter.swift */; };
 		96E199022A3DF30D00CBD393 /* InternetManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96E199012A3DF30D00CBD393 /* InternetManager.swift */; };
 		96E199042A3DF4BC00CBD393 /* Endpointable+Contract.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96E199032A3DF4BC00CBD393 /* Endpointable+Contract.swift */; };
@@ -102,13 +103,6 @@
 			remoteGlobalIDString = 961F14132A38D16E00BF9A7C;
 			remoteInfo = TenAroundMe;
 		};
-		961F14382A38D17000BF9A7C /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 961F140C2A38D16E00BF9A7C /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 961F14132A38D16E00BF9A7C;
-			remoteInfo = TenAroundMe;
-		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
@@ -119,10 +113,6 @@
 		961F14262A38D17000BF9A7C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		961F14282A38D17000BF9A7C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		961F142D2A38D17000BF9A7C /* TenAroundMeTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TenAroundMeTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		961F14312A38D17000BF9A7C /* TenAroundMeTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TenAroundMeTests.swift; sourceTree = "<group>"; };
-		961F14372A38D17000BF9A7C /* TenAroundMeUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TenAroundMeUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		961F143B2A38D17000BF9A7C /* TenAroundMeUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TenAroundMeUITests.swift; sourceTree = "<group>"; };
-		961F143D2A38D17000BF9A7C /* TenAroundMeUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TenAroundMeUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		961F145E2A38D8BA00BF9A7C /* Project Description.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Project Description.swift"; sourceTree = "<group>"; };
 		961F14662A38E9E100BF9A7C /* Daily Journal.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Daily Journal.swift"; sourceTree = "<group>"; };
 		961F14682A38FD0A00BF9A7C /* Project Decisions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Project Decisions.swift"; sourceTree = "<group>"; };
@@ -188,6 +178,10 @@
 		96BA720D2A446FFE00442923 /* Double.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Double.swift; sourceTree = "<group>"; };
 		96BA72132A449FF100442923 /* DetailVC+Contract.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "DetailVC+Contract.swift"; sourceTree = "<group>"; };
 		96BA72182A44A09100442923 /* DetailVC+DetailVCContract.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "DetailVC+DetailVCContract.swift"; sourceTree = "<group>"; };
+		96BA72252A45842300442923 /* MapVMTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapVMTests.swift; sourceTree = "<group>"; };
+		96BA72272A45847A00442923 /* MockMapVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockMapVC.swift; sourceTree = "<group>"; };
+		96BA72292A45848800442923 /* MockSearchResultsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockSearchResultsVC.swift; sourceTree = "<group>"; };
+		96BA722B2A4584A300442923 /* MockPlacesResultsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockPlacesResultsVC.swift; sourceTree = "<group>"; };
 		96E198F92A3DF17000CBD393 /* NetworkAdapter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkAdapter.swift; sourceTree = "<group>"; };
 		96E199012A3DF30D00CBD393 /* InternetManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InternetManager.swift; sourceTree = "<group>"; };
 		96E199032A3DF4BC00CBD393 /* Endpointable+Contract.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Endpointable+Contract.swift"; sourceTree = "<group>"; };
@@ -218,13 +212,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		961F14342A38D17000BF9A7C /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -233,7 +220,6 @@
 			children = (
 				961F14162A38D16E00BF9A7C /* TenAroundMe */,
 				961F14302A38D17000BF9A7C /* TenAroundMeTests */,
-				961F143A2A38D17000BF9A7C /* TenAroundMeUITests */,
 				961F14152A38D16E00BF9A7C /* Products */,
 			);
 			sourceTree = "<group>";
@@ -243,7 +229,6 @@
 			children = (
 				961F14142A38D16E00BF9A7C /* TenAroundMe.app */,
 				961F142D2A38D17000BF9A7C /* TenAroundMeTests.xctest */,
-				961F14372A38D17000BF9A7C /* TenAroundMeUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -264,18 +249,9 @@
 		961F14302A38D17000BF9A7C /* TenAroundMeTests */ = {
 			isa = PBXGroup;
 			children = (
-				961F14312A38D17000BF9A7C /* TenAroundMeTests.swift */,
+				96BA72222A4583F200442923 /* Screens */,
 			);
 			path = TenAroundMeTests;
-			sourceTree = "<group>";
-		};
-		961F143A2A38D17000BF9A7C /* TenAroundMeUITests */ = {
-			isa = PBXGroup;
-			children = (
-				961F143B2A38D17000BF9A7C /* TenAroundMeUITests.swift */,
-				961F143D2A38D17000BF9A7C /* TenAroundMeUITestsLaunchTests.swift */,
-			);
-			path = TenAroundMeUITests;
 			sourceTree = "<group>";
 		};
 		961F144A2A38D21A00BF9A7C /* Supporting Files */ = {
@@ -963,6 +939,33 @@
 			path = Contract;
 			sourceTree = "<group>";
 		};
+		96BA72222A4583F200442923 /* Screens */ = {
+			isa = PBXGroup;
+			children = (
+				96BA72232A4583FC00442923 /* Map */,
+			);
+			path = Screens;
+			sourceTree = "<group>";
+		};
+		96BA72232A4583FC00442923 /* Map */ = {
+			isa = PBXGroup;
+			children = (
+				96BA72242A45840300442923 /* MockView */,
+				96BA72252A45842300442923 /* MapVMTests.swift */,
+			);
+			path = Map;
+			sourceTree = "<group>";
+		};
+		96BA72242A45840300442923 /* MockView */ = {
+			isa = PBXGroup;
+			children = (
+				96BA72272A45847A00442923 /* MockMapVC.swift */,
+				96BA72292A45848800442923 /* MockSearchResultsVC.swift */,
+				96BA722B2A4584A300442923 /* MockPlacesResultsVC.swift */,
+			);
+			path = MockView;
+			sourceTree = "<group>";
+		};
 		96E198FB2A3DF19100CBD393 /* Utils */ = {
 			isa = PBXGroup;
 			children = (
@@ -1153,24 +1156,6 @@
 			productReference = 961F142D2A38D17000BF9A7C /* TenAroundMeTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
-		961F14362A38D17000BF9A7C /* TenAroundMeUITests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 961F14472A38D17000BF9A7C /* Build configuration list for PBXNativeTarget "TenAroundMeUITests" */;
-			buildPhases = (
-				961F14332A38D17000BF9A7C /* Sources */,
-				961F14342A38D17000BF9A7C /* Frameworks */,
-				961F14352A38D17000BF9A7C /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				961F14392A38D17000BF9A7C /* PBXTargetDependency */,
-			);
-			name = TenAroundMeUITests;
-			productName = TenAroundMeUITests;
-			productReference = 961F14372A38D17000BF9A7C /* TenAroundMeUITests.xctest */;
-			productType = "com.apple.product-type.bundle.ui-testing";
-		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -1186,10 +1171,7 @@
 					};
 					961F142C2A38D17000BF9A7C = {
 						CreatedOnToolsVersion = 14.3.1;
-						TestTargetID = 961F14132A38D16E00BF9A7C;
-					};
-					961F14362A38D17000BF9A7C = {
-						CreatedOnToolsVersion = 14.3.1;
+						LastSwiftMigration = 1430;
 						TestTargetID = 961F14132A38D16E00BF9A7C;
 					};
 				};
@@ -1209,7 +1191,6 @@
 			targets = (
 				961F14132A38D16E00BF9A7C /* TenAroundMe */,
 				961F142C2A38D17000BF9A7C /* TenAroundMeTests */,
-				961F14362A38D17000BF9A7C /* TenAroundMeUITests */,
 			);
 		};
 /* End PBXProject section */
@@ -1232,13 +1213,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 		961F142B2A38D17000BF9A7C /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		961F14352A38D17000BF9A7C /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -1332,16 +1306,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				961F14322A38D17000BF9A7C /* TenAroundMeTests.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		961F14332A38D17000BF9A7C /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				961F143C2A38D17000BF9A7C /* TenAroundMeUITests.swift in Sources */,
-				961F143E2A38D17000BF9A7C /* TenAroundMeUITestsLaunchTests.swift in Sources */,
+				96BA722A2A45848800442923 /* MockSearchResultsVC.swift in Sources */,
+				96BA722C2A4584A300442923 /* MockPlacesResultsVC.swift in Sources */,
+				96BA72262A45842300442923 /* MapVMTests.swift in Sources */,
+				96BA72282A45847A00442923 /* MockMapVC.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1352,11 +1320,6 @@
 			isa = PBXTargetDependency;
 			target = 961F14132A38D16E00BF9A7C /* TenAroundMe */;
 			targetProxy = 961F142E2A38D17000BF9A7C /* PBXContainerItemProxy */;
-		};
-		961F14392A38D17000BF9A7C /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 961F14132A38D16E00BF9A7C /* TenAroundMe */;
-			targetProxy = 961F14382A38D17000BF9A7C /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -1557,6 +1520,7 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = GQM8T6BKPB;
@@ -1569,6 +1533,7 @@
 				SUPPORTS_MACCATALYST = NO;
 				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 1;
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TenAroundMe.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/TenAroundMe";
@@ -1580,6 +1545,7 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = GQM8T6BKPB;
@@ -1595,48 +1561,6 @@
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 1;
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TenAroundMe.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/TenAroundMe";
-			};
-			name = Release;
-		};
-		961F14482A38D17000BF9A7C /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = GQM8T6BKPB;
-				GENERATE_INFOPLIST_FILE = YES;
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = osman.sefa.ibis.TenAroundMeUITests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
-				SUPPORTS_MACCATALYST = NO;
-				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
-				SWIFT_EMIT_LOC_STRINGS = NO;
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = 1;
-				TEST_TARGET_NAME = TenAroundMe;
-			};
-			name = Debug;
-		};
-		961F14492A38D17000BF9A7C /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = GQM8T6BKPB;
-				GENERATE_INFOPLIST_FILE = YES;
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = osman.sefa.ibis.TenAroundMeUITests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
-				SUPPORTS_MACCATALYST = NO;
-				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
-				SWIFT_EMIT_LOC_STRINGS = NO;
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = 1;
-				TEST_TARGET_NAME = TenAroundMe;
 			};
 			name = Release;
 		};
@@ -1666,15 +1590,6 @@
 			buildConfigurations = (
 				961F14452A38D17000BF9A7C /* Debug */,
 				961F14462A38D17000BF9A7C /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		961F14472A38D17000BF9A7C /* Build configuration list for PBXNativeTarget "TenAroundMeUITests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				961F14482A38D17000BF9A7C /* Debug */,
-				961F14492A38D17000BF9A7C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

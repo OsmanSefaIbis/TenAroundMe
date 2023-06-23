@@ -26,6 +26,7 @@ protocol MapVCContract: AnyObject {
     
     func dismissPresentingSuggestionsList()
     func dismissPresentingPlacesList()
+    func dismissKeyboard()
     
     func presentCoreDataTable()
     
