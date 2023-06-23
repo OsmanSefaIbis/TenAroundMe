@@ -14,7 +14,6 @@
 		961F145F2A38D8BA00BF9A7C /* Project Description.swift in Sources */ = {isa = PBXBuildFile; fileRef = 961F145E2A38D8BA00BF9A7C /* Project Description.swift */; };
 		961F14672A38E9E100BF9A7C /* Daily Journal.swift in Sources */ = {isa = PBXBuildFile; fileRef = 961F14662A38E9E100BF9A7C /* Daily Journal.swift */; };
 		961F14692A38FD0A00BF9A7C /* Project Decisions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 961F14682A38FD0A00BF9A7C /* Project Decisions.swift */; };
-		961F146B2A3A3F6C00BF9A7C /* MockUps.png in Resources */ = {isa = PBXBuildFile; fileRef = 961F146A2A3A3F6C00BF9A7C /* MockUps.png */; };
 		961F146F2A3B90DA00BF9A7C /* Public Link.swift in Sources */ = {isa = PBXBuildFile; fileRef = 961F146E2A3B90DA00BF9A7C /* Public Link.swift */; };
 		961F14762A3BAF7300BF9A7C /* MapVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 961F14742A3BAF7300BF9A7C /* MapVC.swift */; };
 		961F14792A3BB03800BF9A7C /* Map.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 961F14782A3BB03800BF9A7C /* Map.storyboard */; };
@@ -116,7 +115,6 @@
 		961F145E2A38D8BA00BF9A7C /* Project Description.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Project Description.swift"; sourceTree = "<group>"; };
 		961F14662A38E9E100BF9A7C /* Daily Journal.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Daily Journal.swift"; sourceTree = "<group>"; };
 		961F14682A38FD0A00BF9A7C /* Project Decisions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Project Decisions.swift"; sourceTree = "<group>"; };
-		961F146A2A3A3F6C00BF9A7C /* MockUps.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = MockUps.png; path = ../../../../../../../../../Desktop/MockUps.png; sourceTree = "<group>"; };
 		961F146E2A3B90DA00BF9A7C /* Public Link.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Public Link.swift"; sourceTree = "<group>"; };
 		961F14742A3BAF7300BF9A7C /* MapVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapVC.swift; sourceTree = "<group>"; };
 		961F14782A3BB03800BF9A7C /* Map.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Map.storyboard; sourceTree = "<group>"; };
@@ -314,7 +312,6 @@
 		961F14502A38D35100BF9A7C /* Figma */ = {
 			isa = PBXGroup;
 			children = (
-				961F146A2A3A3F6C00BF9A7C /* MockUps.png */,
 			);
 			path = Figma;
 			sourceTree = "<group>";
@@ -1200,7 +1197,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				961F146B2A3A3F6C00BF9A7C /* MockUps.png in Resources */,
 				961F14272A38D17000BF9A7C /* LaunchScreen.storyboard in Resources */,
 				9686258B2A3DC52E00ACFC26 /* SearchResultsVC.xib in Resources */,
 				961F14792A3BB03800BF9A7C /* Map.storyboard in Resources */,
