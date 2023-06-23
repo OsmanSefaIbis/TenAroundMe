@@ -2,7 +2,7 @@
 -> Top 10 places closest to the user's current location ✅ <br />
 -> Top 10 places should be displayed on a map with a pin ✅ <br />
 -> Display additional information such as the name and distance <br />
-    from the current location for the place ✅
+    from the current location for the place ✅ <br />
 API: HERE Geocoding & Search 
 # Demo
 https://github.com/OsmanSefaIbis/TenAroundMe/assets/24541415/295a677d-aac9-4ffc-8485-41bafa21d8eb
