@@ -52,14 +52,14 @@ extension MapVC: MapVCContract {
     
     func reloadSuggestions() {
         DispatchQueue.main.async { [weak self] in
-            guard let self else { return }
+            guard let self = self else { return }
             self.searchResultsController.tableView.reloadData()
         }
     }
     
     func removeAnnotations() {
         DispatchQueue.main.async { [weak self] in
-            guard let self else { return }
+            guard let self = self else { return }
             self.map.removeAnnotations(map.annotations)
         }
     }
@@ -70,7 +70,7 @@ extension MapVC: MapVCContract {
     
     func addAnnotations(with places: [Places]){
         DispatchQueue.main.async { [weak self] in
-            guard let self else { return }
+            guard let self = self else { return }
             places.forEach { place in
                 self.map.addAnnotation(place)
             }
@@ -85,7 +85,7 @@ extension MapVC: MapVCContract {
     func presentPlaces(with places: [Places]) {
         
         DispatchQueue.main.async { [weak self] in
-            guard let self else { return }
+            guard let self = self else { return }
             let placesTableVC = PlacesResultsVC(pass: self.viewModel)
             placesTableVC.modalPresentationStyle = .pageSheet
             
@@ -112,7 +112,7 @@ extension MapVC: MapVCContract {
     
     func dismissPresentingSuggestionsList() {
         DispatchQueue.main.async { [weak self] in
-            guard let self else { return }
+            guard let self = self else { return }
             if let presentingVC = self.presentedViewController {
                 self.modalTransitionStyle = .crossDissolve
                 presentingVC.dismiss(animated: true, completion: nil)
@@ -122,7 +122,7 @@ extension MapVC: MapVCContract {
     
     func dismissPresentingPlacesList() {
         DispatchQueue.main.async { [weak self] in
-            guard let self else { return }
+            guard let self = self else { return }
             if let presentingVC = self.sheetPresentationController?.presentedViewController {
                 self.modalTransitionStyle = .crossDissolve
                 presentingVC.dismiss(animated: true, completion: nil)
@@ -132,7 +132,7 @@ extension MapVC: MapVCContract {
     
     func presentCoreDataTable() {
         DispatchQueue.main.async { [weak self] in
-            guard let self else { return }
+            guard let self = self else { return }
             let coreDataTable = CoreDataTableVC(pass: viewModel)
             self.modalPresentationStyle = .pageSheet
             present(coreDataTable, animated: true)

@@ -57,5 +57,9 @@
  ~~~~~~~~~~~~~~~~~~~
  • Nothing specific, just coded today.
  
+ June - 21 - 22
+ ~~~~~~~~~~~~~~~~~~~
+ • Decided to do the detail page as plain as possible.
+ • Could not follow some of what i wanted so will not specify.
  
 */

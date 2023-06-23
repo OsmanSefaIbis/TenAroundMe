@@ -17,10 +17,10 @@ public struct CoreDataModel{
     
     init(latitude: Double, longitude: Double, timestamp: Date) {
         id = CoreDataModel.nextId
+        CoreDataModel.nextId += 1
         self.latitude = latitude
         self.longitude = longitude
         self.timestamp = timestamp
-        CoreDataModel.nextId += 1
     }
     
     init(id: Int64, latitude: Double, longitude: Double, timestamp: Date) {

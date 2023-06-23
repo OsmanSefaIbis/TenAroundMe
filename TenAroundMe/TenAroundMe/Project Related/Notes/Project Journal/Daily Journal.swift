@@ -127,7 +127,8 @@
  
  • User can select from auto suggestions.
  
- 
- 
+ June - 21 - 22
+ ~~~~~~~~~~~~~~~~~~~
+ • Just coded, i couldnt journal.
  
 */

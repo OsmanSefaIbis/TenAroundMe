@@ -63,17 +63,13 @@
 		9672E11E2A40EB1A005A8822 /* PlacesResultsVC+PlacesCellDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9672E11D2A40EB1A005A8822 /* PlacesResultsVC+PlacesCellDelegate.swift */; };
 		9672E1222A40EBCD005A8822 /* PlacesCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9672E1202A40EBCD005A8822 /* PlacesCell.swift */; };
 		9672E1232A40EBCD005A8822 /* PlacesCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9672E1212A40EBCD005A8822 /* PlacesCell.xib */; };
-		9672E1292A40ED30005A8822 /* PlacesCell+Contract.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9672E1282A40ED30005A8822 /* PlacesCell+Contract.swift */; };
 		9672E12C2A40ED57005A8822 /* PlacesCell+Delegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9672E12B2A40ED57005A8822 /* PlacesCell+Delegate.swift */; };
-		9672E12F2A40EDB6005A8822 /* PlacesCell+PlacesCellContract.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9672E12E2A40EDB6005A8822 /* PlacesCell+PlacesCellContract.swift */; };
 		9672E13C2A425A15005A8822 /* Alpha3.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9672E13B2A425A15005A8822 /* Alpha3.swift */; };
 		968625872A3DC00700ACFC26 /* MapVC+UISearchBarDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 968625862A3DC00600ACFC26 /* MapVC+UISearchBarDelegate.swift */; };
 		9686258A2A3DC52E00ACFC26 /* SearchResultsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 968625882A3DC52E00ACFC26 /* SearchResultsVC.swift */; };
 		9686258B2A3DC52E00ACFC26 /* SearchResultsVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 968625892A3DC52E00ACFC26 /* SearchResultsVC.xib */; };
 		968625922A3DC9DB00ACFC26 /* SearchCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 968625902A3DC9DB00ACFC26 /* SearchCell.swift */; };
 		968625932A3DC9DB00ACFC26 /* SearchCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 968625912A3DC9DB00ACFC26 /* SearchCell.xib */; };
-		968625982A3DCA5000ACFC26 /* SearchCell+Contract.swift in Sources */ = {isa = PBXBuildFile; fileRef = 968625972A3DCA5000ACFC26 /* SearchCell+Contract.swift */; };
-		9686259B2A3DCA7900ACFC26 /* SearchCell+SearchCellContract.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9686259A2A3DCA7900ACFC26 /* SearchCell+SearchCellContract.swift */; };
 		9686259E2A3DCAC000ACFC26 /* SearchCellModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9686259D2A3DCAC000ACFC26 /* SearchCellModel.swift */; };
 		968625A72A3DCC5D00ACFC26 /* SearchResultsVC+UITableViewDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 968625A62A3DCC5D00ACFC26 /* SearchResultsVC+UITableViewDelegate.swift */; };
 		968625A92A3DCCC100ACFC26 /* SearchResultsVC+UITableViewDatasource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 968625A82A3DCCC100ACFC26 /* SearchResultsVC+UITableViewDatasource.swift */; };
@@ -83,8 +79,6 @@
 		96BA720E2A446FFE00442923 /* Double.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96BA720D2A446FFE00442923 /* Double.swift */; };
 		96BA72142A449FF100442923 /* DetailVC+Contract.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96BA72132A449FF100442923 /* DetailVC+Contract.swift */; };
 		96BA72192A44A09100442923 /* DetailVC+DetailVCContract.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96BA72182A44A09100442923 /* DetailVC+DetailVCContract.swift */; };
-		96E198F52A3DDDC200CBD393 /* SearchCell+Delegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96E198F42A3DDDC200CBD393 /* SearchCell+Delegate.swift */; };
-		96E198F82A3DDED700CBD393 /* SearchResultsVC+SearchCellDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96E198F72A3DDED700CBD393 /* SearchResultsVC+SearchCellDelegate.swift */; };
 		96E198FA2A3DF17000CBD393 /* NetworkAdapter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96E198F92A3DF17000CBD393 /* NetworkAdapter.swift */; };
 		96E199022A3DF30D00CBD393 /* InternetManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96E199012A3DF30D00CBD393 /* InternetManager.swift */; };
 		96E199042A3DF4BC00CBD393 /* Endpointable+Contract.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96E199032A3DF4BC00CBD393 /* Endpointable+Contract.swift */; };
@@ -178,17 +172,13 @@
 		9672E11D2A40EB1A005A8822 /* PlacesResultsVC+PlacesCellDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "PlacesResultsVC+PlacesCellDelegate.swift"; sourceTree = "<group>"; };
 		9672E1202A40EBCD005A8822 /* PlacesCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlacesCell.swift; sourceTree = "<group>"; };
 		9672E1212A40EBCD005A8822 /* PlacesCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PlacesCell.xib; sourceTree = "<group>"; };
-		9672E1282A40ED30005A8822 /* PlacesCell+Contract.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "PlacesCell+Contract.swift"; sourceTree = "<group>"; };
 		9672E12B2A40ED57005A8822 /* PlacesCell+Delegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "PlacesCell+Delegate.swift"; sourceTree = "<group>"; };
-		9672E12E2A40EDB6005A8822 /* PlacesCell+PlacesCellContract.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "PlacesCell+PlacesCellContract.swift"; sourceTree = "<group>"; };
 		9672E13B2A425A15005A8822 /* Alpha3.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Alpha3.swift; sourceTree = "<group>"; };
 		968625862A3DC00600ACFC26 /* MapVC+UISearchBarDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "MapVC+UISearchBarDelegate.swift"; sourceTree = "<group>"; };
 		968625882A3DC52E00ACFC26 /* SearchResultsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchResultsVC.swift; sourceTree = "<group>"; };
 		968625892A3DC52E00ACFC26 /* SearchResultsVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SearchResultsVC.xib; sourceTree = "<group>"; };
 		968625902A3DC9DB00ACFC26 /* SearchCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchCell.swift; sourceTree = "<group>"; };
 		968625912A3DC9DB00ACFC26 /* SearchCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SearchCell.xib; sourceTree = "<group>"; };
-		968625972A3DCA5000ACFC26 /* SearchCell+Contract.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "SearchCell+Contract.swift"; sourceTree = "<group>"; };
-		9686259A2A3DCA7900ACFC26 /* SearchCell+SearchCellContract.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "SearchCell+SearchCellContract.swift"; sourceTree = "<group>"; };
 		9686259D2A3DCAC000ACFC26 /* SearchCellModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchCellModel.swift; sourceTree = "<group>"; };
 		968625A62A3DCC5D00ACFC26 /* SearchResultsVC+UITableViewDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "SearchResultsVC+UITableViewDelegate.swift"; sourceTree = "<group>"; };
 		968625A82A3DCCC100ACFC26 /* SearchResultsVC+UITableViewDatasource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "SearchResultsVC+UITableViewDatasource.swift"; sourceTree = "<group>"; };
@@ -198,8 +188,6 @@
 		96BA720D2A446FFE00442923 /* Double.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Double.swift; sourceTree = "<group>"; };
 		96BA72132A449FF100442923 /* DetailVC+Contract.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "DetailVC+Contract.swift"; sourceTree = "<group>"; };
 		96BA72182A44A09100442923 /* DetailVC+DetailVCContract.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "DetailVC+DetailVCContract.swift"; sourceTree = "<group>"; };
-		96E198F42A3DDDC200CBD393 /* SearchCell+Delegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "SearchCell+Delegate.swift"; sourceTree = "<group>"; };
-		96E198F72A3DDED700CBD393 /* SearchResultsVC+SearchCellDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "SearchResultsVC+SearchCellDelegate.swift"; sourceTree = "<group>"; };
 		96E198F92A3DF17000CBD393 /* NetworkAdapter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkAdapter.swift; sourceTree = "<group>"; };
 		96E199012A3DF30D00CBD393 /* InternetManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InternetManager.swift; sourceTree = "<group>"; };
 		96E199032A3DF4BC00CBD393 /* Endpointable+Contract.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Endpointable+Contract.swift"; sourceTree = "<group>"; };
@@ -755,7 +743,6 @@
 			isa = PBXGroup;
 			children = (
 				9672E1252A40ECEB005A8822 /* Protocols */,
-				9672E1262A40ECF4005A8822 /* Extensions */,
 			);
 			path = Utils;
 			sourceTree = "<group>";
@@ -763,26 +750,9 @@
 		9672E1252A40ECEB005A8822 /* Protocols */ = {
 			isa = PBXGroup;
 			children = (
-				9672E1282A40ED30005A8822 /* PlacesCell+Contract.swift */,
 				9672E12B2A40ED57005A8822 /* PlacesCell+Delegate.swift */,
 			);
 			path = Protocols;
-			sourceTree = "<group>";
-		};
-		9672E1262A40ECF4005A8822 /* Extensions */ = {
-			isa = PBXGroup;
-			children = (
-				9672E12D2A40ED9E005A8822 /* Conformances */,
-			);
-			path = Extensions;
-			sourceTree = "<group>";
-		};
-		9672E12D2A40ED9E005A8822 /* Conformances */ = {
-			isa = PBXGroup;
-			children = (
-				9672E12E2A40EDB6005A8822 /* PlacesCell+PlacesCellContract.swift */,
-			);
-			path = Conformances;
 			sourceTree = "<group>";
 		};
 		9686257E2A3DB76100ACFC26 /* UIKIt */ = {
@@ -844,28 +814,9 @@
 		9686258F2A3DC9A700ACFC26 /* Utils */ = {
 			isa = PBXGroup;
 			children = (
-				968625942A3DCA1000ACFC26 /* Protocols */,
-				968625952A3DCA1A00ACFC26 /* Extensions */,
 				968625962A3DCA2200ACFC26 /* Data Links */,
 			);
 			path = Utils;
-			sourceTree = "<group>";
-		};
-		968625942A3DCA1000ACFC26 /* Protocols */ = {
-			isa = PBXGroup;
-			children = (
-				968625972A3DCA5000ACFC26 /* SearchCell+Contract.swift */,
-				96E198F42A3DDDC200CBD393 /* SearchCell+Delegate.swift */,
-			);
-			path = Protocols;
-			sourceTree = "<group>";
-		};
-		968625952A3DCA1A00ACFC26 /* Extensions */ = {
-			isa = PBXGroup;
-			children = (
-				968625992A3DCA6200ACFC26 /* Conformances */,
-			);
-			path = Extensions;
 			sourceTree = "<group>";
 		};
 		968625962A3DCA2200ACFC26 /* Data Links */ = {
@@ -874,14 +825,6 @@
 				9686259C2A3DCAA400ACFC26 /* Model */,
 			);
 			path = "Data Links";
-			sourceTree = "<group>";
-		};
-		968625992A3DCA6200ACFC26 /* Conformances */ = {
-			isa = PBXGroup;
-			children = (
-				9686259A2A3DCA7900ACFC26 /* SearchCell+SearchCellContract.swift */,
-			);
-			path = Conformances;
 			sourceTree = "<group>";
 		};
 		9686259C2A3DCAA400ACFC26 /* Model */ = {
@@ -939,7 +882,6 @@
 			isa = PBXGroup;
 			children = (
 				968625AE2A3DCD8900ACFC26 /* UIKit */,
-				96E198F62A3DDE9D00CBD393 /* Communication */,
 			);
 			path = Delegations;
 			sourceTree = "<group>";
@@ -1019,14 +961,6 @@
 				96BA72182A44A09100442923 /* DetailVC+DetailVCContract.swift */,
 			);
 			path = Contract;
-			sourceTree = "<group>";
-		};
-		96E198F62A3DDE9D00CBD393 /* Communication */ = {
-			isa = PBXGroup;
-			children = (
-				96E198F72A3DDED700CBD393 /* SearchResultsVC+SearchCellDelegate.swift */,
-			);
-			path = Communication;
 			sourceTree = "<group>";
 		};
 		96E198FB2A3DF19100CBD393 /* Utils */ = {
@@ -1320,7 +1254,6 @@
 			files = (
 				96BA720C2A446C9B00442923 /* Int.swift in Sources */,
 				96362CE82A3E976800E561E0 /* SuggestDTO.swift in Sources */,
-				96E198F82A3DDED700CBD393 /* SearchResultsVC+SearchCellDelegate.swift in Sources */,
 				9672E11C2A40EA8D005A8822 /* PlacesResultsVC+UITableViewDatasource.swift in Sources */,
 				9686258A2A3DC52E00ACFC26 /* SearchResultsVC.swift in Sources */,
 				96BA72082A43615300442923 /* CoreDataTableVC.swift in Sources */,
@@ -1347,12 +1280,8 @@
 				96E199022A3DF30D00CBD393 /* InternetManager.swift in Sources */,
 				9672E1222A40EBCD005A8822 /* PlacesCell.swift in Sources */,
 				96362CE62A3E970700E561E0 /* DetailDTO.swift in Sources */,
-				96E198F52A3DDDC200CBD393 /* SearchCell+Delegate.swift in Sources */,
-				9672E12F2A40EDB6005A8822 /* PlacesCell+PlacesCellContract.swift in Sources */,
-				9686259B2A3DCA7900ACFC26 /* SearchCell+SearchCellContract.swift in Sources */,
 				96E199062A3DF55200CBD393 /* RequestType.swift in Sources */,
 				9672E0F52A3FD92A005A8822 /* Flag.swift in Sources */,
-				968625982A3DCA5000ACFC26 /* SearchCell+Contract.swift in Sources */,
 				96362CF42A3F3F1700E561E0 /* SearchResultsVC+SearchResultsVCContract.swift in Sources */,
 				968625A72A3DCC5D00ACFC26 /* SearchResultsVC+UITableViewDelegate.swift in Sources */,
 				96E198FA2A3DF17000CBD393 /* NetworkAdapter.swift in Sources */,
@@ -1393,7 +1322,6 @@
 				96E199172A3DFC3300CBD393 /* SearchQuery.swift in Sources */,
 				96E199042A3DF4BC00CBD393 /* Endpointable+Contract.swift in Sources */,
 				96E1990A2A3DF58D00CBD393 /* NetworkAdapter+Extension.swift in Sources */,
-				9672E1292A40ED30005A8822 /* PlacesCell+Contract.swift in Sources */,
 				96BA72142A449FF100442923 /* DetailVC+Contract.swift in Sources */,
 				96BA720E2A446FFE00442923 /* Double.swift in Sources */,
 				961F14F72A3CF0E200BF9A7C /* MapVM+MapModelDelegate.swift in Sources */,

@@ -22,8 +22,8 @@ class PlacesCell: UITableViewCell {
     @IBOutlet weak var buttonDetail: UIButton!
     
     
-    var indexPath: IndexPath?
     weak var delegate: PlacesCellDelegate?
+    var indexPath: IndexPath?
     private var place: PlacesCellModel?
     
     override func awakeFromNib() {
@@ -43,8 +43,7 @@ class PlacesCell: UITableViewCell {
     
     func configure(with model: PlacesCellModel) {
         
-        
-        place = model
+        self.place = model
         
         ///Category
         if let primaryCategory = model.categories.first(where: { $0.primary == true }) {

@@ -19,12 +19,10 @@ extension MapVC: MapVMDelegate {
     
     func didConnectionHalt(_ prompt: String) {
         let alertController = UIAlertController(title: HardCoded.offLineAlertTitlePrompt.get(), message: prompt, preferredStyle: .alert )
-        let okAction = UIAlertAction(title: HardCoded.offLineActionTitlePrompt.get(), style: .default) { [weak self] (action:UIAlertAction!) in
-            guard let self else { return }
-//            self.viewModel.reset() //TODO: later
-        }
+        let okAction = UIAlertAction(title: HardCoded.offLineActionTitlePrompt.get(), style: .default)
         alertController.addAction(okAction)
-        DispatchQueue.main.async {
+        DispatchQueue.main.async { [weak self] in
+            guard let self = self else { return }
             self.present(alertController, animated: true)
         }
     }

@@ -11,11 +11,7 @@ import CoreLocation
 
 extension MapVM {
         
-    /// CRUD CoreData
-    func manuallySetID(with greatestCoreDataID: Int64) {
-        let initiateWithID = greatestCoreDataID + 1
-        CoreDataModel.setNextId(with: initiateWithID)
-    }
+    /// CRUD CoreData, left printouts on purpose
 
     func coreDataSave(with data: CoreDataModel, for location: CLLocation) {
         let context = appDelegate.persistentContainer.viewContext
@@ -28,10 +24,10 @@ extension MapVM {
             locationObject.setValue(location.coordinate.latitude, forKey: "latitude")
             locationObject.setValue(location.coordinate.longitude, forKey: "longitude")
             do{
-                coreDataInformCurrentData() /// before
+                coreDataInformCurrentData() /// console before
                 try context.save()
                 print(" ~~~~~~ CoreData: Data saved successfully! ~~~~~~ ")
-                coreDataInformCurrentData() /// after
+                coreDataInformCurrentData() /// console after
             }catch{
                 print("Error: Occured in saveToCoreData() with \(error)")
             }
@@ -118,6 +114,11 @@ extension MapVM {
         } catch {
             fatalError("Core Data dump gone bad ... ")
         }
+    }
+    
+    func manuallySetID(with greatestCoreDataID: Int64) {
+        let initiateWithID = greatestCoreDataID + 1
+        CoreDataModel.setNextId(with: initiateWithID)
     }
     
     func modifyURLQueryString(_ urlString: String) -> String? {

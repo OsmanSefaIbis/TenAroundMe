@@ -7,12 +7,11 @@
 
 import UIKit
 
-class SearchCell: UITableViewCell {
+final class SearchCell: UITableViewCell {
 
     @IBOutlet weak var labelSuggestTitle: UILabel!
     
     var indexPath: IndexPath?
-    weak var delegate: SearchCellDelegate?
     
     override func awakeFromNib() {
         super.awakeFromNib()

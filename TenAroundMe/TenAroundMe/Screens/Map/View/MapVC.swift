@@ -30,10 +30,9 @@ final class MapVC: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         viewModel.mapView_viewDidLoad()
-//        presentCoreDataTable() --> TODO: Done
     }
     
-    @IBAction func toggleMapStyle(_ sender: Any) {
+    @IBAction func toggleMapStyle(_ sender: Any) { 
         if let segmentedControl = sender as? UISegmentedControl {
                 switch segmentedControl.selectedSegmentIndex {
                     case 0:

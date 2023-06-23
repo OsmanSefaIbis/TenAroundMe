@@ -7,7 +7,7 @@
 
 import UIKit
 
-class SearchResultsVC: UIViewController {
+final class SearchResultsVC: UIViewController {
 
     @IBOutlet weak var tableView: UITableView!
     

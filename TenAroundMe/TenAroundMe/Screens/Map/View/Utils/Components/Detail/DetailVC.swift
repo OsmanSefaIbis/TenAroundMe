@@ -3,19 +3,19 @@
 //  TenAroundMe
 //
 //  Created by Sefa İbiş on 15.06.2023.
-// 
+//
+
+/*
+ optionalTODO: Precache the image when searchPerfom is invoked
+ YELP API Related
+ ~~~~~~~~~~~
+ • API_KEY: VSByqNIHQ6nvtiTvjfEX0Q
+ • Client ID: VSByqNIHQ6nvtiTvjfEX0Q
+ */
 
 import UIKit
 
 final class DetailVC: UIViewController {
-    
-    /*
-     TODO: Precache the image when searchPerfom is invoked
-     YELP API Related
-     ~~~~~~~~~~~
-     • API_KEY: VSByqNIHQ6nvtiTvjfEX0Q
-     • Client ID: VSByqNIHQ6nvtiTvjfEX0Q
-     */
     
     @IBOutlet private weak var labelPlaceTitle: UILabel!
     @IBOutlet private weak var labelAddress: UILabel!
@@ -44,6 +44,21 @@ final class DetailVC: UIViewController {
         fatalError("init(coder:) has not been implemented")
     }
     
+    private func configureDetail() { // optionalTODO: Unit test
+        loadViewIfNeeded()
+        labelPlaceTitle.text = place.title
+        labelAddress.text = place.addressLabel.isEmpty ? "N/A" : place.addressLabel 
+        labelDistance.text = place.distance.formatDistance()
+        labelOpenHours.text = place.openHour.isEmpty ? "N/A" : place.openHour
+        labelLatitude.text = place.position.latitude.formatCoordinate()
+        labelLongitude.text = place.position.longitude.formatCoordinate()
+        labelCategories.text = place.categoryLabel
+        let website = place.website.isEmpty ? "N/A" : place.website
+        buttonWebsite.setTitle(website, for: .normal)
+        let phone = place.phone.isEmpty ? "N/A" : place.phone
+        buttonPhone.setTitle(phone, for: .normal)
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
     }
@@ -70,22 +85,6 @@ final class DetailVC: UIViewController {
             guard let url = URL(string: "tel://\(place.phone.numberFormatter)") else { return }
             UIApplication.shared.open(url)
         }
-    }
-
-    
-    private func configureDetail() {
-        loadViewIfNeeded()
-        labelPlaceTitle.text = place.title
-        labelAddress.text = place.addressLabel.isEmpty ? "N/A" : place.addressLabel
-        labelDistance.text = place.distance.formatDistance()
-        labelOpenHours.text = place.openHour.isEmpty ? "N/A" : place.openHour
-        labelLatitude.text = place.position.latitude.formatCoordinate()
-        labelLongitude.text = place.position.longitude.formatCoordinate()
-        labelCategories.text = place.categoryLabel
-        let website = place.website.isEmpty ? "N/A" : place.website
-        buttonWebsite.setTitle(website, for: .normal)
-        let phone = place.phone.isEmpty ? "N/A" : place.phone
-        buttonPhone.setTitle(phone, for: .normal)
     }
 
 }

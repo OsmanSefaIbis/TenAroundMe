@@ -38,7 +38,7 @@ class CoreDataTableVC: UITableViewController {
     func initiateTableViewWithCoreData() {
         viewModel.coreDataRetrieve(to: &persistentData)
         var dataFetchedFromCoreData: [CoreDataModel] = persistentData.map {
-            .init(id: $0.id, latitude: $0.latitude, longitude: $0.longitude, timestamp: $0.timestamp ?? Date())
+            .init(id: $0.id, latitude: $0.latitude.formatCoordinateDouble(), longitude: $0.longitude.formatCoordinateDouble(), timestamp: $0.timestamp ?? Date())
         }
         dataFetchedFromCoreData.sort { $0.id > $1.id }
         guard let mostRecentId = dataFetchedFromCoreData.first?.id else { return }
@@ -86,11 +86,12 @@ class CoreDataTableVC: UITableViewController {
         var content = UITableViewCell().defaultContentConfiguration()
         content.prefersSideBySideTextAndSecondaryText = true
         content.text = "🌐 Lati:" + String(model.latitude) + "\t 🌐 Longi: " + String(model.longitude)
-        content.textProperties.font = UIFont.systemFont(ofSize: 10, weight: .regular)
-        content.secondaryText = "⏰" + model.timestamp.formatted()
+        content.textProperties.font = UIFont.systemFont(ofSize: 12, weight: .regular)
+        content.secondaryText = " ⏰ " + model.timestamp.formatted()
         content.secondaryTextProperties.font = UIFont.systemFont(ofSize: 10, weight: .regular)
         let cell = tableView.dequeueReusableCell(withIdentifier: "Cell", for: indexPath)
         cell.contentConfiguration = content
+        
         return cell
     }
 }

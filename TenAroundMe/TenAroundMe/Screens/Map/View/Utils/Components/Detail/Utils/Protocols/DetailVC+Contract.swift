@@ -8,6 +8,5 @@
 import Foundation
 
 protocol DetailVCContract: AnyObject {
-    
-
+    // optinalTODO: explore nearby on map
 }

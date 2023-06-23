@@ -17,7 +17,7 @@ final class MapVM {
     weak var searchResultView: SearchResultsVCContract?
     weak var placesResultView: PlacesResultsVCContract?
     weak var detailView: DetailVCContract?
-    weak var coreDataResultView: CoreDataTableVC?
+    weak var coreDataResultView: CoreDataTableVC? // TODO: Contract
     weak var delegate: MapVMDelegate?
     
     var timeControl: Timer?
@@ -34,9 +34,9 @@ final class MapVM {
     var latestLocation: Position?
     var latestCountryCode: String?
     var latestPlaces: [Places] = []
-    var latestSelectedPlace: Places? // optionalTODO: Focused pin green
+    var latestSelectedPlace: Places?
     
-    init(mapView:MapVCContract) {
+    init(mapView: MapVCContract) {
         model.delegate = self
         self.mapView = mapView
     }

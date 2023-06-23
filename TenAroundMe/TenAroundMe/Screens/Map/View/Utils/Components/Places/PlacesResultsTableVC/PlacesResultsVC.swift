@@ -13,7 +13,6 @@ class PlacesResultsVC: UIViewController {
     @IBOutlet weak var tableView: UITableView!
     
     var viewModel: MapVM!
-    
     var places: [Places]
     
     private var indexForFocusedRow: Int? { 

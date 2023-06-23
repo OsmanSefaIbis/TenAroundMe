@@ -9,4 +9,8 @@ extension Double {
     func formatCoordinate() -> String {
         String(format: "%.3f", self)
     }
+
+    func formatCoordinateDouble() -> Double {
+        return Double(String(format: "%.5f", self)) ?? 0.0
+    }
 }

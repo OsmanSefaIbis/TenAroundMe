@@ -8,6 +8,5 @@
 import Foundation
 
 extension DetailVC: DetailVCContract {
-
-        
+    // optinalTODO: explore nearby on map
 }

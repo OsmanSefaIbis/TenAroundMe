@@ -21,7 +21,7 @@ extension PlacesResultsVC: UITableViewDataSource {
         let place = places[indexPath.row]
         cell.configure(with: place.dataModel)
         
-        cell.backgroundColor = place.isFocused ? UIColor.lightGray.withAlphaComponent(0.5) : UIColor.clear
+        cell.backgroundColor = place.isFocused ? UIColor.lightGray.withAlphaComponent(0.5) : UIColor.clear // optionalTODO: Test
         
         return cell
     }

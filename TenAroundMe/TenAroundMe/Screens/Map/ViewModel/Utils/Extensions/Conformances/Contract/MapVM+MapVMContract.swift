@@ -26,10 +26,6 @@ extension MapVM: MapVMContract {
         placesResultView?.configureTableView()
     }
     
-    func searchIsActivated() {
-        // TODO: think later
-    }
-    
     func searchIsDeactivated() {
         self.mapView?.dismissPresentingPlacesList()
     }
@@ -45,7 +41,7 @@ extension MapVM: MapVMContract {
         
         timeControl?.invalidate()
         timeControl = Timer.scheduledTimer(withTimeInterval: 0.9, repeats: false, block: { [weak self] (timer) in
-            guard let self else { return }
+            guard let self = self else { return }
             switch search.count {
                 case 0:
                 searchIsDeactivated() ; searchIsDeactivated()
@@ -76,18 +72,18 @@ extension MapVM: MapVMContract {
         let selectedResultType = selectedData.resutlType
                 
         switch selectedResultType {
-        case "categoryQuery","chainQuery" :
-            // INFO: AutoSuggest endpoint does not give category id, so i used the href
-            self.mapView?.dismissPresentingPlacesList()
-            // since autosuggest is limited to 50, the href also takes the limit, so i had to inject 10 for TOP10
-            guard let modifiedUrl = modifyURLQueryString(selectedData.hrefCategory) else { return }
-            let query: SearchQuery = .init(hrefCategory: modifiedUrl)
-            performSuggestSearch(with: query)
-        default:
-            // INFO: Either a "place" or "chainQuery"
-            self.mapView?.dismissPresentingPlacesList()
-            let query: SearchQuery = .init(input: selectedData.title, location: position, country: country)
-            performSearch(with: query)
+            case "categoryQuery","chainQuery" :
+                // INFO: AutoSuggest endpoint does not give category id, so i used the href
+                self.mapView?.dismissPresentingPlacesList()
+                // INFO: Autosuggest is limited to 50, the href also takes the limit, so i had to inject 10 for TOP10
+                guard let modifiedUrl = modifyURLQueryString(selectedData.hrefCategory) else { return }
+                let query: SearchQuery = .init(hrefCategory: modifiedUrl)
+                performSuggestSearch(with: query)
+            default:
+                // INFO: "Place"
+                self.mapView?.dismissPresentingPlacesList()
+                let query: SearchQuery = .init(input: selectedData.title, location: position, country: country)
+                performSearch(with: query)
         }
     }
     

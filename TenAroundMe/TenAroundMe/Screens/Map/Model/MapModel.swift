@@ -20,7 +20,7 @@ final class MapModel {
     func fetchAutoSuggest(with query: SearchQuery){
         if internet.isOnline() {
             network.fetchSuggestion(by: query) { [weak self] response in
-                guard let self else { return }
+                guard let self = self else { return }
                 switch response {
                     case .success(let data):
                     guard let results = data.items else { return }
@@ -38,7 +38,7 @@ final class MapModel {
     func fetchSearch(with query: SearchQuery){
         if internet.isOnline() {
             network.fetchSearch(by: query) { [weak self] response in
-                guard let self else { return }
+                guard let self = self else { return }
                 switch response {
                     case .success(let data):
                     guard let results = data.items else { return }
@@ -56,7 +56,7 @@ final class MapModel {
     func fetchSuggestSearch(with query: SearchQuery){
         if internet.isOnline() {
             network.fetchSuggestionSearch(by: query) { [weak self] response in
-                guard let self else { return }
+                guard let self = self else { return }
                 switch response {
                     case .success(let data):
                     guard let results = data.items else { return }
