@@ -24,7 +24,7 @@ extension MapVM: MapModelDelegate {
                 id: $0.id ?? "",
                 title: $0.title ?? "",
                 resutlType: $0.resultType ?? "",
-                hrefCategory: $0.href ?? "",
+                href: $0.href ?? "",
                 distance: $0.distance ?? 0,
                 categories: categories,
                 chains: chains

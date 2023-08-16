@@ -17,7 +17,7 @@ protocol MapVMContract {
     func textDidChange(with input: String)
     func performAutoSuggest(with query: SearchQuery)
     func setSuggestions(with results: [SuggestDataModel])
-    func suggestionSelected(with rowIndex: Int)
+    func suggestionSelected(as resultType: String, with selectedData: SuggestDataModel)
     
     func performSearch(with query: SearchQuery)
     func setPlaces(with results: [PlacesDataModel])

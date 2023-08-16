@@ -30,6 +30,8 @@ extension NetworkAdapter {
 
         return URLRequest(url: url)
     }
+    
+    
 
     func isValidJSON(_ jsonString: String) -> Bool {
         

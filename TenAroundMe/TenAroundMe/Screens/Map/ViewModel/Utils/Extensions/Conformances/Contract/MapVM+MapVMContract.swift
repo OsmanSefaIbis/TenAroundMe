@@ -27,13 +27,13 @@ extension MapVM: MapVMContract {
     }
     
     func searchIsDeactivated() {
-        self.mapView?.dismissPresentingPlacesList()
+        mapView?.dismissPresentingPlacesList()
     }
     
     func textDidChange(with input: String) {
         
         if input.count == 0 { /// minor case
-            self.searchResultView?.dumpData()
+            searchResultView?.dumpData()
         }
         
         let search = input.replacingOccurrences(of: "\\s+", with: "+", options: .regularExpression)
@@ -49,11 +49,10 @@ extension MapVM: MapVMContract {
                 guard let position = self.latestLocation else { return }
                 guard let country = self.latestCountryCode else { return }
                 let query: SearchQuery = .init(input: search, location: position, country: country)
-                performAutoSuggest(with: query)
                 self.mapView?.dismissKeyboard()
+                performAutoSuggest(with: query)
             }
         } )
-        
     }
     
     func performAutoSuggest(with query: SearchQuery) {
@@ -63,31 +62,27 @@ extension MapVM: MapVMContract {
     
     func setSuggestions(with results: [SuggestDataModel]) {
         suggestionResults = results
-        self.searchResultView?.stopSpinner()
+        searchResultView?.stopSpinner()
         mapView?.reloadSuggestions()
     }
     
-    func suggestionSelected(with rowIndex: Int) {
-        
+    func suggestionSelected(as resultType: String, with selectedData: SuggestDataModel) {
         guard let position = self.latestLocation else { return }
         guard let country = self.latestCountryCode else { return }
-        let selectedData = suggestionResults[rowIndex]
-        let selectedResultType = selectedData.resutlType
                 
-        switch selectedResultType {
+        switch resultType {
             case "categoryQuery","chainQuery" :
                 // INFO: AutoSuggest endpoint does not give category id, so i used the href
-                self.mapView?.dismissPresentingPlacesList()
                 // INFO: Autosuggest is limited to 50, the href also takes the limit, so i had to inject 10 for TOP10
-                guard let modifiedUrl = modifyURLQueryString(selectedData.hrefCategory) else { return }
-                let query: SearchQuery = .init(hrefCategory: modifiedUrl)
+                guard let modifiedUrl = modifyURLQueryString(selectedData.href) else { return }
+                let query: SearchQuery = .init(href: modifiedUrl)
                 performSuggestSearch(with: query)
             default:
                 // INFO: "Place"
-                self.mapView?.dismissPresentingPlacesList()
                 let query: SearchQuery = .init(input: selectedData.title, location: position, country: country)
                 performSearch(with: query)
         }
+        mapView?.dismissPresentingPlacesList()
     }
     
     func performSearch(with query: SearchQuery) {
@@ -117,5 +112,4 @@ extension MapVM: MapVMContract {
         mapView?.addAnnotations(with: latestPlaces)
         mapView?.presentPlaces(with: latestPlaces)
     }
-
 }

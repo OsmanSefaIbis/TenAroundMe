@@ -33,7 +33,7 @@ class PlacesCell: UITableViewCell {
 
     @IBAction func buttonDetailPressed(_ sender: Any) {
         guard let indexPath = self.indexPath else { return }
-        guard let place = self.place else { return }
+//        guard let place = self.place else { return }
         self.delegate?.buttonDetailPressed(at: indexPath)
     }
     override func setSelected(_ selected: Bool, animated: Bool) {

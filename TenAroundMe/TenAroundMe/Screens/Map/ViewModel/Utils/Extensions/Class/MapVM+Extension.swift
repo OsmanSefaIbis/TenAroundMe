@@ -12,7 +12,7 @@ import CoreLocation
 extension MapVM {
         
     /// CRUD CoreData, left printouts on purpose
-
+    
     func coreDataSave(with data: CoreDataModel, for location: CLLocation) {
         let context = appDelegate.persistentContainer.viewContext
         if let entity = NSEntityDescription.entity(forEntityName: "UserLocationEntity", in: context){

@@ -24,7 +24,9 @@ extension SearchResultsVC: UITableViewDataSource {
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         viewModel.mapView?.dismissPresentingSuggestionsList()
         let selectedRowIndex = indexPath.row
-        viewModel.suggestionSelected(with: selectedRowIndex)
+        let selectedData = viewModel.suggestionResults[selectedRowIndex]
+        let selectedResultType = selectedData.resutlType
+        viewModel.suggestionSelected(as: selectedResultType, with: selectedData)
     }
 
 }

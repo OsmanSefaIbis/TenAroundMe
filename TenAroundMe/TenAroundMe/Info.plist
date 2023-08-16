@@ -1,5 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
-<dict/>
+<dict>
+	<key>NSLocationWhenInUseUsageDescription</key>
+	<string>TenAroundMe requires access to your location to provide you with a personalized experience and show you the top 10 places closest to your current location.</string>
+	<key>NSLocationAlwaysAndWhenInUseUsageDescription</key>
+	<string>TenAroundMe requires access to your location to provide you with a personalized experience and show you the top 10 places closest to your current location.</string>
+</dict>
 </plist>

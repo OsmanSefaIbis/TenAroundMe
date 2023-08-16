@@ -49,31 +49,31 @@ final class MockMapVC: MapVCContract {
     }
     
     func setSuggestion(with results: [TenAroundMe.SuggestDataModel]) {
-        counter_reloadSuggestions += 1
+        counter_setSuggestion += 1
     }
     
     func removeAnnotations() {
-        counter_reloadSuggestions += 1
+        counter_removeAnnotations += 1
     }
     
     func setPlaces(with results: [TenAroundMe.PlacesDataModel]) {
-        counter_reloadSuggestions += 1
+        counter_setPlaces += 1
     }
     
     func addAnnotations(with places: [TenAroundMe.Places]) {
-        counter_reloadSuggestions += 1
+        counter_addAnnotations += 1
     }
     
     func selectAnnotation(by place: TenAroundMe.Places) {
-        counter_reloadSuggestions += 1
+        counter_selectAnnotation += 1
     }
     
     func presentPlaces(with places: [TenAroundMe.Places]) {
-        counter_reloadSuggestions += 1
+        counter_presentPlaces += 1
     }
     
     func dismissPresentingSuggestionsList() {
-        counter_reloadSuggestions += 1
+        counter_dismissPresentingSuggestionsList += 1
     }
     
     func dismissPresentingPlacesList() {
@@ -81,10 +81,10 @@ final class MockMapVC: MapVCContract {
     }
     
     func dismissKeyboard() {
-        counter_reloadSuggestions += 1
+        counter_dismissKeyboard += 1
     }
     
     func presentCoreDataTable() {
-        counter_reloadSuggestions += 1
+        counter_presentCoreDataTable += 1
     }
 }

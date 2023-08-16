@@ -12,7 +12,7 @@ struct SuggestDataModel {
     let id: String
     let title: String
     let resutlType: String
-    let hrefCategory: String
+    let href: String
     let distance: Int
     let categories: [SuggestCategory]
     let chains: [SuggestChain]

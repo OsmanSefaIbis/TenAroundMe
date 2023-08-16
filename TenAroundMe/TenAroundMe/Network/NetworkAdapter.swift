@@ -59,7 +59,7 @@ final class NetworkAdapter {
             by query: SearchQuery,
             onCompletion: @escaping (Result <PlacesDTO, NetworkError> ) -> Void
         ) {
-            guard let hrefCategoryUrl = query.hrefCategory else { return }
+            guard let hrefCategoryUrl = query.href else { return }
             let hrefUrl = hrefCategoryUrl.appending("&apiKey=\(AppConstants.apiKey)")
             guard let url = URL(string: hrefUrl) else { return }
             let request = URLRequest(url: url)
