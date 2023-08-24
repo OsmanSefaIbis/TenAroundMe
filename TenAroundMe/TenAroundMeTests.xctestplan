@@ -1,0 +1,25 @@
+{
+  "configurations" : [
+    {
+      "id" : "66591567-80C0-49B6-AD78-CFAF5EE81AF2",
+      "name" : "Test Scheme Action",
+      "options" : {
+
+      }
+    }
+  ],
+  "defaultOptions" : {
+
+  },
+  "testTargets" : [
+    {
+      "parallelizable" : true,
+      "target" : {
+        "containerPath" : "container:TenAroundMe.xcodeproj",
+        "identifier" : "961F142C2A38D17000BF9A7C",
+        "name" : "TenAroundMeTests"
+      }
+    }
+  ],
+  "version" : 1
+}

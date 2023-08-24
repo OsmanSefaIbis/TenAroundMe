@@ -80,7 +80,7 @@ final class MapVMTests: XCTestCase {
         // TODO: lookup unit testing for timed operation
         XCTAssertEqual(searchResultView.counter_dumpData, 0)
         XCTAssertEqual(mapView.counter_dismissPresentingPlacesList, 0)
-        viewModel.textDidChange(with: "")
+            viewModel.textDidChange(with: "")
         DispatchQueue.main.asyncAfter(deadline: .now() + .seconds(1) ) { [weak self] in
             guard let self = self else { return }
             XCTAssertEqual(searchResultView.counter_dumpData, 1)
@@ -103,7 +103,7 @@ final class MapVMTests: XCTestCase {
     
     func test_performAutoSuggest_suggestionFetch() {
         XCTAssertEqual(searchResultView.counter_startSpinner, 0)
-        viewModel.performAutoSuggest(with: .init())
+            viewModel.performAutoSuggest(with: .init())
         XCTAssertEqual(searchResultView.counter_startSpinner, 1)
     }
     
@@ -118,7 +118,7 @@ final class MapVMTests: XCTestCase {
     func test_suggestionSelected_withInputCategory_triggersperformSuggestSearch() {
         XCTAssertEqual(mapView.counter_dismissPresentingPlacesList, 0)
         XCTAssertEqual(mapView.counter_removeAnnotations, 0)
-        viewModel.suggestionSelected(as: "categoryQuery", with: valueFor_suggestionSelected_category)
+            viewModel.suggestionSelected(as: "categoryQuery", with: valueFor_suggestionSelected_category)
         // bug detected, below count should be 1
         XCTAssertEqual(mapView.counter_dismissPresentingPlacesList, 0)
         XCTAssertEqual(mapView.counter_removeAnnotations, 0)
@@ -139,6 +139,7 @@ final class MapVMTests: XCTestCase {
     }
     
     func test_setPlaces_performsDataMappingThenPresentsPlaces() {
+        
         XCTAssertEqual(mapView.counter_addAnnotations, 0)
         XCTAssertEqual(mapView.counter_presentPlaces, 0)
             viewModel.setPlaces( with: valueFor_setPlaces)

@@ -170,6 +170,7 @@
 		9686259D2A3DCAC000ACFC26 /* SearchCellModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchCellModel.swift; sourceTree = "<group>"; };
 		968625A62A3DCC5D00ACFC26 /* SearchResultsVC+UITableViewDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "SearchResultsVC+UITableViewDelegate.swift"; sourceTree = "<group>"; };
 		968625A82A3DCCC100ACFC26 /* SearchResultsVC+UITableViewDatasource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "SearchResultsVC+UITableViewDatasource.swift"; sourceTree = "<group>"; };
+		96A4C2F52A8FC4DB00DCCE29 /* TenAroundMeTests.xctestplan */ = {isa = PBXFileReference; lastKnownFileType = text; path = TenAroundMeTests.xctestplan; sourceTree = "<group>"; };
 		96BA72072A43615300442923 /* CoreDataTableVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataTableVC.swift; sourceTree = "<group>"; };
 		96BA72092A438B0E00442923 /* CoreDataModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataModel.swift; sourceTree = "<group>"; };
 		96BA720B2A446C9B00442923 /* Int.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Int.swift; sourceTree = "<group>"; };
@@ -216,6 +217,7 @@
 		961F140B2A38D16E00BF9A7C = {
 			isa = PBXGroup;
 			children = (
+				96A4C2F52A8FC4DB00DCCE29 /* TenAroundMeTests.xctestplan */,
 				961F14162A38D16E00BF9A7C /* TenAroundMe */,
 				961F14302A38D17000BF9A7C /* TenAroundMeTests */,
 				961F14152A38D16E00BF9A7C /* Products */,
